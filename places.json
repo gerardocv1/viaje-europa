@@ -2,861 +2,2205 @@
   {
     "name": "Museo del Prado",
     "city": "Madrid",
-    "description": "Uno de los museos de arte más importantes del mundo. Alberga obras maestras de Velázquez, Goya, El Greco y Bosch. Colección de pintura europea del siglo XII al XIX.",
+    "description": "Principal pinacoteca de España y una de las más importantes del mundo. Alberga más de 8.000 cuadros y 700 esculturas, con la mejor colección mundial de pintura española (Velázquez, Goya, El Greco) y obras maestras de Bosch, Tiziano, Rubens y Rafael. Abierto al público desde 1819 en el edificio neoclásico de Villanueva.",
     "duration_min": 180,
     "address": "Paseo del Prado, s/n, 28014 Madrid",
     "lat": 40.4138,
     "lng": -3.6921,
-    "wikipedia_title": "Museo del Prado"
+    "wikipedia_title": "Museo del Prado",
+    "images": null,
+    "tips": [
+      "Ve directamente a la Sala 12 del edificio Villanueva para ver 'Las Meninas' de Velázquez, y luego baja a la sala 56A para 'El Jardín de las Delicias' de El Bosco.",
+      "Entrada gratuita las 2 últimas horas: lunes a sábado de 18:00 a 20:00 y domingos de 17:00 a 19:00 (llega 30 min antes porque hay cola).",
+      "Compra el Abono Paseo del Arte (32,80 €) si vas a visitar también el Reina Sofía y el Thyssen en el mismo viaje."
+    ],
+    "hours": "Lun-Sáb 10:00-20:00; Dom y festivos 10:00-19:00",
+    "price": "General 15 €; reducida 7,50 €; gratis menores de 18 y estudiantes hasta 25 años",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Museo_del_Prado_2016_%2825185969599%29.jpg/1280px-Museo_del_Prado_2016_%2825185969599%29.jpg"
   },
   {
     "name": "Palacio Real de Madrid",
     "city": "Madrid",
-    "description": "El palacio real más grande de Europa occidental. Residencia oficial de la Familia Real española. Destaca por sus salones decorados, la Armería Real y los jardines de Sabatini.",
+    "description": "Residencia oficial del Rey de España (aunque ya no se vive en él, se usa para ceremonias de Estado). Con 3.418 habitaciones es el palacio real más grande de Europa occidental. Destacan el Salón del Trono, la Real Armería y la Real Cocina.",
     "duration_min": 150,
-    "address": "Calle de Bailén, s/n, 28013 Madrid",
+    "address": "Calle de Bailén, s/n, 28071 Madrid",
     "lat": 40.4175,
     "lng": -3.7145,
-    "wikipedia_title": "Royal Palace of Madrid"
+    "wikipedia_title": "Royal Palace of Madrid",
+    "images": null,
+    "tips": [
+      "No te pierdas la Real Armería (acceso incluido), una de las mejores colecciones de armaduras del mundo, con piezas de Carlos V y Felipe II.",
+      "Entrada gratuita para ciudadanos UE y latinoamericanos de lunes a jueves de 17:00 a 19:00 (invierno) o de 18:00 a 20:00 (verano).",
+      "Asiste al Cambio Solemne de la Guardia el primer miércoles de cada mes a las 12:00 en la Plaza de la Armería (gratis y muy espectacular)."
+    ],
+    "hours": "Oct-Mar 10:00-18:00; Abr-Sep 10:00-19:00",
+    "price": "14 € adulto; 7 € reducida; gratis residentes UE lun-jue tarde",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Palacio_Real_de_Madrid_-_03.jpg/1280px-Palacio_Real_de_Madrid_-_03.jpg"
   },
   {
     "name": "Plaza Mayor",
     "city": "Madrid",
-    "description": "Plaza rectangular del siglo XVII en el corazón de Madrid. Rodeada de edificios de ladrillo rojo con soportales, bares y restaurantes. Escenario histórico de mercados, corridas y festividades.",
+    "description": "Plaza porticada del siglo XVII construida bajo Felipe III, cuya estatua ecuestre preside el centro. Fue escenario de autos de fe, corridas de toros y proclamaciones reales. Está rodeada por 237 balcones distribuidos en sus tres plantas.",
     "duration_min": 60,
     "address": "Plaza Mayor, 28012 Madrid",
     "lat": 40.4155,
     "lng": -3.6873,
-    "wikipedia_title": "Plaza Mayor, Madrid"
+    "wikipedia_title": "Plaza Mayor, Madrid",
+    "images": null,
+    "tips": [
+      "Entra por el Arco de Cuchilleros (esquina suroeste) para acceder a las cuevas y mesones tradicionales como Casa Botín (el restaurante más antiguo del mundo, fundado en 1725).",
+      "Visita el mercadillo navideño desde finales de noviembre hasta el 31 de diciembre.",
+      "No comas en las terrazas de la plaza (sobreprecio turístico); cruza dos calles hacia el Mercado de San Miguel o Cava Baja."
+    ],
+    "hours": "Acceso libre 24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Plaza_Mayor_de_Madrid_06.jpg/1280px-Plaza_Mayor_de_Madrid_06.jpg"
   },
   {
     "name": "Puerta del Sol",
     "city": "Madrid",
-    "description": "La plaza más céntrica de Madrid y punto kilométrico cero de la red de carreteras españolas. Aquí está el famoso reloj de fin de año y la estatua del oso y el madroño.",
+    "description": "Plaza emblemática y centro neurálgico de Madrid. Contiene el Kilómetro Cero de las carreteras radiales españolas, la estatua del Oso y el Madroño (símbolo de la ciudad) y el reloj de la Casa de Correos donde se celebran las campanadas de Nochevieja.",
     "duration_min": 30,
     "address": "Puerta del Sol, 28013 Madrid",
     "lat": 40.4168,
     "lng": -3.7038,
-    "wikipedia_title": "Puerta del Sol"
+    "wikipedia_title": "Puerta del Sol",
+    "images": null,
+    "tips": [
+      "Pisa el Kilómetro Cero en la acera frente a la Casa de Correos (placa de bronce embutida en el suelo).",
+      "Cómprate un 'barquillo' al vendedor con uniforme tradicional que está cerca del Oso y el Madroño.",
+      "Evita la plaza el 31 de diciembre por la tarde si no piensas comer las uvas allí."
+    ],
+    "hours": "Acceso libre 24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Puerta_del_Sol_-_panor%C3%A1mica_nocturna.jpg/1280px-Puerta_del_Sol_-_panor%C3%A1mica_nocturna.jpg"
   },
   {
     "name": "Templo de Debod",
     "city": "Madrid",
-    "description": "Templo funerario egipcio del siglo II a.C. trasladado desde Nubia como regalo de Egipto a España. Ofrece vistas panorámicas espectaculares de Madrid al atardecer.",
+    "description": "Auténtico templo egipcio del siglo II a.C., regalado por Egipto a España en 1968 en agradecimiento por la ayuda en el salvamento de los templos de Nubia. Está reconstruido piedra a piedra en el parque del Cuartel de la Montaña.",
     "duration_min": 60,
-    "address": "Calle de Ferraz, 1, 28008 Madrid",
+    "address": "Calle Ferraz, 1, 28008 Madrid",
     "lat": 40.4262,
     "lng": -3.7194,
-    "wikipedia_title": "Temple of Debod"
+    "wikipedia_title": "Temple of Debod",
+    "images": null,
+    "tips": [
+      "Ve al atardecer (especialmente en verano) para una de las mejores puestas de sol de Madrid; el sol se pone justo detrás del templo reflejado en el estanque.",
+      "Entrar al interior es gratis pero hay aforo limitado; llega temprano (martes a domingo 10:00-14:00 y tardes).",
+      "Sube por el cercano Paseo del Pintor Rosales hasta el Teleférico de Madrid para ver vistas alternativas."
+    ],
+    "hours": "Mar-Dom 10:00-19:00 (interior); exterior 24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Madrid_-_Templo_de_Debod_-_20061111-04.jpg/1280px-Madrid_-_Templo_de_Debod_-_20061111-04.jpg"
   },
   {
     "name": "Museo Reina Sofía",
     "city": "Madrid",
-    "description": "Museo nacional de arte moderno y contemporáneo. Alberga el Guernica de Picasso, obras de Salvador Dalí y Joan Miró. Edificio histórico con icónicos ascensores exteriores de cristal.",
+    "description": "Museo Nacional Centro de Arte Reina Sofía, dedicado al arte español del siglo XX y arte contemporáneo. Alberga el 'Guernica' de Picasso y obras maestras de Dalí, Miró y Juan Gris en un antiguo hospital del siglo XVIII ampliado por Jean Nouvel.",
     "duration_min": 150,
     "address": "Calle de Santa Isabel, 52, 28012 Madrid",
     "lat": 40.4065,
     "lng": -3.6917,
-    "wikipedia_title": "Museo Reina Sofía"
+    "wikipedia_title": "Museo Reina Sofía",
+    "images": null,
+    "tips": [
+      "Sube directamente a la 2ª planta del edificio Sabatini, Sala 206, para ver el 'Guernica' (1937); intenta ir temprano porque suele llenarse.",
+      "Entrada gratuita lunes y miércoles a sábado de 19:00 a 21:00 y domingo de 12:30 a 14:30; cerrado los martes.",
+      "No te pierdas la terraza del edificio Nouvel: vistas espectaculares de Madrid y suele estar vacía."
+    ],
+    "hours": "Lun y Mié-Sáb 10:00-21:00; Dom 10:00-14:30; cerrado martes",
+    "price": "12 €; gratis menores de 18 años",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Madrid_-_Museo_Nacional_Centro_de_Arte_Reina_Sof%C3%ADa_%28MNCARS%29_03.jpg/1280px-Madrid_-_Museo_Nacional_Centro_de_Arte_Reina_Sof%C3%ADa_%28MNCARS%29_03.jpg"
   },
   {
     "name": "Parque del Retiro",
     "city": "Madrid",
-    "description": "Parque histórico de 125 hectáreas, pulmón verde de Madrid. Con lago navegable, jardines temáticos, el Palacio de Cristal y el Velódromo. Perfecto para pasear y descansar.",
+    "description": "Antiguos jardines reales del siglo XVII, hoy el parque más popular de Madrid con 125 hectáreas. Patrimonio de la Humanidad UNESCO desde 2021. Contiene el Palacio de Cristal, el Estanque Grande, el Monumento a Alfonso XII y el famoso Ángel Caído.",
     "duration_min": 120,
     "address": "Plaza de la Independencia, 7, 28001 Madrid",
     "lat": 40.4153,
-    "lng": -3.6830,
-    "wikipedia_title": "Buen Retiro Park"
+    "lng": -3.683,
+    "wikipedia_title": "Buen Retiro Park",
+    "images": null,
+    "tips": [
+      "Alquila una barca de remos en el Estanque Grande (unos 8-10 € por 45 min) — actividad madrileña por excelencia.",
+      "Visita el Palacio de Cristal (entrada gratuita), que es una sede del Reina Sofía con exposiciones temporales.",
+      "Los domingos por la mañana ve al Paseo de la Argentina ('Paseo de las Estatuas') y al Bosque del Recuerdo."
+    ],
+    "hours": "Oct-Mar 6:00-22:00; Abr-Sep 6:00-24:00",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Madrid_-_Parque_del_Buen_Retiro%2C_Palacio_de_Cristal_03.jpg/1280px-Madrid_-_Parque_del_Buen_Retiro%2C_Palacio_de_Cristal_03.jpg"
   },
   {
     "name": "Museo Thyssen-Bornemisza",
     "city": "Madrid",
-    "description": "Complementa al Prado y al Reina Sofía en el Triángulo del Arte madrileño. Colección que abarca desde el siglo XIII hasta el arte contemporáneo, con impresionistas y expresionistas.",
+    "description": "Tercera punta del 'Triángulo del Arte' madrileño. Colección privada de la familia Thyssen-Bornemisza adquirida por el Estado en 1993, complementa al Prado y Reina Sofía cubriendo primitivos italianos, impresionismo, expresionismo y pop art.",
     "duration_min": 120,
     "address": "Paseo del Prado, 8, 28014 Madrid",
     "lat": 40.4167,
-    "lng": -3.6950,
-    "wikipedia_title": "Museo Thyssen-Bornemisza"
+    "lng": -3.695,
+    "wikipedia_title": "Museo Thyssen-Bornemisza",
+    "images": null,
+    "tips": [
+      "Lunes entrada gratuita de 12:00 a 16:00 (con colección permanente; suele haber cola).",
+      "Empieza por la 2ª planta (primitivos italianos y renacimiento) y baja cronológicamente.",
+      "No te pierdas 'Habitación de hotel' de Edward Hopper (planta 1, Sala 30); es la joya menos publicitada."
+    ],
+    "hours": "Mar-Dom 10:00-19:00; Lun 12:00-16:00",
+    "price": "13 €; reducida 9 €; lunes gratis (colección permanente)",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Palacio_de_Villahermosa_%28Madrid%29_05.jpg/1280px-Palacio_de_Villahermosa_%28Madrid%29_05.jpg"
   },
   {
     "name": "Catedral de la Almudena",
     "city": "Madrid",
-    "description": "Catedral de estilo neogótico construida entre 1883 y 1993. Ubicada frente al Palacio Real, es la sede del arzobispado de Madrid. Interior luminoso con vidrieras modernas.",
+    "description": "Catedral de Madrid, consagrada por el Papa Juan Pablo II en 1993. Construcción iniciada en 1883 mezclando estilos neoclásico (exterior), neogótico (interior) y neorrománico (cripta). Está justo enfrente del Palacio Real.",
     "duration_min": 45,
     "address": "Calle de Bailén, 10, 28013 Madrid",
     "lat": 40.4155,
     "lng": -3.7155,
-    "wikipedia_title": "Almudena Cathedral"
+    "wikipedia_title": "Almudena Cathedral",
+    "images": null,
+    "tips": [
+      "Sube a la cúpula (6 €) para una de las mejores vistas panorámicas de Madrid (acceso por la calle Mayor 90).",
+      "No te pierdas la cripta neorrománica (acceso por calle Mayor 92, gratis) — espectacular y casi vacía.",
+      "Visítala combinada con el Palacio Real porque están justo enfrente."
+    ],
+    "hours": "10:00-20:30 (cierra durante misas)",
+    "price": "Catedral gratis (donativo 1 €); museo y cúpula 6 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Catedral_de_la_Almudena_-_03.jpg/1280px-Catedral_de_la_Almudena_-_03.jpg"
   },
   {
     "name": "Mercado de San Miguel",
     "city": "Madrid",
-    "description": "Mercado gastronómico en un edificio de hierro del siglo XIX. Ofrece tapas, pinchos, vinos, mariscos y cocina de autor. Uno de los mercados más bonitos de Europa.",
+    "description": "Mercado gourmet del siglo XIX con estructura de hierro y cristal, reconvertido en 2009 en uno de los templos gastronómicos de Madrid. No es un mercado tradicional sino un espacio para tapear, con puestos de jamón, ostras, croquetas, sushi y vermús.",
     "duration_min": 60,
     "address": "Plaza de San Miguel, s/n, 28005 Madrid",
-    "lat": 40.4150,
+    "lat": 40.415,
     "lng": -3.6898,
-    "wikipedia_title": "Mercado de San Miguel"
+    "wikipedia_title": "Mercado de San Miguel",
+    "images": null,
+    "tips": [
+      "Ve a media mañana (11:30-12:30) o entre 16:00 y 19:00 para evitar las multitudes de comidas/cenas.",
+      "Las croquetas de Casa Aranda y las ostras de Daniel Sorlut son lo más recomendado.",
+      "No te sientes en mesas; el ambiente es de circulación, picoteando de pie con copa en mano."
+    ],
+    "hours": "Dom-Jue 10:00-24:00; Vie-Sáb 10:00-1:00",
+    "price": "Gratis (consumo aparte)",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Mercado_de_San_Miguel_%28Madrid%29_06.jpg/1280px-Mercado_de_San_Miguel_%28Madrid%29_06.jpg"
   },
   {
     "name": "Barrio de La Latina",
     "city": "Madrid",
-    "description": "El barrio más antiguo de Madrid con calles medievales empedradas. Centro del tapeo madrileño, especialmente los domingos. Aquí se encuentra el mercado de El Rastro.",
+    "description": "Uno de los barrios más antiguos del centro histórico de Madrid, con calles estrechas medievales en torno a la Cava Alta y Cava Baja. Famoso por sus tabernas centenarias, su ambiente de tapeo y los domingos del Rastro.",
     "duration_min": 120,
-    "address": "La Latina, 28005 Madrid",
+    "address": "Distrito Centro, en torno a Cava Baja, 28005 Madrid",
     "lat": 40.4101,
     "lng": -3.6978,
-    "wikipedia_title": "La Latina"
+    "wikipedia_title": "La Latina",
+    "images": null,
+    "tips": [
+      "Recorre la Cava Baja de tapeo: Casa Lucio (callos), Taberna Tempranillo (vinos), Lamiak (pintxos) y Casa Lucas.",
+      "Los domingos al mediodía hay 'vermú-cañeo' en la plaza de la Paja y plaza de San Andrés.",
+      "Visita la Basílica de San Francisco el Grande al final del barrio y baja al Mirador del Palacio Real."
+    ],
+    "hours": "Acceso libre 24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Madrid_-_La_Latina%2C_Plaza_de_la_Paja_02.jpg/1280px-Madrid_-_La_Latina%2C_Plaza_de_la_Paja_02.jpg"
   },
   {
     "name": "El Rastro",
     "city": "Madrid",
-    "description": "El mercadillo más famoso de Madrid, activo los domingos y festivos desde el siglo XVI. Cientos de puestos de antigüedades, ropa vintage, libros y curiosidades en La Latina.",
+    "description": "Mercado al aire libre más famoso de España, en funcionamiento desde el siglo XVI. Se celebra todos los domingos y festivos en torno a la Ribera de Curtidores, con más de 1.000 puestos de antigüedades, ropa vintage, objetos curiosos y bricolaje.",
     "duration_min": 90,
     "address": "Calle de la Ribera de Curtidores, 28005 Madrid",
     "lat": 40.4085,
-    "lng": -3.7060,
-    "wikipedia_title": "El Rastro"
+    "lng": -3.706,
+    "wikipedia_title": "El Rastro",
+    "images": null,
+    "tips": [
+      "Llega antes de las 10:00 para ver los puestos sin agobios; a partir de las 12:00 es imposible moverse.",
+      "Después del Rastro, ve a la Plaza de Cascorro o a las tabernas de la Cava Baja a tomar el vermú.",
+      "Explora las galerías interiores del Rastro (Galerías Piquer en Ribera de Curtidores 29) — anticuarios serios."
+    ],
+    "hours": "Domingos y festivos 9:00-15:00",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/El_Rastro_de_Madrid_03.jpg/1280px-El_Rastro_de_Madrid_03.jpg"
   },
   {
     "name": "Barrio de Malasaña",
     "city": "Madrid",
-    "description": "Barrio bohemio y alternativo, corazón de la Movida Madrileña. Tiendas vintage, galerías de arte, cafés con encanto y vida nocturna intensa. Muy popular entre jóvenes.",
+    "description": "Barrio bohemio y alternativo en torno a la Plaza del Dos de Mayo, cuna de la Movida Madrileña de los años 80. Hoy es zona de hipsters, tiendas vintage, librerías independientes, cafés de especialidad y vida nocturna.",
     "duration_min": 90,
-    "address": "Malasaña, 28004 Madrid",
+    "address": "Distrito Centro, en torno a Plaza del Dos de Mayo, 28004 Madrid",
     "lat": 40.4227,
-    "lng": -3.7040,
-    "wikipedia_title": "Malasaña"
+    "lng": -3.704,
+    "wikipedia_title": "Malasaña",
+    "images": null,
+    "tips": [
+      "Visita la calle Fuencarral y la calle Velarde para tiendas de diseño independiente y vintage únicos.",
+      "Café de especialidad en HanSo Café (calle del Pez, 20) o en Toma Café — son referentes mundiales.",
+      "En la plaza del Dos de Mayo verás el arco original del Cuartel del Conde-Duque (resto del levantamiento de 1808)."
+    ],
+    "hours": "Acceso libre 24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Plaza_del_Dos_de_Mayo_%28Madrid%29_06.jpg/1280px-Plaza_del_Dos_de_Mayo_%28Madrid%29_06.jpg"
   },
   {
     "name": "Gran Vía",
     "city": "Madrid",
-    "description": "La gran avenida comercial de Madrid, con arquitectura ecléctica de principios del siglo XX. Teatros, cines, tiendas de moda, restaurantes y el icónico edificio Metrópolis.",
+    "description": "La gran avenida comercial y de espectáculos de Madrid, inaugurada en 1910. Es un escaparate de la arquitectura del primer tercio del siglo XX, con edificios emblemáticos como el Metrópolis, el Telefónica, el Capitol y el Carrión.",
     "duration_min": 90,
     "address": "Gran Vía, 28013 Madrid",
     "lat": 40.4196,
     "lng": -3.7022,
-    "wikipedia_title": "Gran Vía (Madrid)"
+    "wikipedia_title": "Gran Vía (Madrid)",
+    "images": null,
+    "tips": [
+      "Sube a la azotea del Hotel RIU Plaza España (entrada 12,50 €) para vistas 360° del skyline madrileño.",
+      "Asiste a un musical en el Teatro Lope de Vega (El Rey León) o en el Coliseum — la 'Broadway española'.",
+      "Foto clásica: cruce con Alcalá frente al Edificio Metrópolis; ve al amanecer para evitar tráfico y gente."
+    ],
+    "hours": "24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Madrid_-_Gran_V%C3%ADa%2C_edificio_Metr%C3%B3polis_01.jpg/1280px-Madrid_-_Gran_V%C3%ADa%2C_edificio_Metr%C3%B3polis_01.jpg"
   },
   {
     "name": "Estadio Santiago Bernabéu",
     "city": "Madrid",
-    "description": "Estadio del Real Madrid C.F. con capacidad para más de 81.000 espectadores. Ofrece visitas guiadas al estadio renovado, museo del club e impresionante sala de trofeos.",
+    "description": "Estadio del Real Madrid CF, inaugurado en 1947 y completamente remodelado en 2024 con techo retráctil, fachada hipnótica de acero y nuevo museo. Capacidad para 85.000 espectadores y considerado uno de los templos del fútbol mundial.",
     "duration_min": 90,
     "address": "Avenida de Concha Espina, 1, 28036 Madrid",
-    "lat": 40.4530,
+    "lat": 40.453,
     "lng": -3.6883,
-    "wikipedia_title": "Santiago Bernabéu Stadium"
+    "wikipedia_title": "Santiago Bernabéu Stadium",
+    "images": null,
+    "tips": [
+      "Reserva el 'Bernabéu Tour' online: incluye acceso al césped, vestuarios, palco presidencial y sala de trofeos con las 15 Champions.",
+      "Para un partido de LaLiga, compra entradas en la web oficial del Real Madrid 4-6 semanas antes.",
+      "Combina con La Esquina del Bernabéu o pásate al Paseo de la Castellana para ver las Cuatro Torres."
+    ],
+    "hours": "Tour: 9:30-19:00 (verano hasta 20:00)",
+    "price": "Tour 35 €; reducida 25 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Estadio_Santiago_Bernab%C3%A9u_10.jpg/1280px-Estadio_Santiago_Bernab%C3%A9u_10.jpg"
   },
   {
     "name": "Ermita de San Antonio de la Florida",
     "city": "Madrid",
-    "description": "Iglesia neoclásica del siglo XVIII con frescos originales de Francisco de Goya en la cúpula. También conocida como Panteón de Goya, aquí reposan sus restos.",
+    "description": "Pequeña ermita neoclásica de 1798 que custodia los frescos originales de Francisco de Goya en su cúpula (1798), una de las obras maestras absolutas del pintor. Además guarda los restos del propio Goya (sin la cabeza, robada misteriosamente).",
     "duration_min": 45,
     "address": "Glorieta de San Antonio de la Florida, 5, 28008 Madrid",
     "lat": 40.4372,
     "lng": -3.7289,
-    "wikipedia_title": "Ermita de San Antonio de la Florida"
+    "wikipedia_title": "Ermita de San Antonio de la Florida",
+    "images": null,
+    "tips": [
+      "Entrada totalmente gratis; visita esencial pero muy desconocida. Ve un día entre semana por la mañana.",
+      "No uses flash y trae unos prismáticos o usa el zoom del móvil para apreciar los detalles a 12 m de altura.",
+      "Combínala con un paseo por el parque del Oeste y el Templo de Debod (a 15 min andando)."
+    ],
+    "hours": "Mar-Dom 9:30-20:00",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Ermita_de_San_Antonio_de_la_Florida_%28Madrid%29_06.jpg/1280px-Ermita_de_San_Antonio_de_la_Florida_%28Madrid%29_06.jpg"
   },
   {
     "name": "Plaza de Cibeles",
     "city": "Madrid",
-    "description": "Emblemática plaza con la Fuente de Cibeles al centro. Rodeada por el Palacio de Comunicaciones (actual Ayuntamiento), el Banco de España y el Palacio de Linares.",
+    "description": "Una de las plazas más icónicas de Madrid, presidida por la fuente de Cibeles (1782) con la diosa romana en su carro tirado por leones. Rodeada por cuatro edificios monumentales: Banco de España, Palacio de Buenavista, Palacio de Linares y el espectacular Palacio de Cibeles.",
     "duration_min": 30,
     "address": "Plaza de Cibeles, 28014 Madrid",
     "lat": 40.4193,
     "lng": -3.6917,
-    "wikipedia_title": "Plaza de Cibeles"
+    "wikipedia_title": "Plaza de Cibeles",
+    "images": null,
+    "tips": [
+      "Sube al Mirador del Palacio de Cibeles (CentroCentro, piso 8, 3 €) para vista del Paseo del Prado y Gran Vía.",
+      "Si el Real Madrid gana un título, la fuente es donde celebran; cualquier otra fecha está libre para fotos.",
+      "Sube a la planta 6 (CentroCentro) gratis para ver la fachada del Palacio de Cibeles."
+    ],
+    "hours": "24h",
+    "price": "Gratis (Mirador 3 €)",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Plaza_de_Cibeles_%28Madrid%29_15.jpg/1280px-Plaza_de_Cibeles_%28Madrid%29_15.jpg"
   },
   {
     "name": "Real Basílica de San Francisco el Grande",
     "city": "Madrid",
-    "description": "Basílica neoclásica del siglo XVIII con una de las cúpulas más grandes del mundo. Decorada con frescos de Goya y colecciones de arte religioso español.",
+    "description": "Basílica neoclásica del siglo XVIII con la tercera cúpula de planta circular más grande del mundo (33 m de diámetro). Alberga obras de Goya ('San Bernardino de Siena predicando ante Alfonso V de Aragón') y Zurbarán.",
     "duration_min": 60,
     "address": "Plaza de San Francisco, 1, 28005 Madrid",
     "lat": 40.4078,
     "lng": -3.7042,
-    "wikipedia_title": "Basilica of San Francisco el Grande"
-  },
-  {
-    "name": "Torre Eiffel",
-    "city": "Paris",
-    "description": "Símbolo de París y de Francia, construida en 1889 por Gustave Eiffel. Estructura de hierro forjado de 330 metros con plataformas de observación en 3 niveles. Imprescindible.",
-    "duration_min": 120,
-    "address": "Champ de Mars, 5 Av. Anatole France, 75007 Paris",
-    "lat": 48.8584,
-    "lng": 2.2945,
-    "wikipedia_title": "Eiffel Tower"
-  },
-  {
-    "name": "Museo del Louvre",
-    "city": "Paris",
-    "description": "El museo más visitado del mundo con más de 35.000 obras. Alberga la Mona Lisa, la Venus de Milo y la Victoria de Samotracia. Antiguo palacio real con pirámide de cristal.",
-    "duration_min": 240,
-    "address": "Rue de Rivoli, 75001 Paris",
-    "lat": 48.8606,
-    "lng": 2.3352,
-    "wikipedia_title": "Louvre"
-  },
-  {
-    "name": "Catedral de Notre-Dame",
-    "city": "Paris",
-    "description": "Majestuosa catedral gótica del siglo XII en la Île de la Cité. Famosa por sus rosetones, gárgolas y torres. Actualmente en restauración tras el incendio de 2019, reabierta en 2024.",
-    "duration_min": 90,
-    "address": "6 Parvis Notre-Dame, Place Jean-Paul II, 75004 Paris",
-    "lat": 48.8530,
-    "lng": 2.3499,
-    "wikipedia_title": "Notre-Dame de Paris"
-  },
-  {
-    "name": "Arco del Triunfo",
-    "city": "Paris",
-    "description": "Monumento neoclásico encargado por Napoleón en 1806. En el centro de la Place Charles de Gaulle, donde confluyen 12 avenidas. Desde la cima, vistas de los Campos Elíseos.",
-    "duration_min": 60,
-    "address": "Place Charles de Gaulle, 75008 Paris",
-    "lat": 48.8738,
-    "lng": 2.2950,
-    "wikipedia_title": "Arc de Triomphe"
-  },
-  {
-    "name": "Campos Elíseos",
-    "city": "Paris",
-    "description": "La avenida más famosa del mundo, de 1.9 km desde la Place de la Concorde al Arco de Triunfo. Tiendas de lujo, restaurantes, teatros y terrazas de café con mucho ambiente.",
-    "duration_min": 90,
-    "address": "Avenue des Champs-Élysées, 75008 Paris",
-    "lat": 48.8697,
-    "lng": 2.3074,
-    "wikipedia_title": "Champs-Élysées"
-  },
-  {
-    "name": "Basílica del Sacré-Cœur",
-    "city": "Paris",
-    "description": "Basílica de estilo romano-bizantino en lo alto de la colina de Montmartre. Interior con el mayor mosaico del mundo y vistas panorámicas de París desde la cúpula.",
-    "duration_min": 60,
-    "address": "35 Rue du Chevalier de la Barre, 75018 Paris",
-    "lat": 48.8867,
-    "lng": 2.3431,
-    "wikipedia_title": "Sacré-Cœur, Paris"
-  },
-  {
-    "name": "Montmartre",
-    "city": "Paris",
-    "description": "Pintoresco barrio de artistas en la colina más alta de París. Calles adoquinadas, Place du Tertre con pintores en vivo, el cabaré Moulin Rouge y el ambiente más bohemio de la ciudad.",
-    "duration_min": 120,
-    "address": "Montmartre, 75018 Paris",
-    "lat": 48.8863,
-    "lng": 2.3388,
-    "wikipedia_title": "Montmartre"
-  },
-  {
-    "name": "Museo de Orsay",
-    "city": "Paris",
-    "description": "Museo de arte impresionista y postimpresionista instalado en una antigua estación de tren. Alberga la mayor colección del mundo de Monet, Renoir, Degas, Van Gogh y Cézanne.",
-    "duration_min": 150,
-    "address": "1 Rue de la Légion d'Honneur, 75007 Paris",
-    "lat": 48.8600,
-    "lng": 2.3266,
-    "wikipedia_title": "Musée d'Orsay"
-  },
-  {
-    "name": "Palacio de Versalles",
-    "city": "Paris",
-    "description": "Antiguo palacio real de Luis XIV a 20 km de París. La Galería de los Espejos, los jardines formales de Le Nôtre y el Palacio del Gran Trianón son imprescindibles. Patrimonio de la Humanidad.",
-    "duration_min": 300,
-    "address": "Place d'Armes, 78000 Versailles",
-    "lat": 48.8047,
-    "lng": 2.1200,
-    "wikipedia_title": "Palace of Versailles"
-  },
-  {
-    "name": "Sainte-Chapelle",
-    "city": "Paris",
-    "description": "Joya del gótico radiante del siglo XIII construida para albergar reliquias de la Pasión. Sus 15 vidrieras medievales de 15 metros de altura son simplemente extraordinarias.",
-    "duration_min": 60,
-    "address": "10 Boulevard du Palais, 75001 Paris",
-    "lat": 48.8550,
-    "lng": 2.3450,
-    "wikipedia_title": "Sainte-Chapelle"
-  },
-  {
-    "name": "Panteón de París",
-    "city": "Paris",
-    "description": "Edificio neoclásico en el Barrio Latino que alberga los restos de figuras ilustres como Voltaire, Rousseau, Víctor Hugo y Marie Curie. La cúpula ofrece vistas privilegiadas.",
-    "duration_min": 60,
-    "address": "Place du Panthéon, 75005 Paris",
-    "lat": 48.8462,
-    "lng": 2.3462,
-    "wikipedia_title": "Panthéon, Paris"
-  },
-  {
-    "name": "Barrio del Marais",
-    "city": "Paris",
-    "description": "Barrio histórico del siglo XVII con mansiones nobles (hôtels particuliers), galerías de arte contemporáneo, el Museo Picasso y el Museo Carnavalet. Ambiente animado y cosmopolita.",
-    "duration_min": 120,
-    "address": "Le Marais, 75003 Paris",
-    "lat": 48.8597,
-    "lng": 2.3626,
-    "wikipedia_title": "Le Marais"
-  },
-  {
-    "name": "Museo Picasso París",
-    "city": "Paris",
-    "description": "Mayor colección de obras de Pablo Picasso del mundo, instalada en el Hôtel Salé del siglo XVII. Más de 5.000 piezas que cubren toda la trayectoria del artista malagueño.",
-    "duration_min": 90,
-    "address": "5 Rue de Thorigny, 75003 Paris",
-    "lat": 48.8607,
-    "lng": 2.3641,
-    "wikipedia_title": "Musée Picasso, Paris"
-  },
-  {
-    "name": "Jardines de Luxemburgo",
-    "city": "Paris",
-    "description": "El parque más querido por los parisinos, con 26 hectáreas de jardines formales, una gran piscina octagonal, estatuas y el Palacio del Senado. Perfecto para un picnic.",
-    "duration_min": 90,
-    "address": "Rue de Médicis, 75006 Paris",
-    "lat": 48.8462,
-    "lng": 2.3371,
-    "wikipedia_title": "Luxembourg Gardens"
-  },
-  {
-    "name": "Barrio Latino",
-    "city": "Paris",
-    "description": "El barrio universitario de París desde el siglo XIII, hogar de la Sorbona. Calles llenas de librerías, cafés filosóficos y restaurantes del mundo entero. Ambiente estudiantil único.",
-    "duration_min": 90,
-    "address": "Quartier Latin, 75005 Paris",
-    "lat": 48.8485,
-    "lng": 2.3450,
-    "wikipedia_title": "Latin Quarter, Paris"
-  },
-  {
-    "name": "Moulin Rouge",
-    "city": "Paris",
-    "description": "El cabaré más famoso del mundo, creado en 1889 en el barrio de Pigalle. Inventó el cancán y marcó el Belle Époque parisino. Espectáculos nocturnos de cabaret cada noche.",
-    "duration_min": 90,
-    "address": "82 Boulevard de Clichy, 75018 Paris",
-    "lat": 48.8844,
-    "lng": 2.3323,
-    "wikipedia_title": "Moulin Rouge"
-  },
-  {
-    "name": "Île de la Cité",
-    "city": "Paris",
-    "description": "La isla corazón de París, donde los galos fundaron la ciudad hace 2.000 años. Aquí están Notre-Dame, la Sainte-Chapelle, la Conciergerie y mercados de flores.",
-    "duration_min": 90,
-    "address": "Île de la Cité, 75001 Paris",
-    "lat": 48.8535,
-    "lng": 2.3490,
-    "wikipedia_title": "Île de la Cité"
-  },
-  {
-    "name": "Disneyland París",
-    "city": "Paris",
-    "description": "El parque de atracciones más visitado de Europa, a 35 km de París. Incluye Disneyland Park y Walt Disney Studios con atracciones para todas las edades.",
-    "duration_min": 600,
-    "address": "Boulevard de Parc, 77700 Coupvray",
-    "lat": 48.8722,
-    "lng": 2.7760,
-    "wikipedia_title": "Disneyland Paris"
-  },
-  {
-    "name": "Centro Pompidou",
-    "city": "Paris",
-    "description": "Controvertido centro cultural con arquitectura high-tech de tuberías de colores expuestas. Alberga el Museo Nacional de Arte Moderno con la mayor colección de arte moderno de Europa.",
-    "duration_min": 120,
-    "address": "Place Georges-Pompidou, 75004 Paris",
-    "lat": 48.8607,
-    "lng": 2.3520,
-    "wikipedia_title": "Centre Georges Pompidou"
-  },
-  {
-    "name": "Duomo de Milán",
-    "city": "Milan",
-    "description": "La catedral gótica más grande de Italia y tercera del mundo. Construida durante 600 años con 135 agujas de mármol. Desde las terrazas, vistas de Milán con los Alpes al fondo.",
-    "duration_min": 90,
-    "address": "Piazza del Duomo, 20122 Milano",
-    "lat": 45.4642,
-    "lng": 9.1920,
-    "wikipedia_title": "Milan Cathedral"
-  },
-  {
-    "name": "Galería Vittorio Emanuele II",
-    "city": "Milan",
-    "description": "Galería comercial del siglo XIX considerada el 'salotto buono' de Milán. Espectacular estructura de hierro y cristal que conecta el Duomo con La Scala. Aquí están las boutiques más exclusivas.",
-    "duration_min": 60,
-    "address": "Piazza del Duomo, 20121 Milano",
-    "lat": 45.4653,
-    "lng": 9.1923,
-    "wikipedia_title": "Galleria Vittorio Emanuele II"
-  },
-  {
-    "name": "Teatro alla Scala",
-    "city": "Milan",
-    "description": "El teatro de ópera más famoso del mundo, fundado en 1778. Ha visto los estrenos de Verdi, Puccini y Bellini. El museo adyacente exhibe trajes, instrumentos y memorabilia única.",
-    "duration_min": 60,
-    "address": "Via Filodrammatici, 2, 20121 Milano",
-    "lat": 45.4685,
-    "lng": 9.1912,
-    "wikipedia_title": "La Scala"
-  },
-  {
-    "name": "Castillo Sforzesco",
-    "city": "Milan",
-    "description": "Imponente castillo del siglo XV de los duques Sforza. Alberga varios museos con la última obra de Michelangelo (la Pietà Rondanini), arte medieval y colecciones de instrumentos musicales.",
-    "duration_min": 120,
-    "address": "Piazza Castello, 20121 Milano",
-    "lat": 45.4708,
-    "lng": 9.1757,
-    "wikipedia_title": "Sforza Castle"
-  },
-  {
-    "name": "Santa Maria delle Grazie — La Última Cena",
-    "city": "Milan",
-    "description": "Iglesia renacentista del siglo XV declarada Patrimonio de la Humanidad. En su refectorio se encuentra La Última Cena de Leonardo da Vinci, uno de los frescos más famosos del mundo. Reserva obligatoria.",
-    "duration_min": 60,
-    "address": "Piazza di Santa Maria delle Grazie, 2, 20123 Milano",
-    "lat": 45.4659,
-    "lng": 9.1708,
-    "wikipedia_title": "Santa Maria delle Grazie, Milan"
-  },
-  {
-    "name": "Pinacoteca di Brera",
-    "city": "Milan",
-    "description": "La principal galería de arte de Milán, en un palacio del siglo XVII. Alberga obras maestras de Mantegna, Piero della Francesca, Caravaggio y Rubens.",
-    "duration_min": 120,
-    "address": "Via Brera, 28, 20121 Milano",
-    "lat": 45.4724,
-    "lng": 9.1872,
-    "wikipedia_title": "Pinacoteca di Brera"
-  },
-  {
-    "name": "Barrio de Brera",
-    "city": "Milan",
-    "description": "El barrio artístico y bohemio de Milán, junto a la Pinacoteca. Boutiques de diseño, galerías, librerías y restaurantes elegantes en calles adoquinadas. El Soho milanés.",
-    "duration_min": 90,
-    "address": "Brera, 20121 Milano",
-    "lat": 45.4724,
-    "lng": 9.1872,
-    "wikipedia_title": "Brera district"
-  },
-  {
-    "name": "Basílica de Sant'Ambrogio",
-    "city": "Milan",
-    "description": "Una de las iglesias más antiguas de Milán, fundada en el siglo IV por San Ambrosio. Ejemplo perfecto del románico lombardo con un magnífico atrio y mosaicos paleocristianos.",
-    "duration_min": 45,
-    "address": "Piazza Sant'Ambrogio, 15, 20123 Milano",
-    "lat": 45.4607,
-    "lng": 9.1732,
-    "wikipedia_title": "Basilica of Sant'Ambrogio"
-  },
-  {
-    "name": "Barrio de Navigli",
-    "city": "Milan",
-    "description": "Sistema de canales históricos del siglo XII diseñado por Leonardo da Vinci. Hoy es el barrio de moda de Milán con bares, restaurantes y aperitivo al atardecer junto al agua.",
-    "duration_min": 90,
-    "address": "Navigli, 20144 Milano",
-    "lat": 45.4527,
-    "lng": 9.1830,
-    "wikipedia_title": "Navigli"
-  },
-  {
-    "name": "Parque Sempione",
-    "city": "Milan",
-    "description": "El pulmón verde de Milán, un parque de estilo inglés de 38 hectáreas detrás del Castillo Sforzesco. Senderos, lago, Arena Cívica y el moderno Arco della Pace a la entrada.",
-    "duration_min": 90,
-    "address": "Parco Sempione, 20154 Milano",
-    "lat": 45.4752,
-    "lng": 9.1780,
-    "wikipedia_title": "Parco Sempione"
-  },
-  {
-    "name": "Arco della Pace",
-    "city": "Milan",
-    "description": "Arco de triunfo neoclásico de 1838 construido por orden de Napoleón. Coronado por una estatua de la Paz en carro tirado por seis caballos. Marca la entrada del Parque Sempione.",
-    "duration_min": 30,
-    "address": "Piazza Sempione, 20154 Milano",
-    "lat": 45.4754,
-    "lng": 9.1751,
-    "wikipedia_title": "Arco della Pace"
-  },
-  {
-    "name": "Cementerio Monumental",
-    "city": "Milan",
-    "description": "Cementerio histórico del siglo XIX considerado un museo al aire libre. Esculturas funerarias de mármol de los grandes artistas italianos de la época. Obra de arte en sí mismo.",
-    "duration_min": 90,
-    "address": "Piazzale Cimitero Monumentale, 20154 Milano",
-    "lat": 45.4922,
-    "lng": 9.1662,
-    "wikipedia_title": "Monumental Cemetery of Milan"
-  },
-  {
-    "name": "Pinacoteca Ambrosiana",
-    "city": "Milan",
-    "description": "Uno de los museos más importantes de Milán, fundado en 1618. Alberga cartones de Rafael, obras de Botticelli, Caravaggio y el Códice Atlántico de Leonardo da Vinci.",
-    "duration_min": 90,
-    "address": "Piazza Pio XI, 2, 20123 Milano",
-    "lat": 45.4636,
-    "lng": 9.1798,
-    "wikipedia_title": "Pinacoteca Ambrosiana"
-  },
-  {
-    "name": "Via Montenapoleone",
-    "city": "Milan",
-    "description": "La calle de moda más famosa de Milán y una de las más exclusivas del mundo. Junto a Via della Spiga forma el Cuadrilátero de Oro, con Gucci, Prada, Versace y Armani.",
-    "duration_min": 90,
-    "address": "Via Montenapoleone, 20121 Milano",
-    "lat": 45.4714,
-    "lng": 9.1965,
-    "wikipedia_title": "Via Montenapoleone"
-  },
-  {
-    "name": "Piazza Gae Aulenti",
-    "city": "Milan",
-    "description": "Plaza moderna en el corazón del nuevo distrito financiero de Porta Nuova. Rodeada de rascacielos de diseño, con el UniCredit Tower y la Biblioteca degli Alberi. Milán del futuro.",
-    "duration_min": 45,
-    "address": "Piazza Gae Aulenti, 20124 Milano",
-    "lat": 45.4840,
-    "lng": 9.1902,
-    "wikipedia_title": "Piazza Gae Aulenti"
-  },
-  {
-    "name": "Basílica de San Pedro",
-    "city": "Roma",
-    "description": "La iglesia más grande del mundo y el corazón del catolicismo. Construida sobre la tumba de San Pedro, con la imponente cúpula de Michelangelo. La Pietà y el baldaquino de Bernini son imperdibles.",
-    "duration_min": 120,
-    "address": "Piazza San Pietro, 00120 Città del Vaticano",
-    "lat": 41.9022,
-    "lng": 12.4534,
-    "wikipedia_title": "St. Peter's Basilica"
-  },
-  {
-    "name": "Museos Vaticanos",
-    "city": "Roma",
-    "description": "Uno de los mayores complejos museísticos del mundo con 54 galerías. El punto culminante es la Capilla Sixtina con los frescos de Michelangelo, incluido El Juicio Final y la Creación.",
-    "duration_min": 180,
-    "address": "Viale Vaticano, 00165 Roma",
-    "lat": 41.9065,
-    "lng": 12.4536,
-    "wikipedia_title": "Vatican Museums"
-  },
-  {
-    "name": "Coliseo",
-    "city": "Roma",
-    "description": "El mayor anfiteatro del mundo antiguo, construido en el siglo I d.C. Aquí se celebraban combates de gladiadores y espectáculos con fieras. Símbolo eterno de Roma.",
-    "duration_min": 120,
-    "address": "Piazza del Colosseo, 1, 00184 Roma",
-    "lat": 41.8902,
-    "lng": 12.4923,
-    "wikipedia_title": "Colosseum"
-  },
-  {
-    "name": "Foro Romano",
-    "city": "Roma",
-    "description": "El corazón político, comercial y religioso de la Roma antigua. Ruinas de templos, arcos de triunfo y basílicas de 2.500 años de historia. Suele combinarse con el Coliseo.",
-    "duration_min": 90,
-    "address": "Via Sacra, 00186 Roma",
-    "lat": 41.8925,
-    "lng": 12.4853,
-    "wikipedia_title": "Roman Forum"
-  },
-  {
-    "name": "Panteón de Roma",
-    "city": "Roma",
-    "description": "El edificio de la antigüedad mejor conservado del mundo, construido en el año 125 d.C. Su cúpula con óculo central sigue siendo la mayor cúpula de hormigón sin refuerzo del mundo.",
-    "duration_min": 60,
-    "address": "Piazza della Rotonda, 00186 Roma",
-    "lat": 41.8986,
-    "lng": 12.4769,
-    "wikipedia_title": "Pantheon, Rome"
-  },
-  {
-    "name": "Fontana di Trevi",
-    "city": "Roma",
-    "description": "La fuente barroca más grande y famosa de Roma, diseñada por Nicola Salvi en el siglo XVIII. La tradición dice que lanzar una moneda garantiza el regreso a Roma.",
-    "duration_min": 45,
-    "address": "Piazza di Trevi, 00187 Roma",
-    "lat": 41.9009,
-    "lng": 12.4833,
-    "wikipedia_title": "Trevi Fountain"
-  },
-  {
-    "name": "Museos Capitolinos",
-    "city": "Roma",
-    "description": "Los museos públicos más antiguos del mundo, inaugurados en 1471. En la colina Capitolina, albergan la estatua ecuestre de Marco Aurelio, el Laocoonte y vistas únicas del Foro.",
-    "duration_min": 90,
-    "address": "Piazza del Campidoglio, 1, 00186 Roma",
-    "lat": 41.8932,
-    "lng": 12.4823,
-    "wikipedia_title": "Capitoline Museums"
-  },
-  {
-    "name": "Castel Sant'Angelo",
-    "city": "Roma",
-    "description": "Mausoleo del emperador Adriano del siglo II, reconvertido en fortaleza papal y hoy museo. Unido a la Basílica de San Pedro por el Passetto di Borgo, un pasaje secreto del Vaticano.",
-    "duration_min": 90,
-    "address": "Lungotevere Castello, 50, 00193 Roma",
-    "lat": 41.9036,
-    "lng": 12.4663,
-    "wikipedia_title": "Castel Sant'Angelo"
-  },
-  {
-    "name": "Piazza Navona",
-    "city": "Roma",
-    "description": "La plaza barroca más bella de Roma, construida sobre el estadio de Domiciano. La Fuente de los Cuatro Ríos de Bernini preside el espacio, rodeado de cafés y pintores.",
-    "duration_min": 60,
-    "address": "Piazza Navona, 00186 Roma",
-    "lat": 41.8990,
-    "lng": 12.4728,
-    "wikipedia_title": "Piazza Navona"
-  },
-  {
-    "name": "Escalinata de España",
-    "city": "Roma",
-    "description": "La famosa Escalinata de la Trinidad del siglo XVIII con 135 escalones. Punto de encuentro icónico de Roma, con la fuente Barcaccia de Bernini y la vista hacia Villa Medici.",
-    "duration_min": 60,
-    "address": "Piazza di Spagna, 00187 Roma",
-    "lat": 41.9059,
-    "lng": 12.4823,
-    "wikipedia_title": "Spanish Steps"
-  },
-  {
-    "name": "Trastevere",
-    "city": "Roma",
-    "description": "El barrio más auténtico y romántico de Roma a orillas del Tíber. Callejuelas medievales, hiedra en las fachadas, restaurantes de cocina romana tradicional y mucho ambiente nocturno.",
-    "duration_min": 120,
-    "address": "Trastevere, 00153 Roma",
-    "lat": 41.8890,
-    "lng": 12.4699,
-    "wikipedia_title": "Trastevere"
-  },
-  {
-    "name": "Basílica de Santa María en Trastevere",
-    "city": "Roma",
-    "description": "Una de las primeras iglesias de Roma, del siglo IV. Sus mosaicos dorados del siglo XII en el ábside son considerados de los más bellos de Roma. Ubicada en la animada piazza homónima.",
-    "duration_min": 45,
-    "address": "Piazza di Santa Maria in Trastevere, 00153 Roma",
-    "lat": 41.8897,
-    "lng": 12.4689,
-    "wikipedia_title": "Santa Maria in Trastevere"
-  },
-  {
-    "name": "Galería Borghese",
-    "city": "Roma",
-    "description": "Una de las galerías de arte más importantes del mundo en la Villa Borghese. Esculturas de Bernini, pinturas de Caravaggio, Tiziano y Rafael. Entrada limitada — reserva imprescindible.",
-    "duration_min": 90,
-    "address": "Piazzale Scipione Borghese, 5, 00197 Roma",
-    "lat": 41.9140,
-    "lng": 12.4919,
-    "wikipedia_title": "Galleria Borghese"
-  },
-  {
-    "name": "Parque Villa Borghese",
-    "city": "Roma",
-    "description": "El parque más grande y hermoso del centro de Roma con 80 hectáreas. Lagos, jardines formales, la Galería Borghese, el Museo Etrusco y vistas panorámicas de Roma.",
-    "duration_min": 120,
-    "address": "Viale del Museo Borghese, 00197 Roma",
-    "lat": 41.9097,
-    "lng": 12.4883,
-    "wikipedia_title": "Villa Borghese gardens"
-  },
-  {
-    "name": "Monte Palatino",
-    "city": "Roma",
-    "description": "La más mítica de las siete colinas de Roma, donde según la leyenda fue fundada la ciudad. Con ruinas de los palacios imperiales y jardines del siglo XVI, ofrece las mejores vistas del Foro.",
-    "duration_min": 60,
-    "address": "Via Sacra, 00184 Roma",
-    "lat": 41.8878,
-    "lng": 12.4870,
-    "wikipedia_title": "Palatine Hill"
-  },
-  {
-    "name": "Campo de' Fiori",
-    "city": "Roma",
-    "description": "Animada plaza popular sin iglesias ni palacios, famosa por su mercado matinal de frutas y flores. De noche se convierte en uno de los bares al aire libre más concurridos de Roma.",
-    "duration_min": 60,
-    "address": "Campo de' Fiori, 00186 Roma",
-    "lat": 41.8956,
-    "lng": 12.4722,
-    "wikipedia_title": "Campo de' Fiori"
-  },
-  {
-    "name": "Basílica de San Juan de Letrán",
-    "city": "Roma",
-    "description": "La catedral más antigua de Occidente, fundada en el siglo IV y considerada la madre de todas las iglesias católicas. Precede en importancia a la propia Basílica de San Pedro.",
-    "duration_min": 60,
-    "address": "Piazza di San Giovanni in Laterano, 4, 00184 Roma",
-    "lat": 41.8833,
-    "lng": 12.5056,
-    "wikipedia_title": "Archbasilica of Saint John Lateran"
-  },
-  {
-    "name": "Circo Máximo",
-    "city": "Roma",
-    "description": "El mayor recinto de espectáculos de la antigüedad con capacidad para 250.000 espectadores. Aquí se celebraban las carreras de cuadrigas. Hoy es un parque verde con vista al Palatino.",
-    "duration_min": 45,
-    "address": "Via del Circo Massimo, 00153 Roma",
-    "lat": 41.8856,
-    "lng": 12.4876,
-    "wikipedia_title": "Circus Maximus"
-  },
-  {
-    "name": "Barrio Judío de Roma",
-    "city": "Roma",
-    "description": "El gueto judío más antiguo de Europa occidental, habitado desde el siglo II a.C. Sinagoga, museos, restaurantes de cocina judío-romana y una historia de más de 2.000 años.",
-    "duration_min": 60,
-    "address": "Ghetto, 00186 Roma",
-    "lat": 41.8960,
-    "lng": 12.4773,
-    "wikipedia_title": "Jewish Ghetto, Rome"
-  },
-  {
-    "name": "Museo Guggenheim Bilbao",
-    "city": "Bilbao",
-    "description": "Icónico museo de arte contemporáneo diseñado por Frank Gehry en 1997, cubierto de titanio. Su arquitectura revolucionaria transformó Bilbao. Exposiciones permanentes y temporales de arte internacional.",
-    "duration_min": 120,
-    "address": "Avenida Abandoibarra, 2, 48009 Bilbao",
-    "lat": 43.2686,
-    "lng": -2.9340,
-    "wikipedia_title": "Guggenheim Museum Bilbao"
-  },
-  {
-    "name": "Casco Viejo de Bilbao",
-    "city": "Bilbao",
-    "description": "El corazón histórico medieval de Bilbao conocido como Las Siete Calles. Animado ambiente de pintxos, bares y tiendas tradicionales. Aquí está la Catedral de Santiago y el Mercado de la Ribera.",
-    "duration_min": 120,
-    "address": "Casco Viejo, 48005 Bilbao",
-    "lat": 43.2567,
-    "lng": -2.9241,
-    "wikipedia_title": "Casco Viejo (Bilbao)"
-  },
-  {
-    "name": "Mercado de la Ribera",
-    "city": "Bilbao",
-    "description": "El mayor mercado cubierto de Europa, declarado Patrimonio Cultural Vasco. Edificio art déco de 1929 a orillas del Nervión con pescadería, carnicería y pintxos frescos.",
-    "duration_min": 60,
-    "address": "Erribera Kalea, 22, 48005 Bilbao",
-    "lat": 43.2575,
-    "lng": -2.9233,
-    "wikipedia_title": "Mercado de la Ribera"
-  },
-  {
-    "name": "Catedral de Santiago de Bilbao",
-    "city": "Bilbao",
-    "description": "Catedral gótica del siglo XIV en el corazón del Casco Viejo. Etapa del Camino de Santiago del Norte. Destaca por su claustro gótico-renacentista y la fachada neogótica.",
-    "duration_min": 45,
-    "address": "Plaza de Santiago, 1, 48005 Bilbao",
-    "lat": 43.2565,
-    "lng": -2.9248,
-    "wikipedia_title": "Cathedral of Santiago de Bilbao"
-  },
-  {
-    "name": "Museo de Bellas Artes de Bilbao",
-    "city": "Bilbao",
-    "description": "Uno de los mejores museos de bellas artes de España con obras desde el siglo XII al XXI. Colecciones de El Greco, Velázquez, Gauguin y artistas vascos junto al Guggenheim.",
-    "duration_min": 90,
-    "address": "Plaza del Museo, 2, 48009 Bilbao",
-    "lat": 43.2638,
-    "lng": -2.9354,
-    "wikipedia_title": "Bilbao Fine Arts Museum"
-  },
-  {
-    "name": "Parque Doña Casilda",
-    "city": "Bilbao",
-    "description": "Romántico parque histórico de finales del siglo XIX junto al Museo de Bellas Artes. Con lago, patos, quiosco de música y jardines arbolados. Uno de los rincones más tranquilos de Bilbao.",
-    "duration_min": 60,
-    "address": "Parke Kalea, 1, 48013 Bilbao",
-    "lat": 43.2645,
-    "lng": -2.9411,
-    "wikipedia_title": "Doña Casilda Iturrizar Park"
-  },
-  {
-    "name": "Teatro Arriaga",
-    "city": "Bilbao",
-    "description": "Espectacular teatro neorrococó de 1890, considerado el más hermoso del País Vasco. Sede de ópera, teatro y danza. Su fachada ecléctica preside la plaza de Unamuno en el Casco Viejo.",
-    "duration_min": 30,
-    "address": "Plaza Arriaga, 1, 48005 Bilbao",
-    "lat": 43.2574,
-    "lng": -2.9259,
-    "wikipedia_title": "Teatro Arriaga"
-  },
-  {
-    "name": "Puente Zubizuri",
-    "city": "Bilbao",
-    "description": "Elegante puente peatonal sobre la Ría del Nervión diseñado por Santiago Calatrava. Su estructura blanca en arco con pasarela acristalada es uno de los símbolos del Bilbao moderno.",
-    "duration_min": 20,
-    "address": "Paseo de Uribitarte, 48001 Bilbao",
-    "lat": 43.2680,
-    "lng": -2.9286,
-    "wikipedia_title": "Zubizuri"
-  },
-  {
-    "name": "Azkuna Zentroa",
-    "city": "Bilbao",
-    "description": "Centro sociocultural en una bodega de vinos de 1909 renovada por Philippe Starck. Piscina cubierta, sala de cine, exposiciones y cafetería. Arquitectura de interior sorprendente.",
-    "duration_min": 60,
-    "address": "Plaza Arriquibar, 4, 48010 Bilbao",
-    "lat": 43.2626,
-    "lng": -2.9391,
-    "wikipedia_title": "Azkuna Zentroa"
-  },
-  {
-    "name": "Ría del Nervión — Paseo",
-    "city": "Bilbao",
-    "description": "Paseo ribereño de varios kilómetros a lo largo de la Ría del Nervión. Conecta el Casco Viejo con el Guggenheim y el barrio de Deusto. Las mejores vistas de la arquitectura contemporánea de Bilbao.",
-    "duration_min": 90,
-    "address": "Paseo Uribitarte, 48001 Bilbao",
-    "lat": 43.2647,
-    "lng": -2.9295,
-    "wikipedia_title": "Nervión"
+    "wikipedia_title": "Basilica of San Francisco el Grande",
+    "images": null,
+    "tips": [
+      "Visita obligada con guía (incluida en la entrada de 5 €) para acceder al museo y sacristía con obras de Goya.",
+      "Está en La Latina, a solo 5 min andando del Palacio Real — combinables perfectamente en una mañana.",
+      "Pasa por la cercana plaza de la Paja y la Catedral de la Almudena para una ruta histórica completa."
+    ],
+    "hours": "Mar-Sáb 10:30-12:30 y 16:00-18:00",
+    "price": "5 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Real_Bas%C3%ADlica_de_San_Francisco_el_Grande_%28Madrid%29_07.jpg/1280px-Real_Bas%C3%ADlica_de_San_Francisco_el_Grande_%28Madrid%29_07.jpg"
   },
   {
     "name": "Puerta de Alcalá",
     "city": "Madrid",
-    "description": "Arco de triunfo neoclásico del siglo XVIII encargado por Carlos III, uno de los cinco accesos originales a la ciudad. Símbolo icónico de Madrid ubicado en la Plaza de la Independencia, junto al Parque del Retiro.",
+    "description": "Puerta monumental neoclásica encargada por Carlos III en 1778 al arquitecto Francesco Sabatini, una de las cinco antiguas puertas de la ciudad. Es uno de los símbolos más reconocibles de Madrid.",
     "duration_min": 20,
     "address": "Plaza de la Independencia, 28001 Madrid",
-    "lat": 40.4190,
+    "lat": 40.419,
     "lng": -3.6885,
-    "wikipedia_title": "Puerta de Alcalá"
+    "wikipedia_title": "Puerta de Alcalá",
+    "images": null,
+    "tips": [
+      "Fotos al amanecer o entre las 5 y 6 am (sin coches) o iluminada de noche.",
+      "Cuenta los relieves en sus dos fachadas — no son iguales: una tiene escudos y la otra panoplias militares.",
+      "Desde aquí, entra al Retiro por la Puerta de la Independencia (200 m al este)."
+    ],
+    "hours": "24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Puerta_de_Alcal%C3%A1_%28Madrid%29_15.jpg/1280px-Puerta_de_Alcal%C3%A1_%28Madrid%29_15.jpg"
   },
   {
     "name": "Plaza de España",
     "city": "Madrid",
-    "description": "Amplia plaza en el extremo oeste de la Gran Vía dominada por el Edificio España y la Torre de Madrid. En el centro, la fuente monumental con las estatuas de Don Quijote y Sancho Panza.",
+    "description": "Plaza al final de Gran Vía, completamente remodelada y reabierta en 2021 con jardines, fuentes y zonas verdes. Preside el Monumento a Cervantes (1928) con Don Quijote y Sancho Panza en bronce. La rodean el Edificio España y la Torre de Madrid.",
     "duration_min": 30,
     "address": "Plaza de España, 28008 Madrid",
     "lat": 40.4233,
     "lng": -3.7124,
-    "wikipedia_title": "Plaza de España, Madrid"
+    "wikipedia_title": "Plaza de España, Madrid",
+    "images": null,
+    "tips": [
+      "Hazte la foto clásica con Don Quijote y Sancho Panza a caballo bajo el monumento a Cervantes.",
+      "Sube al rooftop del Hotel RIU Plaza España (entrada 12,50 €) — vistas 360° con suelo de cristal.",
+      "Camina 500 m al norte hasta el Templo de Debod para combinar las dos visitas al atardecer."
+    ],
+    "hours": "24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Plaza_de_Espa%C3%B1a_%28Madrid%29_19.jpg/1280px-Plaza_de_Espa%C3%B1a_%28Madrid%29_19.jpg"
+  },
+  {
+    "name": "Estación de Atocha — Jardín Tropical",
+    "city": "Madrid",
+    "description": "Estación de tren de 1892 cuyo vestíbulo antiguo (de hierro y cristal) se convirtió en 1992 en un jardín tropical con más de 7.000 plantas de 260 especies y un estanque de tortugas.",
+    "duration_min": 30,
+    "address": "Plaza del Emperador Carlos V, s/n, 28045 Madrid",
+    "lat": 40.4069,
+    "lng": -3.6897,
+    "wikipedia_title": "Madrid Atocha railway station",
+    "images": null,
+    "tips": [
+      "Acceso totalmente gratuito; entra por la antigua estación (Glorieta del Emperador Carlos V).",
+      "Sube a la cafetería de la planta superior para una vista cenital del jardín.",
+      "Al lado está el monumento conmemorativo de las víctimas del 11-M (cilindro de cristal con mensajes)."
+    ],
+    "hours": "5:00-1:00 (horario estación)",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Madrid_-_Estaci%C3%B3n_de_Atocha%2C_invernadero_01.jpg/1280px-Madrid_-_Estaci%C3%B3n_de_Atocha%2C_invernadero_01.jpg"
+  },
+  {
+    "name": "CaixaForum Madrid",
+    "city": "Madrid",
+    "description": "Centro cultural en una antigua central eléctrica reconvertida por Herzog & de Meuron. Famoso por su jardín vertical de 24 m de altura diseñado por Patrick Blanc (15.000 plantas) y por exposiciones temporales de gran calidad.",
+    "duration_min": 90,
+    "address": "Paseo del Prado, 36, 28014 Madrid",
+    "lat": 40.4077,
+    "lng": -3.6931,
+    "wikipedia_title": "CaixaForum Madrid",
+    "images": null,
+    "tips": [
+      "Entrada GRATIS para clientes de CaixaBank; 6 € para no clientes.",
+      "El jardín vertical es la foto más viral; ve al atardecer cuando la luz lo realza.",
+      "Está en pleno Paseo del Arte (Prado-Thyssen-Reina Sofía); complementa cualquiera de los tres."
+    ],
+    "hours": "Lun-Dom 10:00-20:00",
+    "price": "6 €; gratis clientes CaixaBank y menores 16 años",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/CaixaForum_Madrid_%28Spain%29_03.jpg/1280px-CaixaForum_Madrid_%28Spain%29_03.jpg"
+  },
+  {
+    "name": "Museo Sorolla",
+    "city": "Madrid",
+    "description": "Antigua casa-estudio del pintor valenciano Joaquín Sorolla (1863-1923), preservada exactamente como él la dejó. Pequeño museo con la mayor colección del mundo de obras del maestro de la luz, en un palacete con jardín andaluz precioso.",
+    "duration_min": 60,
+    "address": "Paseo del General Martínez Campos, 37, 28010 Madrid",
+    "lat": 40.4316,
+    "lng": -3.695,
+    "wikipedia_title": "Sorolla Museum",
+    "images": null,
+    "tips": [
+      "Entrada gratis los sábados a partir de las 14:00 y los domingos por la mañana.",
+      "No te pierdas el jardín del museo (con fuentes andaluzas, azulejos y cipreses).",
+      "Pequeño y poco turístico; visítalo en 1-1,5h, ideal para una mañana tranquila."
+    ],
+    "hours": "Mar-Sáb 9:30-20:00; Dom 10:00-15:00",
+    "price": "3 €; gratis sábados 14:00-20:00 y domingos",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Museo_Sorolla_%28Madrid%29_07.jpg/1280px-Museo_Sorolla_%28Madrid%29_07.jpg"
+  },
+  {
+    "name": "Faro de Moncloa",
+    "city": "Madrid",
+    "description": "Torre-mirador de 110 m de altura inaugurada en 1992, con un ascensor panorámico que sube en menos de 1 minuto a la plataforma circular. Ofrece la mejor vista panorámica 360° de Madrid.",
+    "duration_min": 45,
+    "address": "Avenida de la Memoria, 2, 28008 Madrid",
+    "lat": 40.4438,
+    "lng": -3.7188,
+    "wikipedia_title": "Faro de Moncloa",
+    "images": null,
+    "tips": [
+      "Sube al atardecer para ver Madrid iluminándose; los días claros se ven hasta la Sierra de Guadarrama.",
+      "Combínalo con el Museo de América (justo al lado) y el cercano Templo de Debod.",
+      "Entrada muy barata (3 €); abierto sólo por la tarde de martes a domingo."
+    ],
+    "hours": "Mar-Dom 9:30-20:00",
+    "price": "3 €; 1,50 € reducida",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Faro_de_Moncloa_-_03.jpg/1280px-Faro_de_Moncloa_-_03.jpg"
+  },
+  {
+    "name": "Matadero Madrid",
+    "city": "Madrid",
+    "description": "Antiguo matadero municipal de principios del siglo XX, reconvertido en un enorme complejo cultural dedicado a la creación contemporánea (cine, teatro, diseño, arte). Está en el barrio de Arganzuela junto al río Manzanares.",
+    "duration_min": 90,
+    "address": "Plaza de Legazpi, 8, 28045 Madrid",
+    "lat": 40.3988,
+    "lng": -3.7076,
+    "wikipedia_title": "Matadero Madrid",
+    "images": null,
+    "tips": [
+      "Casi todo es gratis (exposiciones, instalaciones, salas); compra entrada solo para eventos específicos.",
+      "Está pegado a Madrid Río (parque lineal junto al Manzanares); combínalos en una tarde de paseo.",
+      "Revisa el programa de eventos en mataderomadrid.org antes de ir."
+    ],
+    "hours": "Mar-Dom 11:00-21:00 (varía por espacio)",
+    "price": "Mayoría gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Matadero_Madrid_%28Espa%C3%B1a%29_01.jpg/1280px-Matadero_Madrid_%28Espa%C3%B1a%29_01.jpg"
+  },
+  {
+    "name": "Museo Cerralbo",
+    "city": "Madrid",
+    "description": "Palacete del siglo XIX que fue residencia del Marqués de Cerralbo, conservado tal cual lo dejó en 1922 con su colección privada de arte, antigüedades, armas y objetos curiosos. Una cápsula del tiempo aristocrática.",
+    "duration_min": 60,
+    "address": "Calle de Ventura Rodríguez, 17, 28008 Madrid",
+    "lat": 40.4224,
+    "lng": -3.7136,
+    "wikipedia_title": "Cerralbo Museum",
+    "images": null,
+    "tips": [
+      "Entrada gratis los sábados desde las 14:00, domingos por la mañana y jueves de 17:00 a 20:00.",
+      "No te pierdas el Salón de Baile con su techo pintado y los espejos.",
+      "Está a 5 min andando de Plaza de España, ideal para combinar con el Templo de Debod."
+    ],
+    "hours": "Mar-Sáb 9:30-15:00 y jueves 17:00-20:00; Dom 10:00-15:00",
+    "price": "3 €; gratis jue 17:00-20:00 y domingos",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Museo_Cerralbo_%28Madrid%29_07.jpg/1280px-Museo_Cerralbo_%28Madrid%29_07.jpg"
+  },
+  {
+    "name": "Casa de Campo",
+    "city": "Madrid",
+    "description": "Mayor parque público de Madrid, con 1.722 hectáreas (5 veces el Central Park de NY). Antiguo coto de caza real, hoy alberga el Zoo, el Parque de Atracciones, un lago y un teleférico que la conecta con el centro.",
+    "duration_min": 120,
+    "address": "Casa de Campo, 28011 Madrid",
+    "lat": 40.4068,
+    "lng": -3.7474,
+    "wikipedia_title": "Casa de Campo",
+    "images": null,
+    "tips": [
+      "Cruza desde el centro en el Teleférico de Madrid (Paseo del Pintor Rosales) por 6,50 € ida y vuelta.",
+      "El lago es perfecto para tomarse algo en las terrazas o alquilar barca; muy popular los fines de semana.",
+      "El Parque de Atracciones y Zoo son grandes opciones familiares pero requieren día completo."
+    ],
+    "hours": "24h",
+    "price": "Gratis (Zoo ~26 €, Parque Atracciones ~32 €)",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Lago_de_la_Casa_de_Campo_%28Madrid%29_01.jpg/1280px-Lago_de_la_Casa_de_Campo_%28Madrid%29_01.jpg"
+  },
+  {
+    "name": "Torre Eiffel",
+    "city": "Paris",
+    "description": "Símbolo absoluto de París y de Francia, construida por Gustave Eiffel para la Exposición Universal de 1889. Mide 330 m con la antena, tiene tres niveles accesibles al público y permanece como el monumento de pago más visitado del mundo (más de 6 millones/año).",
+    "duration_min": 120,
+    "address": "Champ de Mars, 5 Avenue Anatole France, 75007 París",
+    "lat": 48.8584,
+    "lng": 2.2945,
+    "wikipedia_title": "Eiffel Tower",
+    "images": null,
+    "tips": [
+      "Compra entradas online en toureiffel.paris exactamente 60 días antes de tu visita a las 8:30 (hora de París).",
+      "Mejor hora: subir 1h antes del atardecer para ver París de día, de noche y verla iluminarse desde arriba.",
+      "Las mejores fotos del exterior son desde la Place du Trocadéro y desde el Champ de Mars."
+    ],
+    "hours": "9:15-22:45 (verano hasta 23:45)",
+    "price": "2ª planta ascensor 22,60 €; cima ascensor 35,30 €; escaleras 14,20 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg/800px-Tour_Eiffel_Wikimedia_Commons.jpg"
+  },
+  {
+    "name": "Museo del Louvre",
+    "city": "Paris",
+    "description": "El museo más grande y visitado del mundo (9 millones/año), antigua fortaleza medieval y luego palacio real. Alberga más de 35.000 obras expuestas, incluyendo la Mona Lisa, la Venus de Milo, la Victoria de Samotracia y la Libertad guiando al pueblo.",
+    "duration_min": 240,
+    "address": "Rue de Rivoli, 75001 París",
+    "lat": 48.8606,
+    "lng": 2.3352,
+    "wikipedia_title": "Louvre",
+    "images": null,
+    "tips": [
+      "Reserva entrada con franja horaria en ticketlouvre.fr; entra a las 9:00 y dirígete al ala Denon, sala 711, para ver La Gioconda casi sin gente.",
+      "Entrada gratuita el primer viernes de cada mes a partir de las 18:00 (excepto julio y agosto) y el 14 de julio.",
+      "Usa la entrada del Carrousel du Louvre o Porte des Lions en vez de la Pirámide para evitar colas."
+    ],
+    "hours": "Lun, Mié, Jue, Sáb, Dom 9:00-18:00; Vie 9:00-21:45; cerrado martes",
+    "price": "22 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Louvre_Museum_Wikimedia_Commons.jpg/1280px-Louvre_Museum_Wikimedia_Commons.jpg"
+  },
+  {
+    "name": "Catedral de Notre-Dame",
+    "city": "Paris",
+    "description": "Catedral gótica del siglo XII-XIV, uno de los monumentos más importantes del gótico francés. Sufrió un devastador incendio en abril de 2019 que destruyó la aguja y el tejado. Reabrió al público el 8 de diciembre de 2024 tras la restauración.",
+    "duration_min": 90,
+    "address": "6 Parvis Notre-Dame - Place Jean-Paul II, 75004 París",
+    "lat": 48.853,
+    "lng": 2.3499,
+    "wikipedia_title": "Notre-Dame de Paris",
+    "images": null,
+    "tips": [
+      "La entrada es gratis pero hay que reservar slot horario en notredamedeparis.fr.",
+      "El acceso a las torres (vistas de las gárgolas) abrirá en 2026; consulta web oficial para fecha exacta.",
+      "Después, cruza el puente al Square Jean-XXIII (parte trasera) para ver los arbotantes góticos."
+    ],
+    "hours": "8:00-19:00 (varía)",
+    "price": "Gratis (reserva online)",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Notre-Dame_de_Paris%2C_4_October_2017.jpg/1280px-Notre-Dame_de_Paris%2C_4_October_2017.jpg"
+  },
+  {
+    "name": "Arco del Triunfo",
+    "city": "Paris",
+    "description": "Arco monumental neoclásico (50 m) encargado por Napoleón en 1806 para conmemorar las victorias del ejército francés. Bajo él reposa la Tumba del Soldado Desconocido con su llama eterna. Es el centro de la 'Étoile', confluencia de 12 avenidas.",
+    "duration_min": 60,
+    "address": "Place Charles de Gaulle, 75008 París",
+    "lat": 48.8738,
+    "lng": 2.295,
+    "wikipedia_title": "Arc de Triomphe",
+    "images": null,
+    "tips": [
+      "Sube a la terraza superior (13 €): 284 escalones a una de las mejores vistas de París.",
+      "NUNCA cruces la rotonda por la superficie (Place Charles de Gaulle); usa el paso subterráneo del lado norte.",
+      "Ve al atardecer cuando se encienden las luces y se ve la Torre Eiffel iluminada desde arriba."
+    ],
+    "hours": "10:00-22:30 (verano hasta 23:00)",
+    "price": "13 €; gratis menores 18 años",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Arc_Triomphe.jpg/1280px-Arc_Triomphe.jpg"
+  },
+  {
+    "name": "Campos Elíseos",
+    "city": "Paris",
+    "description": "La avenida más famosa del mundo, de 1,9 km y 70 m de ancho, va desde la Place de la Concorde al Arco del Triunfo. Mezcla tiendas de lujo, restaurantes, cines y los Jardines de los Campos Elíseos.",
+    "duration_min": 90,
+    "address": "Avenue des Champs-Élysées, 75008 París",
+    "lat": 48.8697,
+    "lng": 2.3074,
+    "wikipedia_title": "Champs-Élysées",
+    "images": null,
+    "tips": [
+      "El tramo bajo (cerca de Concorde) tiene los jardines más bonitos; el tramo alto (hacia el Arco) es el comercial.",
+      "Visita Ladurée (75) para macarons clásicos pero no comas allí (precios muy altos).",
+      "Tiendas obligadas: Louis Vuitton (101), Galería Lafayette Champs-Élysées (60) y la Disney Store."
+    ],
+    "hours": "24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Avenue_des_Champs-%C3%89lys%C3%A9es_July_24%2C_2009_N1.jpg/1280px-Avenue_des_Champs-%C3%89lys%C3%A9es_July_24%2C_2009_N1.jpg"
+  },
+  {
+    "name": "Basílica del Sacré-Cœur",
+    "city": "Paris",
+    "description": "Basílica de estilo románico-bizantino con cúpula blanca, construida entre 1875 y 1914 en la cima de la colina de Montmartre. Desde su parvis se obtiene una de las mejores vistas panorámicas de París.",
+    "duration_min": 60,
+    "address": "35 Rue du Chevalier de la Barre, 75018 París",
+    "lat": 48.8867,
+    "lng": 2.3431,
+    "wikipedia_title": "Sacré-Cœur, Paris",
+    "images": null,
+    "tips": [
+      "Sube a la cúpula (8 €, 300 escalones): vistas a 360° aún mejores que las del exterior.",
+      "No subas en el funicular si tienes prisa; las escaleras de Rue Foyatier (Square Louise Michel) son más rápidas.",
+      "Cuidado con los 'amigos del cordón' (timadores con pulseras de hilo) en las escaleras de subida."
+    ],
+    "hours": "6:30-22:30 (cúpula 10:30-20:30)",
+    "price": "Basílica gratis; cúpula 8 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Le_sacre_coeur_paris_2010.JPG/1280px-Le_sacre_coeur_paris_2010.JPG"
+  },
+  {
+    "name": "Montmartre",
+    "city": "Paris",
+    "description": "Histórico barrio sobre una colina de 130 m, cuna de la bohemia parisina y refugio de Van Gogh, Picasso, Toulouse-Lautrec, Renoir y Modigliani a finales del XIX y principios del XX. Conserva su carácter de pueblo con calles empedradas, viñedos y molinos.",
+    "duration_min": 120,
+    "address": "18ème arrondissement, 75018 París",
+    "lat": 48.8863,
+    "lng": 2.3388,
+    "wikipedia_title": "Montmartre",
+    "images": null,
+    "tips": [
+      "Pasea desde el Sacré-Cœur por Place du Tertre hasta Le Consulat, Maison Rose y el Musée de Montmartre.",
+      "Visita el último viñedo de París (Clos Montmartre) en la Rue des Saules; vendimia el primer fin de semana de octubre.",
+      "Cena en Le Petit Train Bleu o La Bonne Franquette; para café autenticidad, La Maison Rose y Au Lapin Agile."
+    ],
+    "hours": "24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Place_du_tertre%2C_Montmartre%2C_Paris_2010.jpg/1280px-Place_du_tertre%2C_Montmartre%2C_Paris_2010.jpg"
+  },
+  {
+    "name": "Museo de Orsay",
+    "city": "Paris",
+    "description": "Museo dedicado al arte del siglo XIX (1848-1914) en una antigua estación de tren Beaux-Arts de 1900. Contiene la mayor colección mundial de impresionistas y postimpresionistas: Monet, Renoir, Van Gogh, Cézanne, Degas, Manet, Gauguin.",
+    "duration_min": 150,
+    "address": "1 Rue de la Légion d'Honneur, 75007 París",
+    "lat": 48.86,
+    "lng": 2.3266,
+    "wikipedia_title": "Musée d'Orsay",
+    "images": null,
+    "tips": [
+      "Sube a la 5ª planta (galerías impresionistas) PRIMERO al abrir el museo; el resto del día está abarrotada.",
+      "El gran reloj de la 5ª planta (vista del Sena a través) es la foto más icónica; cola de 10-15 min.",
+      "Entrada gratuita el primer domingo de cada mes; jueves abierto hasta las 21:45 (mucho más vacío)."
+    ],
+    "hours": "Mar-Dom 9:30-18:00; Jue hasta 21:45; cerrado lunes",
+    "price": "16 €; gratis primer domingo del mes",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Mus%C3%A9e_d%27Orsay_from_Right_Bank_of_Seine_July_2015.jpg/1280px-Mus%C3%A9e_d%27Orsay_from_Right_Bank_of_Seine_July_2015.jpg"
+  },
+  {
+    "name": "Palacio de Versalles",
+    "city": "Paris",
+    "description": "Antigua residencia real (1682-1789) y obra maestra del Barroco francés bajo Luis XIV (el Rey Sol), Luis XV y Luis XVI. Patrimonio UNESCO. Destacan la Galería de los Espejos, los Aposentos Reales, el Trianón y los enormes jardines de André Le Nôtre.",
+    "duration_min": 300,
+    "address": "Place d'Armes, 78000 Versalles",
+    "lat": 48.8047,
+    "lng": 2.12,
+    "wikipedia_title": "Palace of Versailles",
+    "images": null,
+    "tips": [
+      "Reserva online el 'Passport' (32 €) que incluye palacio + Trianones + jardines y reserva HORA para entrar.",
+      "Llega antes de las 9:00 al RER C (Versailles Château Rive Gauche, 40 min desde París).",
+      "Grandes Aguas Musicales (espectáculo de fuentes) solo sábados, domingos y festivos de abril a octubre."
+    ],
+    "hours": "Mar-Dom 9:00-18:30 (Trianón 12:00-18:30)",
+    "price": "Palacio 21 €; Passport 32 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Chateau_Versailles_Galerie_des_Glaces.jpg/1280px-Chateau_Versailles_Galerie_des_Glaces.jpg"
+  },
+  {
+    "name": "Sainte-Chapelle",
+    "city": "Paris",
+    "description": "Joya del gótico radiante construida por San Luis IX en 1248 para albergar la Corona de Espinas de Cristo. Su capilla alta contiene 1.113 vidrieras del siglo XIII repartidas en 15 ventanales de 15 m de altura.",
+    "duration_min": 60,
+    "address": "8 Boulevard du Palais, 75001 París",
+    "lat": 48.855,
+    "lng": 2.345,
+    "wikipedia_title": "Sainte-Chapelle",
+    "images": null,
+    "tips": [
+      "Compra entrada combinada con la Conciergerie (cárcel de María Antonieta) por 22 € — te ahorras 4 €.",
+      "Ve un día soleado por la tarde (15:00-17:00) cuando el sol entra por las vidrieras del lado oeste.",
+      "Asiste a un concierto de música clásica nocturno dentro (tickets desde 20 €) — experiencia inolvidable."
+    ],
+    "hours": "9:00-19:00 (invierno hasta 17:00)",
+    "price": "13 €; combo con Conciergerie 22 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Sainte_Chapelle_Interior_Stained_Glass.jpg/1280px-Sainte_Chapelle_Interior_Stained_Glass.jpg"
+  },
+  {
+    "name": "Panteón de París",
+    "city": "Paris",
+    "description": "Antigua iglesia neoclásica reconvertida en mausoleo nacional durante la Revolución (1791). Aquí descansan Voltaire, Rousseau, Victor Hugo, Émile Zola, Marie Curie, Alexandre Dumas. Bajo su cúpula está el Péndulo de Foucault original.",
+    "duration_min": 60,
+    "address": "Place du Panthéon, 75005 París",
+    "lat": 48.8462,
+    "lng": 2.3462,
+    "wikipedia_title": "Panthéon, Paris",
+    "images": null,
+    "tips": [
+      "Sube a la cúpula (acceso de pago aparte, abril-octubre solamente): 206 escalones a una vista impresionante.",
+      "El Péndulo de Foucault (1851), que demostró la rotación de la Tierra, sigue oscilando bajo la cúpula central.",
+      "Combina con el cercano Jardín de Luxemburgo (5 min andando) y la Iglesia de Saint-Étienne-du-Mont."
+    ],
+    "hours": "10:00-18:30 (invierno 18:00)",
+    "price": "13 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Pantheon_Wikimedia_Commons.jpg/1280px-Pantheon_Wikimedia_Commons.jpg"
+  },
+  {
+    "name": "Barrio del Marais",
+    "city": "Paris",
+    "description": "Histórico barrio del 3º y 4º arrondissement con calles medievales preservadas, hôtels particuliers aristocráticos del XVII, el barrio judío más importante de París y la zona LGTBI más vibrante de la ciudad.",
+    "duration_min": 120,
+    "address": "3º y 4º arrondissement, 75003-75004 París",
+    "lat": 48.8597,
+    "lng": 2.3626,
+    "wikipedia_title": "Le Marais",
+    "images": null,
+    "tips": [
+      "Visita la Place des Vosges (más antigua de París, 1612) y entra GRATIS a la Casa de Victor Hugo (número 6).",
+      "En la Rue des Rosiers prueba el mejor falafel de París en L'As du Fallafel (esquina con Pavée).",
+      "El Marais es uno de los pocos barrios donde las tiendas ABREN los domingos; perfecto para shopping ese día."
+    ],
+    "hours": "24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/P1180628_Paris_IV_place_des_Vosges_rwk.jpg/1280px-P1180628_Paris_IV_place_des_Vosges_rwk.jpg"
+  },
+  {
+    "name": "Museo Picasso París",
+    "city": "Paris",
+    "description": "Mayor colección pública del mundo dedicada a Pablo Picasso (más de 5.000 obras) en el espectacular Hôtel Salé del siglo XVII, en pleno Marais. Recorre las distintas etapas del pintor: azul, rosa, cubista, surrealista.",
+    "duration_min": 90,
+    "address": "5 Rue de Thorigny, 75003 París",
+    "lat": 48.8607,
+    "lng": 2.3641,
+    "wikipedia_title": "Musée Picasso, Paris",
+    "images": null,
+    "tips": [
+      "Compra entrada online con franja horaria (16 €); el museo es pequeño y se congestiona los fines de semana.",
+      "Entrada gratuita el primer domingo del mes (reserva online OBLIGATORIA).",
+      "Ve a la última planta (ático) para ver la colección personal de Picasso: obras de Cézanne, Matisse, Rousseau."
+    ],
+    "hours": "Mar-Vie 10:30-18:00; Sáb-Dom 9:30-18:00; cerrado lunes",
+    "price": "16 €; gratis primer domingo del mes",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/H%C3%B4tel_Sal%C3%A9_Aubert_de_Fontenay.JPG/1280px-H%C3%B4tel_Sal%C3%A9_Aubert_de_Fontenay.JPG"
+  },
+  {
+    "name": "Jardines de Luxemburgo",
+    "city": "Paris",
+    "description": "Los jardines más populares de la Rive Gauche, creados en 1612 por María de Médici, hoy frente al Senado francés (Palacio de Luxemburgo). 25 hectáreas con la icónica fuente octogonal donde los niños navegan barquitos.",
+    "duration_min": 90,
+    "address": "Rue de Médicis - Rue de Vaugirard, 75006 París",
+    "lat": 48.8462,
+    "lng": 2.3371,
+    "wikipedia_title": "Luxembourg Gardens",
+    "images": null,
+    "tips": [
+      "Alquila un barquito de madera para hacerlo navegar en el Grand Bassin (4 €/30 min) — tradición desde 1927.",
+      "El 'Musée du Luxembourg' (lado oeste) suele tener exposiciones temporales excelentes (13-15 €).",
+      "No te pierdas la Fuente Médicis (lado este, en una arboleda escondida) — el rincón más romántico."
+    ],
+    "hours": "7:30-21:30 (varía estación)",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Jardin_du_Luxembourg_Wikimedia_Commons.jpg/1280px-Jardin_du_Luxembourg_Wikimedia_Commons.jpg"
+  },
+  {
+    "name": "Barrio Latino",
+    "city": "Paris",
+    "description": "Histórico barrio universitario en torno a la Sorbona (fundada en 1257), donde se hablaba latín hasta la Revolución. Calles medievales con librerías, cafés históricos donde Sartre, Hemingway, Joyce escribieron.",
+    "duration_min": 90,
+    "address": "5º arrondissement, 75005 París",
+    "lat": 48.8485,
+    "lng": 2.345,
+    "wikipedia_title": "Latin Quarter, Paris",
+    "images": null,
+    "tips": [
+      "Visita la librería Shakespeare and Company (37 Rue de la Bûcherie) frente a Notre-Dame.",
+      "La Rue Mouffetard tiene un mercado callejero todas las mañanas (excepto lunes) y bares animados de noche.",
+      "No comas en los restaurantes turísticos de la Rue de la Huchette; ve a Le Procope (más antiguo de París, 1686)."
+    ],
+    "hours": "24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Quartier_Latin_Paris_2010.jpg/1280px-Quartier_Latin_Paris_2010.jpg"
+  },
+  {
+    "name": "Moulin Rouge",
+    "city": "Paris",
+    "description": "Cabaré más famoso del mundo, inaugurado en 1889 en el bohemio Pigalle. Cuna del cancán moderno y escenario inmortalizado por Toulouse-Lautrec. Ofrece espectáculos de 2 horas con 60 artistas y vestuario espectacular.",
+    "duration_min": 90,
+    "address": "82 Boulevard de Clichy, 75018 París",
+    "lat": 48.8844,
+    "lng": 2.3323,
+    "wikipedia_title": "Moulin Rouge",
+    "images": null,
+    "tips": [
+      "Reserva con MUCHA antelación (1-2 meses) en moulinrouge.com; opción 'Spectacle + Champagne' (115 €) es la más asequible.",
+      "Si solo quieres la foto del molino rojo (gratis), ve de día — de noche el barrio Pigalle está más concurrido.",
+      "Código de vestimenta estricto: smart casual, no shorts ni zapatillas deportivas."
+    ],
+    "hours": "Espectáculos a las 21:00 y 23:00 todos los días",
+    "price": "Espectáculo desde 88 €; cena+show desde 225 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Moulin_Rouge_2010.jpg/1280px-Moulin_Rouge_2010.jpg"
+  },
+  {
+    "name": "Île de la Cité",
+    "city": "Paris",
+    "description": "Cuna histórica de París (Lutecia romana) y centro de la ciudad sobre una isla del Sena. Aquí están Notre-Dame, la Sainte-Chapelle, la Conciergerie (cárcel de María Antonieta), el Pont Neuf y el Mercado de Flores.",
+    "duration_min": 90,
+    "address": "Île de la Cité, 75001-75004 París",
+    "lat": 48.8535,
+    "lng": 2.349,
+    "wikipedia_title": "Île de la Cité",
+    "images": null,
+    "tips": [
+      "Recorre la isla de oeste a este: empieza en la Place Dauphine y termina en el Memorial de la Deportación.",
+      "El Pont Neuf (1607), pese al nombre, es el puente MÁS ANTIGUO de París; vistas excepcionales.",
+      "Visita la Conciergerie (13 € o combo con Sainte-Chapelle 22 €) — celda donde estuvo María Antonieta."
+    ],
+    "hours": "24h",
+    "price": "Gratis (monumentos aparte)",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Pont_Neuf_Paris_2010.jpg/1280px-Pont_Neuf_Paris_2010.jpg"
+  },
+  {
+    "name": "Disneyland París",
+    "city": "Paris",
+    "description": "Mayor parque temático de Europa, abierto en 1992. Compuesto por dos parques: Disneyland Park (con el icónico Castillo de la Bella Durmiente) y Walt Disney Studios Park. Se llega en 40 min con el RER A desde el centro.",
+    "duration_min": 600,
+    "address": "Boulevard de Parc, 77777 Marne-la-Vallée",
+    "lat": 48.8722,
+    "lng": 2.776,
+    "wikipedia_title": "Disneyland Paris",
+    "images": null,
+    "tips": [
+      "Compra entradas online con MUCHA antelación; los precios varían según el día (hasta 50% diferencia entre fechas).",
+      "Llega a la apertura (9:30-10:00) y empieza por las atracciones del fondo del parque.",
+      "Compra el 'Premier Access' (8-25 € por atracción) para las cumbres más populares."
+    ],
+    "hours": "Varía estación 9:30-22:00/23:00",
+    "price": "Desde 62 € (1 parque, 1 día); 2 parques desde 87 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Disneyland_Paris_-_Sleeping_Beauty_Castle.jpg/1280px-Disneyland_Paris_-_Sleeping_Beauty_Castle.jpg"
+  },
+  {
+    "name": "Centro Pompidou",
+    "city": "Paris",
+    "description": "Centro Nacional de Arte y Cultura inaugurado en 1977, edificio revolucionario con su estructura, tuberías y escaleras coloridas en el exterior. Alberga el Museo Nacional de Arte Moderno (mayor colección de arte moderno y contemporáneo de Europa). AVISO: cerrado por renovación hasta 2030.",
+    "duration_min": 120,
+    "address": "Place Georges-Pompidou, 75004 París",
+    "lat": 48.8607,
+    "lng": 2.352,
+    "wikipedia_title": "Centre Georges Pompidou",
+    "images": null,
+    "tips": [
+      "AVISO: el Pompidou está cerrado por completa renovación desde finales de 2025 hasta 2030.",
+      "Cuando abra, sube a la 6ª planta (terraza) gratis con cualquier entrada para vista panorámica de París.",
+      "Mientras esté cerrado, parte de la colección se exhibe en Grand Palais y otras sedes."
+    ],
+    "hours": "CERRADO hasta 2030",
+    "price": "Cerrado",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Centre_Pompidou_PA00086372_jms_8.jpg/1280px-Centre_Pompidou_PA00086372_jms_8.jpg"
   },
   {
     "name": "Jardines de las Tullerías",
     "city": "Paris",
-    "description": "Jardín formal de 28 hectáreas entre el Louvre y la Place de la Concorde, creado por Catalina de Médici en el siglo XVI. Esculturas modernas de Rodin, Giacometti y Maillol. Paseo favorito de los parisinos.",
+    "description": "Jardines reales del siglo XVI, hoy públicos, que conectan el Louvre con la Plaza de la Concordia. Diseñados por Le Nôtre y considerados el primer ejemplo de jardín francés. Contienen esculturas de Rodin, Maillol y Giacometti al aire libre.",
     "duration_min": 60,
-    "address": "Jardin des Tuileries, 75001 Paris",
+    "address": "113 Rue de Rivoli, 75001 París",
     "lat": 48.8638,
     "lng": 2.3283,
-    "wikipedia_title": "Tuileries Garden"
+    "wikipedia_title": "Tuileries Garden",
+    "images": null,
+    "tips": [
+      "No te pierdas el Museo de l'Orangerie (final oeste): contiene los Nenúfares de Monet en dos salas ovales (12,50 €).",
+      "En verano (junio-agosto) se monta la 'Fête des Tuileries', feria con noria gigante (8 € la vuelta).",
+      "Las sillas verdes son GRATIS — sentarte junto al estanque octogonal con baguette y queso es un must parisino."
+    ],
+    "hours": "7:00-21:00 (verano hasta 23:00)",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Jardin_des_Tuileries_Wikimedia_Commons.jpg/1280px-Jardin_des_Tuileries_Wikimedia_Commons.jpg"
+  },
+  {
+    "name": "Catacumbas de París",
+    "city": "Paris",
+    "description": "Osario subterráneo de 1,7 km abierto al público, con los restos de más de 6 millones de parisinos trasladados desde los cementerios saturados de la ciudad entre 1786 y 1814. Recorrido a 20 m de profundidad por túneles de huesos meticulosamente apilados.",
+    "duration_min": 90,
+    "address": "1 Avenue du Colonel Henri Rol-Tanguy, 75014 París",
+    "lat": 48.8337,
+    "lng": 2.332,
+    "wikipedia_title": "Catacombs of Paris",
+    "images": null,
+    "tips": [
+      "ENTRADA SOLO ONLINE con franja horaria (catacombes.paris.fr, 29 €); se agota con semanas de antelación.",
+      "La temperatura es de 14°C todo el año, lleva una chaqueta. Hay 130 escalones de bajada + 112 de subida.",
+      "Si tienes claustrofobia, considera alternativas más pequeñas; la oficial vale la pena por el factor histórico."
+    ],
+    "hours": "Mar-Dom 9:45-20:30; cerrado lunes",
+    "price": "29 € (incluye audioguía)",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Catacombes_de_Paris_-_Skull_Pile.jpg/1280px-Catacombes_de_Paris_-_Skull_Pile.jpg"
+  },
+  {
+    "name": "Ópera Garnier (Palais Garnier)",
+    "city": "Paris",
+    "description": "Espectacular ópera neobarroca inaugurada en 1875 por Charles Garnier bajo Napoleón III. Inspiró 'El Fantasma de la Ópera' de Gaston Leroux. Destacan la Gran Escalera de mármol, el Foyer dorado y el techo pintado por Marc Chagall en 1964.",
+    "duration_min": 60,
+    "address": "Place de l'Opéra, 75009 París",
+    "lat": 48.8719,
+    "lng": 2.3316,
+    "wikipedia_title": "Palais Garnier",
+    "images": null,
+    "tips": [
+      "Visita libre (15 €) por la mañana antes de los ensayos; cierra algunos días por funciones.",
+      "Asistir a una función (ballet u ópera) cuesta desde 25 € en localidades altas.",
+      "Justo enfrente están las Galerías Lafayette — combina ópera + su terraza (gratis, 7ª planta)."
+    ],
+    "hours": "10:00-17:00",
+    "price": "15 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Paris_Opera_full_frontal_architecture%2C_May_2009.jpg/1280px-Paris_Opera_full_frontal_architecture%2C_May_2009.jpg"
+  },
+  {
+    "name": "Galerías Lafayette",
+    "city": "Paris",
+    "description": "Almacenes Art Nouveau emblemáticos inaugurados en 1912, con una espectacular cúpula de vidrio policromado de 43 m de altura. Aunque son un centro comercial de lujo, son una visita imprescindible por la arquitectura.",
+    "duration_min": 60,
+    "address": "40 Boulevard Haussmann, 75009 París",
+    "lat": 48.8737,
+    "lng": 2.3323,
+    "wikipedia_title": "Galeries Lafayette Haussmann",
+    "images": null,
+    "tips": [
+      "Sube en ascensor al rooftop (gratis) en la 7ª planta — vistas magníficas de París hacia la Ópera.",
+      "Visítalo en Navidad para ver el árbol gigante bajo la cúpula (decoración viral cada año, desde noviembre).",
+      "Si compras más de 100€ pide el formulario de Tax Free para recuperar el IVA (12%) antes de salir de la UE."
+    ],
+    "hours": "Lun-Sáb 10:00-20:30; Dom 11:00-20:00",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Galleries_Lafayette_Paris_Cupola.jpg/1280px-Galleries_Lafayette_Paris_Cupola.jpg"
+  },
+  {
+    "name": "Cementerio del Père-Lachaise",
+    "city": "Paris",
+    "description": "Cementerio más famoso del mundo (1804), 44 hectáreas con más de 70.000 tumbas. Reposan Jim Morrison, Édith Piaf, Oscar Wilde, Chopin, Molière, Balzac, Modigliani, Proust y Delacroix.",
+    "duration_min": 90,
+    "address": "16 Rue du Repos, 75020 París",
+    "lat": 48.8601,
+    "lng": 2.3966,
+    "wikipedia_title": "Père Lachaise Cemetery",
+    "images": null,
+    "tips": [
+      "Compra el mapa (3 € en la entrada principal) para localizar tumbas; sin él te puedes perder horas.",
+      "Las tumbas más visitadas: Jim Morrison (división 6) y Oscar Wilde (división 89, cubierta de cristal).",
+      "Ve por la mañana entre semana; los fines de semana hay grupos turísticos masivos."
+    ],
+    "hours": "Lun-Vie 8:00-18:00; Sáb 8:30-18:00; Dom 9:00-18:00",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/P%C3%A8re-Lachaise_-_Avenue_principale.jpg/1280px-P%C3%A8re-Lachaise_-_Avenue_principale.jpg"
+  },
+  {
+    "name": "Museo Rodin",
+    "city": "Paris",
+    "description": "Museo dedicado al escultor Auguste Rodin en el Hôtel Biron, su antigua casa-estudio del siglo XVIII. Contiene 6.800 esculturas (entre ellas 'El Pensador', 'El Beso', 'Las Puertas del Infierno', 'Los Burgueses de Calais') en un jardín espectacular.",
+    "duration_min": 90,
+    "address": "77 Rue de Varenne, 75007 París",
+    "lat": 48.8555,
+    "lng": 2.3157,
+    "wikipedia_title": "Musée Rodin",
+    "images": null,
+    "tips": [
+      "Si vas con poco tiempo, compra solo entrada al jardín (5 €): allí están 'El Pensador' y 'Las Puertas del Infierno'.",
+      "Entrada gratuita el primer domingo de cada mes (de octubre a marzo).",
+      "Combínalo con los Inválidos (tumba de Napoleón) que está justo al lado."
+    ],
+    "hours": "Mar-Dom 10:00-18:30",
+    "price": "14 €; jardín solo 5 €; gratis primer dom del mes",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Mus%C3%A9e_Rodin%2C_Paris_2010.jpg/1280px-Mus%C3%A9e_Rodin%2C_Paris_2010.jpg"
+  },
+  {
+    "name": "La Défense",
+    "city": "Paris",
+    "description": "Distrito de negocios al oeste de París, sobre el eje histórico (Champs-Élysées-Arco del Triunfo). Su monumento icónico es la Grande Arche de la Défense (1989), un cubo hueco de 110 m que alinea con el Arco del Triunfo en perspectiva perfecta.",
+    "duration_min": 60,
+    "address": "La Défense, 92000 Nanterre",
+    "lat": 48.8924,
+    "lng": 2.236,
+    "wikipedia_title": "La Défense",
+    "images": null,
+    "tips": [
+      "Sube a la azotea de la Grande Arche (16 €) para una vista única hacia el centro de París con monumentos alineados.",
+      "A 5 min en metro/RER desde Charles de Gaulle-Étoile; contraste fascinante entre París histórico y moderno.",
+      "Pasea por la Esplanade y busca las 70+ esculturas al aire libre (Calder, Miró, César)."
+    ],
+    "hours": "Toit Grande Arche 10:00-19:00",
+    "price": "Esplanade gratis; Grande Arche 16 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Grande_Arche_de_la_D%C3%A9fense.jpg/1280px-Grande_Arche_de_la_D%C3%A9fense.jpg"
+  },
+  {
+    "name": "Duomo de Milán",
+    "city": "Milan",
+    "description": "Catedral gótica iniciada en 1386 y terminada cinco siglos después (1813), la 3ª iglesia más grande de Europa y la cuarta más grande del mundo. 135 pináculos, 3.400 estatuas y la famosa 'Madonnina' dorada en la cima. Construida en mármol blanco-rosa de Candoglia.",
+    "duration_min": 90,
+    "address": "Piazza del Duomo, 20122 Milán",
+    "lat": 45.4642,
+    "lng": 9.192,
+    "wikipedia_title": "Milan Cathedral",
+    "images": null,
+    "tips": [
+      "Sube a las terrazas: 'Combo Lift' con ascensor 26 €, 'Combo Stairs' a pie 22 €. Llega al amanecer (8:00) para tener el techo casi vacío.",
+      "Compra entrada online en duomomilano.it (sin gastos extra desde abril 2025). El Duomo Pass válido 2 días.",
+      "Código de vestimenta estricto: hombros y rodillas cubiertos para todos los géneros — sin shorts, sin tirantes."
+    ],
+    "hours": "8:00-19:00 (último ingreso 18:10)",
+    "price": "Catedral 10 €; Combo Lift (todo) 26 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Milan_Cathedral_from_Piazza_del_Duomo.jpg/1280px-Milan_Cathedral_from_Piazza_del_Duomo.jpg"
+  },
+  {
+    "name": "Galería Vittorio Emanuele II",
+    "city": "Milan",
+    "description": "Galería comercial cubierta del siglo XIX (inaugurada 1877), considerada el 'salón de Milán'. Estructura de hierro y vidrio en forma de cruz, con cúpula octogonal de 47 m y suelos decorados con mosaicos. Aloja Prada, Louis Vuitton, Versace.",
+    "duration_min": 60,
+    "address": "Piazza del Duomo, 20121 Milán",
+    "lat": 45.4653,
+    "lng": 9.1923,
+    "wikipedia_title": "Galleria Vittorio Emanuele II",
+    "images": null,
+    "tips": [
+      "Busca el mosaico del toro de Turín en el suelo (junto al McDonald's) y haz girar tu talón sobre sus testículos 3 veces para la buena suerte.",
+      "No comas ni tomes café en las terrazas (un café cuesta 7-8 €); ve al bar interior del Camparino in Galleria.",
+      "Sube al 'Highline Galleria' (tour por el techo de la galería) por 12 € para vistas sobre Milán y la cúpula del Duomo."
+    ],
+    "hours": "24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Galleria_Vittorio_Emanuele_II_Milan.jpg/1280px-Galleria_Vittorio_Emanuele_II_Milan.jpg"
+  },
+  {
+    "name": "Teatro alla Scala",
+    "city": "Milan",
+    "description": "Uno de los teatros de ópera más famosos del mundo, inaugurado en 1778. Aquí se estrenaron óperas de Verdi, Puccini, Bellini, Donizetti. Conserva la sala neoclásica original con 6 niveles de palcos y la mejor acústica operística.",
+    "duration_min": 60,
+    "address": "Via Filodrammatici, 2, 20121 Milán",
+    "lat": 45.4685,
+    "lng": 9.1912,
+    "wikipedia_title": "La Scala",
+    "images": null,
+    "tips": [
+      "Visita el Museo del Teatro (12 €, en la fachada izquierda) que incluye ver la sala desde un palco.",
+      "Las entradas más baratas de espectáculo (galería, 13-30 €) salen el día de la función a las 13:00 en taquilla.",
+      "La temporada va de diciembre (apertura el 7 de diciembre, Sant'Ambrogio) hasta noviembre."
+    ],
+    "hours": "Museo 9:30-17:30",
+    "price": "Museo 12 €; espectáculos desde 13 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Milano_Scala.jpg/1280px-Milano_Scala.jpg"
+  },
+  {
+    "name": "Castillo Sforzesco",
+    "city": "Milan",
+    "description": "Fortaleza renacentista del siglo XV construida por Francesco Sforza sobre la antigua fortaleza visconti. Hoy alberga 9 museos cívicos: Pinacoteca, Museo Egipcio, Museo de Arte Antiguo (con la 'Pietà Rondanini', última obra de Miguel Ángel), Museo de Instrumentos Musicales.",
+    "duration_min": 120,
+    "address": "Piazza Castello, 20121 Milán",
+    "lat": 45.4708,
+    "lng": 9.1757,
+    "wikipedia_title": "Sforza Castle",
+    "images": null,
+    "tips": [
+      "El acceso a los patios del castillo es GRATIS; solo se paga para entrar a los museos (5 € o gratis primeros domingos).",
+      "No te pierdas la 'Pietà Rondanini' de Miguel Ángel (escultura inacabada) en el Museo de Arte Antiguo, Sala 15.",
+      "Atraviesa el castillo y sales al Parque Sempione — combina ambas visitas en una mañana."
+    ],
+    "hours": "Patios 7:00-19:30; museos Mar-Dom 10:00-17:30",
+    "price": "Patios gratis; museos 5 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/MailandCastelloSforzesco.jpg/1280px-MailandCastelloSforzesco.jpg"
+  },
+  {
+    "name": "Santa Maria delle Grazie — La Última Cena",
+    "city": "Milan",
+    "description": "Iglesia y convento dominico del siglo XV. En el refectorio (cenacolo) está 'L'Ultima Cena' de Leonardo da Vinci (1495-98), uno de los frescos más famosos del mundo y Patrimonio UNESCO. La pintura se conserva bajo estrictos controles climáticos.",
+    "duration_min": 60,
+    "address": "Piazza di Santa Maria delle Grazie, 20123 Milán",
+    "lat": 45.4659,
+    "lng": 9.1708,
+    "wikipedia_title": "Santa Maria delle Grazie, Milan",
+    "images": null,
+    "tips": [
+      "RESERVA OBLIGATORIA con AL MENOS 3-4 MESES de antelación en cenacolovinciano.org (15 €). Entran grupos de 35 personas por 15 minutos.",
+      "Si no consigues entrada oficial, busca tours guiados (40-80 €) que tienen cupos reservados.",
+      "La iglesia adyacente (gratis) es bella también, con la cúpula de Bramante; visítala antes/después."
+    ],
+    "hours": "Mar-Dom 8:15-19:00; cerrado lunes",
+    "price": "15 € (+2 € reserva)",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/%C3%9Altima_Cena_-_Da_Vinci_5.jpg/1280px-%C3%9Altima_Cena_-_Da_Vinci_5.jpg"
+  },
+  {
+    "name": "Pinacoteca di Brera",
+    "city": "Milan",
+    "description": "Principal pinacoteca de Milán, en el barrio bohemio de Brera, en un palacio del XVII. Contiene obras maestras del Renacimiento y Barroco italianos: 'El Beso' de Hayez, 'Cristo Muerto' de Mantegna, 'Desposorios de la Virgen' de Rafael, obras de Caravaggio.",
+    "duration_min": 120,
+    "address": "Via Brera, 28, 20121 Milán",
+    "lat": 45.4724,
+    "lng": 9.1872,
+    "wikipedia_title": "Pinacoteca di Brera",
+    "images": null,
+    "tips": [
+      "No te pierdas en la Sala 6 'El Cristo Muerto' de Mantegna (1480) — perspectiva escorzada revolucionaria.",
+      "Entrada gratuita el primer domingo de cada mes (cola larga).",
+      "Combina con el Jardín Botánico de Brera (escondido junto al museo, gratis y casi vacío)."
+    ],
+    "hours": "Mar-Dom 8:30-19:15",
+    "price": "15 €; gratis primer domingo del mes",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Palazzo_Brera_-_Milano.jpg/1280px-Palazzo_Brera_-_Milano.jpg"
+  },
+  {
+    "name": "Barrio de Brera",
+    "city": "Milan",
+    "description": "Barrio bohemio y artístico de Milán, calles empedradas con galerías de arte, anticuarios, bistros y restaurantes históricos. Aquí está la Academia de Bellas Artes, la Pinacoteca, el Observatorio y el Jardín Botánico de Brera.",
+    "duration_min": 90,
+    "address": "Brera, 20121 Milán",
+    "lat": 45.4724,
+    "lng": 9.1872,
+    "wikipedia_title": "Brera district",
+    "images": null,
+    "tips": [
+      "Visita el Jardín Botánico de Brera (gratis, entrada por Via Brera 28 o Via Fiori Oscuri 4) — oasis escondido.",
+      "Compra un aperitivo (Aperol o Negroni con tablas) en Bar Brera o N'Ombra de Vin.",
+      "Los jueves por la noche hay 'Brera Design Days' o exposiciones en galerías abiertas hasta tarde."
+    ],
+    "hours": "24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Brera%2C_Milano.jpg/1280px-Brera%2C_Milano.jpg"
+  },
+  {
+    "name": "Basílica de Sant'Ambrogio",
+    "city": "Milan",
+    "description": "Una de las iglesias más antiguas de Milán (siglo IV, reconstruida en estilo románico-lombardo en el siglo XI-XII), fundada por San Ambrosio (patrono de Milán). Bajo el altar se conservan sus reliquias junto a los mártires Gervasio y Protasio.",
+    "duration_min": 45,
+    "address": "Piazza Sant'Ambrogio, 15, 20123 Milán",
+    "lat": 45.4607,
+    "lng": 9.1732,
+    "wikipedia_title": "Basilica of Sant'Ambrogio",
+    "images": null,
+    "tips": [
+      "Entrada gratis; no te pierdas el altar de oro carolingio del siglo IX (Paliotto), pieza medieval excepcional.",
+      "Visita el museo de la basílica (8 €) si te interesa arte sacro medieval; muy poco visitado.",
+      "Combínalo con el Tempio della Vittoria (de Giovanni Muzio) justo al lado."
+    ],
+    "hours": "Lun-Sáb 10:00-12:00 y 14:30-18:00; Dom 15:00-17:00",
+    "price": "Gratis (museo 8 €)",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Milano_Basilica_Sant_Ambrogio_1.jpg/1280px-Milano_Basilica_Sant_Ambrogio_1.jpg"
+  },
+  {
+    "name": "Barrio de Navigli",
+    "city": "Milan",
+    "description": "Barrio histórico al sur del centro, en torno a los Navigli (canales del siglo XII diseñados por Leonardo da Vinci). Hoy es el epicentro de la vida nocturna y el aperitivo milanés, con bares, restaurantes y antiguos lavaderos a orillas del Naviglio Grande y Naviglio Pavese.",
+    "duration_min": 90,
+    "address": "Naviglio Grande / Naviglio Pavese, 20143 Milán",
+    "lat": 45.4527,
+    "lng": 9.183,
+    "wikipedia_title": "Navigli",
+    "images": null,
+    "tips": [
+      "Ve para el aperitivo (18:00-21:00): por 10-15 € tienes un cóctel y buffet libre en muchos bares.",
+      "El último domingo de cada mes hay el famoso 'Mercato dell'Antiquariato' a lo largo del Naviglio Grande.",
+      "Pasea por la Vicolo dei Lavandai (callejón con el antiguo lavadero) — la foto más típica de Navigli."
+    ],
+    "hours": "24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Milano_Naviglio_Grande_2.jpg/1280px-Milano_Naviglio_Grande_2.jpg"
+  },
+  {
+    "name": "Parque Sempione",
+    "city": "Milan",
+    "description": "Parque público de 38 hectáreas detrás del Castillo Sforzesco, creado a finales del XIX a la inglesa. Contiene el Arco della Pace, la Torre Branca, el Acuario Cívico y la Triennale di Milano.",
+    "duration_min": 90,
+    "address": "Piazza Sempione, 20154 Milán",
+    "lat": 45.4752,
+    "lng": 9.178,
+    "wikipedia_title": "Parco Sempione",
+    "images": null,
+    "tips": [
+      "Sube a la Torre Branca (Gio Ponti, 1933) por 7 € para vistas a 108 m sobre Milán.",
+      "Camina del Castillo Sforzesco al Arco della Pace siguiendo el eje del parque — perspectiva napoleónica.",
+      "En verano hay conciertos y eventos al aire libre; revisa programación en milano.it."
+    ],
+    "hours": "6:30-23:30 (varía estación)",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Parco_Sempione_Milan_2010.jpg/1280px-Parco_Sempione_Milan_2010.jpg"
+  },
+  {
+    "name": "Arco della Pace",
+    "city": "Milan",
+    "description": "Arco neoclásico de 25 m construido entre 1807 y 1838 al final del Parque Sempione. Iniciado por Napoleón para conmemorar sus victorias, terminado por los Austriacos para celebrar la paz de 1815.",
+    "duration_min": 30,
+    "address": "Piazza Sempione, 20154 Milán",
+    "lat": 45.4754,
+    "lng": 9.1751,
+    "wikipedia_title": "Arco della Pace",
+    "images": null,
+    "tips": [
+      "Fotos al atardecer enmarcando el castillo Sforzesco al fondo (eje napoleónico) — la mejor postal del Parque.",
+      "La zona alrededor (Corso Sempione) tiene buenos bares para aperitivo, menos turísticos que Navigli.",
+      "Conténtemplalo desde el parque para apreciar la composición arquitectónica."
+    ],
+    "hours": "24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Arco_della_Pace_-_Milano_-_panoramio.jpg/1280px-Arco_della_Pace_-_Milano_-_panoramio.jpg"
+  },
+  {
+    "name": "Cementerio Monumental",
+    "city": "Milan",
+    "description": "Cementerio monumental al norte del centro (1866), considerado un museo al aire libre con tumbas escultóricas de los artistas más importantes italianos del XIX-XX. Reposan Manzoni, Toscanini, los Campari, los Bracco.",
+    "duration_min": 90,
+    "address": "Piazzale Cimitero Monumentale, 20154 Milán",
+    "lat": 45.4922,
+    "lng": 9.1662,
+    "wikipedia_title": "Monumental Cemetery of Milan",
+    "images": null,
+    "tips": [
+      "Coge mapa gratuito en la entrada principal (Famedio); destaca rutas con tumbas más artísticas.",
+      "No te pierdas el 'Famedio' en la entrada, panteón con bustos de los milaneses ilustres.",
+      "Combínalo con la cercana Piazza Gae Aulenti y el barrio Isola (10 min andando)."
+    ],
+    "hours": "Mar-Dom 8:00-18:00",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Cimitero_Monumentale_Milano.jpg/1280px-Cimitero_Monumentale_Milano.jpg"
+  },
+  {
+    "name": "Pinacoteca Ambrosiana",
+    "city": "Milan",
+    "description": "Una de las primeras pinacotecas del mundo (1618), creada por el cardenal Federico Borromeo dentro de la Biblioteca Ambrosiana. Contiene el 'Códice Atlántico' de Leonardo da Vinci, la 'Canasta de fruta' de Caravaggio, obras de Tiziano, Botticelli y Rafael.",
+    "duration_min": 90,
+    "address": "Piazza Pio XI, 2, 20123 Milán",
+    "lat": 45.4636,
+    "lng": 9.1798,
+    "wikipedia_title": "Pinacoteca Ambrosiana",
+    "images": null,
+    "tips": [
+      "El cartón preparatorio de la 'Escuela de Atenas' de Rafael está aquí (Sala 5) — único en el mundo.",
+      "Si vas a Milán por arte, pide el 'Combo Duomo + Ambrosiana' (36 €) — incluye también las terrazas a pie.",
+      "Está a 5 min andando del Duomo; muy poco visitada, ideal por la tarde tras visitar la catedral."
+    ],
+    "hours": "Mar-Dom 10:00-18:00",
+    "price": "17 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Pinacoteca_Ambrosiana_Milano.jpg/1280px-Pinacoteca_Ambrosiana_Milano.jpg"
+  },
+  {
+    "name": "Via Montenapoleone",
+    "city": "Milan",
+    "description": "La calle de lujo más cara de Italia y una de las más caras del mundo, núcleo del 'Quadrilatero della Moda'. Aquí están las flagship stores de Gucci, Prada, Armani, Versace, Dolce & Gabbana, Bulgari.",
+    "duration_min": 90,
+    "address": "Via Montenapoleone, 20121 Milán",
+    "lat": 45.4714,
+    "lng": 9.1965,
+    "wikipedia_title": "Via Montenapoleone",
+    "images": null,
+    "tips": [
+      "Aunque no compres, vale la pena pasear durante la Semana de la Moda (febrero y septiembre).",
+      "Para Tax Free, recoge formulario en cada tienda (compra > 70 €) y valídalo en Malpensa al salir.",
+      "Combínala con Via della Spiga (paralela), también de lujo y peatonal; mucho más tranquila."
+    ],
+    "hours": "Tiendas 10:00-19:30 (Dom 11:00-19:00)",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Via_Montenapoleone_Milano.jpg/1280px-Via_Montenapoleone_Milano.jpg"
+  },
+  {
+    "name": "Piazza Gae Aulenti",
+    "city": "Milan",
+    "description": "Plaza moderna inaugurada en 2012 en el corazón del distrito Porta Nuova, símbolo del Milán contemporáneo. Está elevada 6 m sobre la calle y rodeada por la Torre Unicredit (231 m, edificio más alto de Italia) y el famoso 'Bosco Verticale' muy cerca.",
+    "duration_min": 45,
+    "address": "Piazza Gae Aulenti, 20154 Milán",
+    "lat": 45.484,
+    "lng": 9.1902,
+    "wikipedia_title": "Piazza Gae Aulenti",
+    "images": null,
+    "tips": [
+      "Ve al atardecer para fotos espectaculares de los rascacielos modernos con luz dorada.",
+      "Cena en uno de los bares con terraza alrededor; aperitivo en Radio Rooftop tiene las mejores vistas.",
+      "Combínalo con el cercano Bosco Verticale (calle Confalonieri) y un paseo por el barrio Isola."
+    ],
+    "hours": "24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Piazza_Gae_Aulenti_Milano.jpg/1280px-Piazza_Gae_Aulenti_Milano.jpg"
+  },
+  {
+    "name": "Bosco Verticale",
+    "city": "Milan",
+    "description": "Par de torres residenciales (2014) diseñadas por Stefano Boeri, plantadas con más de 800 árboles, 4.500 arbustos y 15.000 plantas — el primer 'bosque vertical' del mundo. Premio Internacional de Arquitectura 2014.",
+    "duration_min": 30,
+    "address": "Via Gaetano de Castillia, 11, 20124 Milán",
+    "lat": 45.4856,
+    "lng": 9.1922,
+    "wikipedia_title": "Bosco Verticale",
+    "images": null,
+    "tips": [
+      "No se puede entrar (es residencial); admíralo desde la calle Confalonieri o desde la Piazza Gae Aulenti.",
+      "La mejor foto es desde el café Princi en Piazza Gae Aulenti o desde la pasarela peatonal sobre las vías.",
+      "En primavera y otoño los colores del follaje son espectaculares."
+    ],
+    "hours": "Vista exterior 24h",
+    "price": "Gratis (no se entra)",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Bosco_Verticale_Milan.jpg/1280px-Bosco_Verticale_Milan.jpg"
+  },
+  {
+    "name": "Fondazione Prada",
+    "city": "Milan",
+    "description": "Espacio de arte contemporáneo abierto en 2015, diseñado por Rem Koolhaas en una antigua destilería al sur de Milán. Combina edificios industriales restaurados con nuevas estructuras (incluida la 'Torre' y la 'Casa de oro').",
+    "duration_min": 90,
+    "address": "Largo Isarco, 2, 20139 Milán",
+    "lat": 45.4451,
+    "lng": 9.1953,
+    "wikipedia_title": "Fondazione Prada",
+    "images": null,
+    "tips": [
+      "El 'Bar Luce' diseñado por Wes Anderson dentro de la fundación es una atracción en sí (café 2 €).",
+      "Sube a la 'Torre' — vistas espectaculares de Milán desde la 9ª planta y el restaurante Torre.",
+      "Está a 15 min en metro del centro (Lodi T.I.B.B., M3); combina con el barrio NoLo."
+    ],
+    "hours": "Mié-Lun 10:00-19:00; cerrado martes",
+    "price": "15 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Fondazione_Prada_Milano.jpg/1280px-Fondazione_Prada_Milano.jpg"
+  },
+  {
+    "name": "Estadio San Siro (Giuseppe Meazza)",
+    "city": "Milan",
+    "description": "Estadio compartido por AC Milan e Inter de Milán, capacidad para 75.923 espectadores, uno de los templos del fútbol europeo. Sede de finales de Champions y de la Eurocopa.",
+    "duration_min": 90,
+    "address": "Piazzale Angelo Moratti, 20151 Milán",
+    "lat": 45.4781,
+    "lng": 9.1239,
+    "wikipedia_title": "San Siro",
+    "images": null,
+    "tips": [
+      "Tour oficial del estadio + Museo (30 €) — incluye vestuarios, túneles, palco y sala de trofeos.",
+      "Para ver un partido, entradas en webs oficiales; los 'derby della Madonnina' son experiencias únicas.",
+      "Cuidado: el estadio será demolido y reemplazado (proyecto en marcha 2024-2030); verifica situación actual."
+    ],
+    "hours": "Tours 9:30-18:00",
+    "price": "Tour 30 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Stadio_Giuseppe_Meazza_2016.jpg/1280px-Stadio_Giuseppe_Meazza_2016.jpg"
+  },
+  {
+    "name": "CityLife (Tre Torri)",
+    "city": "Milan",
+    "description": "Nuevo distrito residencial y comercial al noroeste, con las 'Tre Torri': Torre Allianz 'Il Dritto' (Isozaki, 209 m), Torre Generali 'Lo Storto' (Hadid, 192 m) y Torre PwC 'Il Curvo' (Libeskind, 175 m). Centro comercial subterráneo y parque público.",
+    "duration_min": 60,
+    "address": "Piazza Tre Torri, 20145 Milán",
+    "lat": 45.4814,
+    "lng": 9.1454,
+    "wikipedia_title": "CityLife, Milan",
+    "images": null,
+    "tips": [
+      "Pasea por el parque CityLife (gratis) y fotografía las tres torres juntas.",
+      "El centro comercial CityLife Shopping District es buen plan en día lluvioso (cines, restaurantes, +90 tiendas).",
+      "Combina con la cercana Triennale di Milano o el Cementerio Monumental (15 min andando)."
+    ],
+    "hours": "Parque 24h; centro comercial 10:00-21:00",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/CityLife_Tre_Torri_Milano.jpg/1280px-CityLife_Tre_Torri_Milano.jpg"
+  },
+  {
+    "name": "Triennale di Milano",
+    "city": "Milan",
+    "description": "Museo dedicado al diseño, arquitectura y artes decorativas italianas, fundado en 1923. Situado en el Palazzo dell'Arte (Muzio, 1933) en el Parque Sempione. Sede de la Trienal de Diseño internacional.",
+    "duration_min": 60,
+    "address": "Viale Emilio Alemagna, 6, 20121 Milán",
+    "lat": 45.4722,
+    "lng": 9.1755,
+    "wikipedia_title": "Triennale di Milano",
+    "images": null,
+    "tips": [
+      "Combínalo con la Torre Branca y el Parque Sempione — están todos juntos.",
+      "El museo permanente sobre diseño italiano del siglo XX está incluido en la entrada.",
+      "El restaurante 'Terrazza Triennale' en la planta superior tiene vistas espectaculares del Parque y Castello."
+    ],
+    "hours": "Mar-Dom 11:00-20:00",
+    "price": "15 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Triennale_Milano_Palazzo_dellArte.jpg/1280px-Triennale_Milano_Palazzo_dellArte.jpg"
+  },
+  {
+    "name": "Basílica de San Pedro",
+    "city": "Roma",
+    "description": "La basílica católica más grande del mundo, en la Ciudad del Vaticano. Construida entre 1506 y 1626 sobre la tumba de San Pedro. Arquitectos: Bramante, Miguel Ángel (cúpula), Bernini (baldaquino y plaza). Contiene 'La Piedad' de Miguel Ángel, las tumbas de los Papas.",
+    "duration_min": 120,
+    "address": "Piazza San Pietro, 00120 Ciudad del Vaticano",
+    "lat": 41.9022,
+    "lng": 12.4534,
+    "wikipedia_title": "St. Peter's Basilica",
+    "images": null,
+    "tips": [
+      "ENTRADA GRATIS pero hay colas enormes; llega antes de las 8:00 (apertura 7:00) o después de las 16:00. Código estricto: hombros y rodillas cubiertos.",
+      "Sube a la cúpula (10 € a pie 551 escalones, 8 € hasta donde llega el ascensor + 320 escalones): vistas a 130 m.",
+      "No te pierdas 'La Piedad' de Miguel Ángel (1499) en la primera capilla a la derecha al entrar — única obra firmada por él."
+    ],
+    "hours": "Abr-Sep 7:00-19:00; Oct-Mar 7:00-18:30",
+    "price": "Gratis (cúpula 8-10 €)",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Basilica_di_San_Pietro_Vaticano_2.jpg/1280px-Basilica_di_San_Pietro_Vaticano_2.jpg"
+  },
+  {
+    "name": "Museos Vaticanos",
+    "city": "Roma",
+    "description": "Complejo museístico con 54 galerías y más de 70.000 obras de arte, incluyendo la Capilla Sixtina con los frescos de Miguel Ángel (1508-1512 y 1536-1541). Las Estancias de Rafael, el Museo Pio-Clementino, la Galería de los Mapas, el Patio de la Piña.",
+    "duration_min": 180,
+    "address": "Viale Vaticano, 00165 Ciudad del Vaticano",
+    "lat": 41.9065,
+    "lng": 12.4536,
+    "wikipedia_title": "Vatican Museums",
+    "images": null,
+    "tips": [
+      "RESERVA OBLIGATORIA con franja horaria en museivaticani.va (20 €+ 5€ reserva). Compra con 1-2 meses de antelación.",
+      "Gratis el último domingo de cada mes — pero la cola da la vuelta al Vaticano (3-4 horas de espera).",
+      "Tras la Capilla Sixtina, sal por la puerta de la derecha ('salida para grupos') — te lleva directo a la Basílica de San Pedro."
+    ],
+    "hours": "Lun-Sáb 8:00-19:00 (último ingreso 17:00)",
+    "price": "20 € + 5 € reserva online",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Vatican_City_-_Sistine_Chapel_ceiling.jpg/1280px-Vatican_City_-_Sistine_Chapel_ceiling.jpg"
+  },
+  {
+    "name": "Coliseo",
+    "city": "Roma",
+    "description": "Anfiteatro Flavio construido en 80 d.C. por Vespasiano y Tito, mayor anfiteatro del mundo (50.000-80.000 espectadores). Patrimonio UNESCO y una de las 7 Maravillas del Mundo Moderno. Aquí se celebraron luchas de gladiadores, naumaquias y combates con fieras.",
+    "duration_min": 120,
+    "address": "Piazza del Colosseo, 1, 00184 Roma",
+    "lat": 41.8902,
+    "lng": 12.4923,
+    "wikipedia_title": "Colosseum",
+    "images": null,
+    "tips": [
+      "Compra entrada oficial en ticketing.colosseo.it exactamente 720 horas (30 días) antes — se agotan en minutos. Combinada Coliseo+Foro+Palatino 18 €; 'Full Experience' 24 €.",
+      "Si quieres la arena/subterráneos, RESERVA con MUCHA antelación; cupos muy limitados.",
+      "El 1er domingo de cada mes la entrada es gratis pero la cola es brutal; llega antes de las 7:30."
+    ],
+    "hours": "8:30 hasta atardecer (16:30 invierno - 19:30 verano)",
+    "price": "18 €; Full Experience 24 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1280px-Colosseo_2020.jpg"
+  },
+  {
+    "name": "Foro Romano",
+    "city": "Roma",
+    "description": "El corazón de la antigua Roma, plaza central de la vida pública entre los siglos VII a.C. y siglo IV d.C. Contiene los restos del Templo de Saturno, Templo de Vesta, la Curia Iulia (Senado), el Arco de Tito, el Arco de Septimio Severo y la Vía Sacra.",
+    "duration_min": 90,
+    "address": "Via della Salaria Vecchia, 5/6, 00186 Roma",
+    "lat": 41.8925,
+    "lng": 12.4853,
+    "wikipedia_title": "Roman Forum",
+    "images": null,
+    "tips": [
+      "La entrada está INCLUIDA en el ticket del Coliseo (válido 24h o 48h Full Experience). Empieza por aquí.",
+      "Sube al Tabularium en los Museos Capitolinos para la mejor vista panorámica del Foro desde arriba.",
+      "Lleva agua y gorra — no hay sombra, los suelos son irregulares; calzado cómodo imprescindible."
+    ],
+    "hours": "9:00 hasta 1h antes del atardecer",
+    "price": "Incluido en ticket Coliseo (18 €)",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Forum_Romanum_Rome.jpg/1280px-Forum_Romanum_Rome.jpg"
+  },
+  {
+    "name": "Panteón de Roma",
+    "city": "Roma",
+    "description": "Templo romano del 27 a.C. reconstruido por Adriano en 126 d.C., el edificio antiguo mejor conservado del mundo. Su cúpula de hormigón sin armar (43,3 m de diámetro) sigue siendo la mayor del mundo en este material. Iglesia desde el siglo VII. Aquí reposa Rafael.",
+    "duration_min": 60,
+    "address": "Piazza della Rotonda, 00186 Roma",
+    "lat": 41.8986,
+    "lng": 12.4769,
+    "wikipedia_title": "Pantheon, Rome",
+    "images": null,
+    "tips": [
+      "Desde 2023 la entrada es de pago (5 €), reserva online en pantheonroma.com. Gratis los primeros domingos del mes.",
+      "Visítalo durante lluvia ligera — el agua que cae por el óculo central es uno de los espectáculos más mágicos de Roma.",
+      "Salida obligada al café Sant'Eustachio o la Tazza d'Oro (Via degli Orfani) — los mejores cafés de Roma."
+    ],
+    "hours": "Lun-Sáb 9:00-19:00; Dom 9:00-18:00",
+    "price": "5 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Pantheon_Rome_2005.jpg/1280px-Pantheon_Rome_2005.jpg"
+  },
+  {
+    "name": "Fontana di Trevi",
+    "city": "Roma",
+    "description": "Fuente barroca más famosa del mundo (Nicola Salvi, 1762), de 26 m de alto y 49 m de ancho. Inmortalizada en 'La Dolce Vita' de Fellini. Tradición: tirar una moneda con la mano derecha sobre el hombro izquierdo significa volver a Roma.",
+    "duration_min": 45,
+    "address": "Piazza di Trevi, 00187 Roma",
+    "lat": 41.9009,
+    "lng": 12.4833,
+    "wikipedia_title": "Trevi Fountain",
+    "images": null,
+    "tips": [
+      "Ve a las 6:30-7:00 de la mañana para foto sin gente; durante el día está siempre LLENÍSIMA.",
+      "Las monedas tiradas (más de 3.000 € al día) se recogen y van a Caritas para los pobres de Roma.",
+      "Después de la fuente, dirígete por la cercana Vía del Tritone hacia Piazza Barberini para ver más Bernini."
+    ],
+    "hours": "24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Trevi_Fountain_Rome.jpg/1280px-Trevi_Fountain_Rome.jpg"
+  },
+  {
+    "name": "Museos Capitolinos",
+    "city": "Roma",
+    "description": "Museos más antiguos del mundo (1471), creados por Sixto IV. En la Piazza del Campidoglio diseñada por Miguel Ángel. Contienen las esculturas originales de la Loba Capitolina, la estatua ecuestre de Marco Aurelio, el Gálata Moribundo y la cabeza colosal de Constantino.",
+    "duration_min": 90,
+    "address": "Piazza del Campidoglio, 1, 00186 Roma",
+    "lat": 41.8932,
+    "lng": 12.4823,
+    "wikipedia_title": "Capitoline Museums",
+    "images": null,
+    "tips": [
+      "No te pierdas el Tabularium (galería subterránea): pasaje romano con la mejor vista del Foro Romano.",
+      "Gratis el primer domingo de cada mes; entrada normal 16 €.",
+      "Subir las 'Cordonata' diseñadas por Miguel Ángel (escalinata con rampa) hacia la plaza es una experiencia en sí."
+    ],
+    "hours": "Mar-Dom 9:30-19:30",
+    "price": "16 €; gratis primer domingo del mes",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Piazza_del_Campidoglio_Rome.jpg/1280px-Piazza_del_Campidoglio_Rome.jpg"
+  },
+  {
+    "name": "Castel Sant'Angelo",
+    "city": "Roma",
+    "description": "Antiguo Mausoleo de Adriano (139 d.C.), reconvertido en fortaleza papal en el siglo VI, residencia papal en el Renacimiento (con pasaje secreto al Vaticano, el 'passetto') y prisión. Hoy es museo. Coronado por la estatua del Arcángel Miguel.",
+    "duration_min": 90,
+    "address": "Lungotevere Castello, 50, 00193 Roma",
+    "lat": 41.9036,
+    "lng": 12.4663,
+    "wikipedia_title": "Castel Sant'Angelo",
+    "images": null,
+    "tips": [
+      "Sube a la terraza superior — vistas espectaculares del Vaticano y del Tíber, especialmente al atardecer.",
+      "Cruza el Puente de los Ángeles delante del castillo (Bernini, con 10 ángeles esculpidos).",
+      "El 'passetto di Borgo' (pasadizo elevado de 800 m al Vaticano) solo abre con visitas guiadas especiales."
+    ],
+    "hours": "Mar-Dom 9:00-19:30",
+    "price": "15 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Castel_Sant%27Angelo_Rome_2010.jpg/1280px-Castel_Sant%27Angelo_Rome_2010.jpg"
+  },
+  {
+    "name": "Piazza Navona",
+    "city": "Roma",
+    "description": "Plaza barroca sobre los restos del Estadio de Domiciano (86 d.C.), de ahí su forma alargada. Tres fuentes: Fontana dei Fiumi (Bernini, 1651, con los 4 ríos del mundo conocido), Fontana del Moro y Fontana del Nettuno. Rodeada por Sant'Agnese in Agone (Borromini).",
+    "duration_min": 60,
+    "address": "Piazza Navona, 00186 Roma",
+    "lat": 41.899,
+    "lng": 12.4728,
+    "wikipedia_title": "Piazza Navona",
+    "images": null,
+    "tips": [
+      "Visita el 'Stadio di Domiziano' (museo subterráneo bajo la plaza, 8 €) — pocos turistas lo conocen.",
+      "No comas en la plaza (precios x2-3); ve a Da Tonino (Via del Governo Vecchio 18, a 2 min).",
+      "En Navidad (8 dic-6 ene) hay un encantador mercado navideño con caseta de la Befana."
+    ],
+    "hours": "24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Piazza_Navona_-_Rome.jpg/1280px-Piazza_Navona_-_Rome.jpg"
+  },
+  {
+    "name": "Escalinata de España",
+    "city": "Roma",
+    "description": "Conjunto formado por la Piazza di Spagna, la escalinata de 135 escalones que sube a la iglesia de Trinità dei Monti (1725) y la Fontana della Barcaccia de Bernini el Viejo. En el extremo sur está la Casa de Keats (museo).",
+    "duration_min": 60,
+    "address": "Piazza di Spagna, 00187 Roma",
+    "lat": 41.9059,
+    "lng": 12.4823,
+    "wikipedia_title": "Spanish Steps",
+    "images": null,
+    "tips": [
+      "PROHIBIDO SENTARSE en los escalones desde 2019 (multas de hasta 250 €); puedes pasear pero no parar.",
+      "Desde lo alto de Trinità dei Monti, baja por Vía Sistina hacia el Pincio para vistas panorámicas.",
+      "Al fondo de la Piazza di Spagna está la Vía dei Condotti (la Montenapoleone romana) — lujo."
+    ],
+    "hours": "24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Piazza_di_Spagna_Rome_2007.jpg/1280px-Piazza_di_Spagna_Rome_2007.jpg"
+  },
+  {
+    "name": "Trastevere",
+    "city": "Roma",
+    "description": "Antiguo barrio popular al oeste del Tíber (de ahí 'Trans Tiberim'), con calles empedradas medievales, hiedra en los muros, fuentes escondidas y la vida nocturna más auténtica de Roma. Aquí están Santa Maria in Trastevere y Santa Cecilia.",
+    "duration_min": 120,
+    "address": "Trastevere, 00153 Roma",
+    "lat": 41.889,
+    "lng": 12.4699,
+    "wikipedia_title": "Trastevere",
+    "images": null,
+    "tips": [
+      "Cena en los restaurantes de Vicolo del Cinque o Vicolo del Bologna (Da Enzo al 29 es famoso, hay que reservar).",
+      "Cruza al 'Trastevere alto' (al sur de Viale di Trastevere) para una versión más auténtica y barata.",
+      "Sube al Gianicolo al atardecer — la mejor vista panorámica de Roma; la fuente del Acqua Paola es alucinante."
+    ],
+    "hours": "24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Trastevere_Rome_2010.jpg/1280px-Trastevere_Rome_2010.jpg"
+  },
+  {
+    "name": "Basílica de Santa María en Trastevere",
+    "city": "Roma",
+    "description": "Una de las basílicas más antiguas de Roma (siglo III-IV, reconstruida en el XII), considerada la primera iglesia oficialmente abierta al culto cristiano público. Fachada con espectaculares mosaicos medievales del XII y campanario románico.",
+    "duration_min": 45,
+    "address": "Piazza di Santa Maria in Trastevere, 00153 Roma",
+    "lat": 41.8897,
+    "lng": 12.4689,
+    "wikipedia_title": "Santa Maria in Trastevere",
+    "images": null,
+    "tips": [
+      "Entra al anochecer cuando los mosaicos de oro de la fachada resplandecen con la luz artificial.",
+      "El interior conserva 22 columnas de mármol de los Baños de Caracalla, reaprovechadas en su construcción.",
+      "Tómate algo en la plaza misma (Piazza Santa Maria in Trastevere) — el corazón social del barrio."
+    ],
+    "hours": "7:30-21:00",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Santa_Maria_in_Trastevere_Rome.jpg/1280px-Santa_Maria_in_Trastevere_Rome.jpg"
+  },
+  {
+    "name": "Galería Borghese",
+    "city": "Roma",
+    "description": "Una de las pinacotecas más espectaculares del mundo, en la antigua Villa Borghese (1620). Colección del cardenal Scipione Borghese: 6 esculturas de Bernini (incluido 'El rapto de Proserpina' y 'Apolo y Dafne'), Caravaggios, Raffaello, Tiziano y Canova.",
+    "duration_min": 90,
+    "address": "Piazzale Scipione Borghese, 5, 00197 Roma",
+    "lat": 41.914,
+    "lng": 12.4919,
+    "wikipedia_title": "Galleria Borghese",
+    "images": null,
+    "tips": [
+      "RESERVA OBLIGATORIA con MUCHA antelación (galleriaborghese.beniculturali.it, 13 €+ 2€ reserva). Solo 2 horas en turnos limitados.",
+      "No te pierdas 'Apolo y Dafne' de Bernini en la Sala 3 — el momento exacto en que ella se convierte en laurel.",
+      "Después de la visita pasea por la Villa Borghese (parque alrededor)."
+    ],
+    "hours": "Mar-Dom 9:00-19:00",
+    "price": "15 € (13 € + 2 € reserva)",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Galleria_Borghese_Rome.jpg/1280px-Galleria_Borghese_Rome.jpg"
+  },
+  {
+    "name": "Parque Villa Borghese",
+    "city": "Roma",
+    "description": "Tercer parque más grande de Roma (80 hectáreas), antiguos jardines de la familia Borghese. Contiene la Galería Borghese, el Bioparco (zoo), el Cinema dei Piccoli (el cine más pequeño del mundo), el lago de los Templos y la Terraza del Pincio.",
+    "duration_min": 120,
+    "address": "Piazzale Napoleone I, 00197 Roma",
+    "lat": 41.9097,
+    "lng": 12.4883,
+    "wikipedia_title": "Villa Borghese gardens",
+    "images": null,
+    "tips": [
+      "Alquila una bici, segway o gocart (10-15 €/h) para recorrer rápido el parque.",
+      "Sube a la Terrazza del Pincio para una de las mejores vistas panorámicas de Roma al atardecer.",
+      "Visita la Galería Nacional de Arte Moderno (GNAM) en el parque — casi sin turistas."
+    ],
+    "hours": "24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Villa_Borghese_Rome.jpg/1280px-Villa_Borghese_Rome.jpg"
+  },
+  {
+    "name": "Monte Palatino",
+    "city": "Roma",
+    "description": "La más importante de las siete colinas de Roma, donde según la leyenda Rómulo fundó la ciudad en 753 a.C. Sitio de los palacios imperiales (Domus Augustana, Domus Flavia, Domus Augusti). Vistas espectaculares del Foro Romano y el Circo Máximo.",
+    "duration_min": 60,
+    "address": "Via di San Gregorio, 30, 00184 Roma",
+    "lat": 41.8878,
+    "lng": 12.487,
+    "wikipedia_title": "Palatine Hill",
+    "images": null,
+    "tips": [
+      "Incluido en la entrada del Coliseo+Foro+Palatino (18 €). Vale la pena empezar por aquí por la mañana.",
+      "Visita la Casa de Augusto (incluida en Full Experience) con sus frescos originales del siglo I a.C.",
+      "Los Horti Farnesiani sobre la cima son los jardines botánicos más antiguos del mundo (siglo XVI)."
+    ],
+    "hours": "9:00-1h antes del atardecer",
+    "price": "Incluido en ticket Coliseo (18 €)",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Palatine_Hill_Rome.jpg/1280px-Palatine_Hill_Rome.jpg"
+  },
+  {
+    "name": "Campo de' Fiori",
+    "city": "Roma",
+    "description": "Animada plaza rectangular con mercado matinal de frutas, verduras y flores desde el siglo XIX. Presidida por la estatua de Giordano Bruno, quemado vivo aquí por la Inquisición en 1600. Por la tarde-noche se convierte en zona de bares.",
+    "duration_min": 60,
+    "address": "Piazza Campo de' Fiori, 00186 Roma",
+    "lat": 41.8956,
+    "lng": 12.4722,
+    "wikipedia_title": "Campo de' Fiori",
+    "images": null,
+    "tips": [
+      "Visita por la mañana (8:00-13:30) para el mercado auténtico; tarde-noche es más bar/turismo.",
+      "Compra 'trapizzino' en Trapizzino Roma (Via Branca) o 'pizza al taglio' en Forno Campo de' Fiori.",
+      "Está a 5 min andando de Piazza Navona — combínalas en una sola visita."
+    ],
+    "hours": "Mercado 7:00-14:00; plaza 24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Campo_de%27_Fiori_-_Roma.jpg/1280px-Campo_de%27_Fiori_-_Roma.jpg"
+  },
+  {
+    "name": "Basílica de San Juan de Letrán",
+    "city": "Roma",
+    "description": "La catedral del Obispo de Roma (el Papa) y la primera de las cuatro basílicas papales mayores. Fundada en el siglo IV por Constantino, es la 'madre y cabeza de todas las iglesias de la ciudad y del mundo'. Frente a ella, la Escalera Santa.",
+    "duration_min": 60,
+    "address": "Piazza di San Giovanni in Laterano, 4, 00184 Roma",
+    "lat": 41.8833,
+    "lng": 12.5056,
+    "wikipedia_title": "Archbasilica of Saint John Lateran",
+    "images": null,
+    "tips": [
+      "Entrada gratuita a la basílica; el Claustro cosmatesco (uno de los más bonitos de Italia) cuesta 5 €.",
+      "Cruza la calle a la Scala Santa y observa a los fieles subiendo de rodillas (tradición de purificación).",
+      "Combínala con el Triclinio Leoniano (mosaicos paleocristianos) que está justo enfrente."
+    ],
+    "hours": "7:00-18:30",
+    "price": "Gratis (claustro 5 €)",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Basilica_di_San_Giovanni_in_Laterano_-_Roma.jpg/1280px-Basilica_di_San_Giovanni_in_Laterano_-_Roma.jpg"
+  },
+  {
+    "name": "Circo Máximo",
+    "city": "Roma",
+    "description": "Antiguo estadio romano de 600 m de largo y 140 de ancho, capacidad para 250.000 espectadores — el estadio deportivo más grande de la historia. Aquí se celebraban las carreras de cuadrigas. Hoy solo queda la forma alargada del campo.",
+    "duration_min": 45,
+    "address": "Via del Circo Massimo, 00186 Roma",
+    "lat": 41.8856,
+    "lng": 12.4876,
+    "wikipedia_title": "Circus Maximus",
+    "images": null,
+    "tips": [
+      "Acceso libre; ideal para correr o caminar. Visita el 'Circo Maximo Experience' (VR, 12 €) los fines de semana.",
+      "Sube al Aventino justo al lado para combinar con el 'Buco della Serratura' (cerradura mágica con vista al Vaticano).",
+      "En verano se celebran conciertos masivos aquí (Rolling Stones, Springsteen) — pura magia."
+    ],
+    "hours": "24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Circo_Massimo_Rome.jpg/1280px-Circo_Massimo_Rome.jpg"
+  },
+  {
+    "name": "Barrio Judío de Roma",
+    "city": "Roma",
+    "description": "Uno de los guetos judíos más antiguos de Europa (1555), donde la comunidad fue confinada durante 300 años. Aún se conserva la Sinagoga Mayor (siglo XX, con museo), restaurantes de cocina judía romana y la Plaza de las Cinco Escolas.",
+    "duration_min": 60,
+    "address": "Lungotevere de' Cenci, 00186 Roma",
+    "lat": 41.896,
+    "lng": 12.4773,
+    "wikipedia_title": "Jewish Ghetto, Rome",
+    "images": null,
+    "tips": [
+      "Prueba el 'carciofo alla giudia' (alcachofa frita estilo judío) en Nonna Betta o Piperno.",
+      "Visita el Museo Hebraico de Roma y la Sinagoga (11 €) — historia conmovedora.",
+      "Pasea por el Portico d'Ottavia y la Fontana delle Tartarughe — rincón secreto del barrio."
+    ],
+    "hours": "24h (sinagoga Dom-Jue 10:00-17:00)",
+    "price": "Gratis (museo 11 €)",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Synagogue_of_Rome.jpg/1280px-Synagogue_of_Rome.jpg"
   },
   {
     "name": "Piazza Venezia",
     "city": "Roma",
-    "description": "La plaza central de Roma, dominada por el imponente Vittoriano (Altar de la Patria), monumento al rey Víctor Manuel II inaugurado en 1911. Desde sus terrazas gratuitas se tiene la mejor vista panorámica de Roma.",
+    "description": "Plaza central de Roma, dominada por el Altar de la Patria (Monumento a Vittorio Emanuele II, 1911), conocido popularmente como 'Il Vittoriano' o 'la máquina de escribir'. Aquí está la Tumba del Soldado Desconocido y el Museo del Risorgimento.",
     "duration_min": 45,
-    "address": "Piazza Venezia, 00186 Roma",
+    "address": "Piazza Venezia, 00187 Roma",
     "lat": 41.8958,
     "lng": 12.4823,
-    "wikipedia_title": "Piazza Venezia"
+    "wikipedia_title": "Piazza Venezia",
+    "images": null,
+    "tips": [
+      "Sube en el ascensor panorámico del Vittoriano (12 €) — vistas 360° espectaculares del Foro.",
+      "Desde el balcón del Palazzo Venezia, Mussolini daba sus discursos a las multitudes.",
+      "Es el centro neurálgico del tráfico romano — guíate por aquí para orientarte."
+    ],
+    "hours": "Vittoriano 9:30-19:30",
+    "price": "Vittoriano gratis; ascensor 12 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Monumento_a_Vittorio_Emanuele_II_-_Rome.jpg/1280px-Monumento_a_Vittorio_Emanuele_II_-_Rome.jpg"
+  },
+  {
+    "name": "Bocca della Verità",
+    "city": "Roma",
+    "description": "Máscara de mármol del siglo I (probablemente una tapa de alcantarilla romana) en el pórtico de Santa Maria in Cosmedin. Según la leyenda medieval, si un mentiroso introduce la mano en la boca, ésta se la corta. Inmortalizada en 'Vacaciones en Roma'.",
+    "duration_min": 30,
+    "address": "Piazza della Bocca della Verità, 18, 00186 Roma",
+    "lat": 41.8882,
+    "lng": 12.4807,
+    "wikipedia_title": "Bocca della Verità",
+    "images": null,
+    "tips": [
+      "Hazte la foto clásica con la mano dentro; la cola se mueve rápido (1-2 min por turista). Donación 2 €.",
+      "Ve antes de las 10:00 o después de las 17:00 para evitar grupos turísticos.",
+      "La iglesia detrás (Santa Maria in Cosmedin) es preciosa y casi nadie entra."
+    ],
+    "hours": "9:30-17:50",
+    "price": "Donación 2 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Bocca_della_verit%C3%A0.jpg/1024px-Bocca_della_verit%C3%A0.jpg"
+  },
+  {
+    "name": "Buco della Serratura (Aventino)",
+    "city": "Roma",
+    "description": "Cerradura de una puerta de la Villa del Priorato de Malta en la Piazza dei Cavalieri di Malta, en la colina del Aventino. Mirando por el ojo de la cerradura se ve perfectamente alineada la cúpula de San Pedro a 2 km de distancia.",
+    "duration_min": 15,
+    "address": "Piazza dei Cavalieri di Malta, 4, 00153 Roma",
+    "lat": 41.8822,
+    "lng": 12.4807,
+    "wikipedia_title": "Keyhole of the Order of Malta",
+    "images": null,
+    "tips": [
+      "Gratis, completamente. Ve por la mañana temprano o al atardecer; poca gente.",
+      "Combínalo con el cercano Giardino degli Aranci (parque público con vista al Tíber).",
+      "El Aventino es el barrio elegante y tranquilo de Roma — perfecto para alejarse del bullicio."
+    ],
+    "hours": "24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Knights_of_Malta_Keyhole_Rome.jpg/1024px-Knights_of_Malta_Keyhole_Rome.jpg"
+  },
+  {
+    "name": "Catacumbas de San Calixto",
+    "city": "Roma",
+    "description": "Catacumbas cristianas de los siglos II-IV en la Vía Apia Antigua, las más importantes de Roma (20 km de galerías subterráneas en 4 niveles, con tumbas de 16 papas y mártires). Combinables con las de San Sebastián cercanas.",
+    "duration_min": 60,
+    "address": "Via Appia Antica, 110-126, 00179 Roma",
+    "lat": 41.8578,
+    "lng": 12.5147,
+    "wikipedia_title": "Catacomb of Callixtus",
+    "images": null,
+    "tips": [
+      "Visita guiada obligatoria (45-60 min) en varios idiomas; entrada 10 €. Llega temprano o reserva online.",
+      "Combínalas con la Vía Apia Antigua y el Mausoleo de Cecilia Metella; mejor en bici o en Archeobus (12 €).",
+      "Cerradas los miércoles las de San Calixto y los domingos las de San Sebastián — alterna según el día."
+    ],
+    "hours": "Jue-Mar 9:00-12:00 y 14:00-17:00; miércoles cerrado",
+    "price": "10 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Catacombe_San_Callisto.jpg/1024px-Catacombe_San_Callisto.jpg"
+  },
+  {
+    "name": "Galería Doria Pamphilj",
+    "city": "Roma",
+    "description": "Colección privada de arte aún propiedad de la familia Doria Pamphilj, en su palazzo del XVI/XVII en pleno centro. Obras maestras: 'Retrato de Inocencio X' de Velázquez, Caravaggio, Tiziano, Rafael, Bernini, Carracci, Brueghel.",
+    "duration_min": 60,
+    "address": "Via del Corso, 305, 00186 Roma",
+    "lat": 41.899,
+    "lng": 12.4803,
+    "wikipedia_title": "Galleria Doria Pamphilj",
+    "images": null,
+    "tips": [
+      "Audioguía narrada por el descendiente actual (príncipe Jonathan Doria Pamphilj) — anécdotas familiares.",
+      "Muy poco visitada en comparación con los grandes museos — visita perfecta cuando los demás están a tope.",
+      "Está en Via del Corso, en pleno centro turístico; combínala con el cercano Pantheon."
+    ],
+    "hours": "9:00-19:00 (cerrado 3er miércoles del mes)",
+    "price": "16 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Palazzo_Doria_Pamphilj_Rome.jpg/1280px-Palazzo_Doria_Pamphilj_Rome.jpg"
+  },
+  {
+    "name": "Quartiere Coppedè",
+    "city": "Roma",
+    "description": "Pequeño barrio art nouveau / fantástico (1915-1927) diseñado por Gino Coppedè, una fantasía arquitectónica con mezcla de estilos medieval, barroco, art nouveau y greco-romano. Decoraciones con animales mitológicos. Famosa 'Fontana delle Rane'.",
+    "duration_min": 30,
+    "address": "Piazza Mincio, 00198 Roma",
+    "lat": 41.9158,
+    "lng": 12.5185,
+    "wikipedia_title": "Coppedè quarter",
+    "images": null,
+    "tips": [
+      "Pequeño (4 manzanas) — visita rápida de 20-30 min, pero alucinante para amantes de la arquitectura. Gratis.",
+      "Entra por la 'Arco di Coppedè' (entre Via Tagliamento y Piazza Mincio) — pórtico decorado con candelabro de hierro.",
+      "Está en el barrio Salario, a 10 min en metro del centro; combínalo con la cercana Villa Torlonia."
+    ],
+    "hours": "24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Quartiere_Coppede_Roma.jpg/1280px-Quartiere_Coppede_Roma.jpg"
+  },
+  {
+    "name": "MAXXI — Museo de Arte del Siglo XXI",
+    "city": "Roma",
+    "description": "Museo nacional de arte y arquitectura contemporáneos, en un espectacular edificio de Zaha Hadid (2010). Exposiciones rotativas de fotografía, instalaciones, video-arte y arquitectura.",
+    "duration_min": 90,
+    "address": "Via Guido Reni, 4A, 00196 Roma",
+    "lat": 41.929,
+    "lng": 12.4672,
+    "wikipedia_title": "MAXXI",
+    "images": null,
+    "tips": [
+      "El edificio en sí merece la visita aunque no te interese el arte contemporáneo — Hadid en estado puro.",
+      "Está en el barrio Flaminio, a 20 min del centro; combínalo con el Auditorium Parco della Musica.",
+      "Hay descuento si compras combo MAXXI + Auditorium; revisar la web."
+    ],
+    "hours": "Mar-Dom 11:00-19:00",
+    "price": "12 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/MAXXI_Rome_Italy.jpg/1280px-MAXXI_Rome_Italy.jpg"
+  },
+  {
+    "name": "Villa Farnesina",
+    "city": "Roma",
+    "description": "Pequeña villa renacentista (1506-1510) en Trastevere, encargada por el banquero Agostino Chigi. Contiene frescos de Rafael (incluido 'El triunfo de Galatea'), Sebastiano del Piombo y Sodoma. Joya secreta del Renacimiento.",
+    "duration_min": 60,
+    "address": "Via della Lungara, 230, 00165 Roma",
+    "lat": 41.8934,
+    "lng": 12.4654,
+    "wikipedia_title": "Villa Farnesina",
+    "images": null,
+    "tips": [
+      "Mucho menos conocida que la Galería Borghese pero igual de impresionante; sin necesidad de reserva.",
+      "Está en Trastevere, perfecto para combinar con un almuerzo en el barrio.",
+      "El segundo sábado del mes hay visita guiada en italiano gratis (10:00 y 12:00) — pregunta al entrar."
+    ],
+    "hours": "Lun-Sáb 9:00-14:00",
+    "price": "12 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Villa_Farnesina_Rome.jpg/1280px-Villa_Farnesina_Rome.jpg"
+  },
+  {
+    "name": "Museo Guggenheim Bilbao",
+    "city": "Bilbao",
+    "description": "Icono arquitectónico mundial de Frank Gehry (1997), revestido de planchas de titanio plateado evocando escamas de pez. Sede de la Fundación Guggenheim, dedicado al arte moderno y contemporáneo. Reactivó la economía de Bilbao en el llamado 'efecto Guggenheim'.",
+    "duration_min": 120,
+    "address": "Avenida Abandoibarra, 2, 48009 Bilbao",
+    "lat": 43.2686,
+    "lng": -2.934,
+    "wikipedia_title": "Guggenheim Museum Bilbao",
+    "images": null,
+    "tips": [
+      "Compra online (16 € adulto, vs 18 € en taquilla); la audioguía está INCLUIDA en el precio.",
+      "Obras al exterior: 'Puppy' de Koons (perro gigante), 'Maman' de Bourgeois (araña de 9 m), 'Tulipanes' de Koons.",
+      "Dentro, la sala de Richard Serra 'La materia del tiempo' (planta baja) es la obra más impresionante."
+    ],
+    "hours": "Mar-Dom 10:00-19:00 (verano hasta 20:00)",
+    "price": "16 € online; 8 € estudiantes",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Guggenheim-bilbao-jan05.jpg/1280px-Guggenheim-bilbao-jan05.jpg"
+  },
+  {
+    "name": "Casco Viejo de Bilbao",
+    "city": "Bilbao",
+    "description": "Núcleo histórico de Bilbao desde 1300, también llamado 'Siete Calles' por sus siete calles originales (Barrenkale, Barrenkale Barrena, Belostikale, Carnicería Vieja, Somera, Artekale, Tendería). Calles peatonales con la mejor concentración de bares de pintxos.",
+    "duration_min": 120,
+    "address": "Casco Viejo, 48005 Bilbao",
+    "lat": 43.2567,
+    "lng": -2.9241,
+    "wikipedia_title": "Casco Viejo (Bilbao)",
+    "images": null,
+    "tips": [
+      "Haz el 'txikiteo' tradicional: pintxos por Plaza Nueva (Sorginzulo, Víctor Montes, Charly) y Calle del Perro.",
+      "Los domingos por la mañana hay mercado de filatelia y numismática en la Plaza Nueva.",
+      "No te pierdas la Calle Somera por la noche para vida nocturna joven y económica."
+    ],
+    "hours": "24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Casco_Viejo_de_Bilbao_-_Plaza_Nueva.jpg/1280px-Casco_Viejo_de_Bilbao_-_Plaza_Nueva.jpg"
+  },
+  {
+    "name": "Mercado de la Ribera",
+    "city": "Bilbao",
+    "description": "Mayor mercado cubierto de Europa según el Récord Guinness (10.000 m²), inaugurado en 1929 a orillas del Nervión. Estilo art déco con tres plantas: pescados (planta baja), carnes (intermedia) y frutas/verduras (alta). Renovado en 2010 con zona gastro.",
+    "duration_min": 60,
+    "address": "Calle de la Ribera, s/n, 48005 Bilbao",
+    "lat": 43.2575,
+    "lng": -2.9233,
+    "wikipedia_title": "Mercado de la Ribera",
+    "images": null,
+    "tips": [
+      "En la planta superior gastronómica hay puestos para tapear con pintxos y txakoli a precios razonables.",
+      "Los sábados por la mañana se llena de locales haciendo la compra — autenticidad garantizada.",
+      "Está pegado al Casco Viejo y al puente de San Antón; ubicación perfecta para combinar."
+    ],
+    "hours": "Lun-Jue 8:00-14:30 y 17:00-19:30; Vie-Sáb 8:00-15:00",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Mercado_de_La_Ribera_-_Bilbao.jpg/1280px-Mercado_de_La_Ribera_-_Bilbao.jpg"
+  },
+  {
+    "name": "Catedral de Santiago de Bilbao",
+    "city": "Bilbao",
+    "description": "Catedral gótica del siglo XIV-XV en pleno Casco Viejo, sede del Obispado de Bilbao desde 1949. Era parada del Camino de Santiago. Destaca su claustro gótico, la portada principal neogótica del XIX y los rosetones medievales.",
+    "duration_min": 45,
+    "address": "Plaza de Santiago, 1, 48005 Bilbao",
+    "lat": 43.2565,
+    "lng": -2.9248,
+    "wikipedia_title": "Cathedral of Santiago de Bilbao",
+    "images": null,
+    "tips": [
+      "Entrada de pago razonable (5 € con audioguía); pequeña pero muy auténtica y poco turística.",
+      "Visita el claustro gótico — uno de los rincones más fotogénicos de Bilbao y conservadísimo.",
+      "Combínala con el cercano 'Pasaje del Arenal' y la Plaza de Unamuno con San Nicolás."
+    ],
+    "hours": "Lun-Sáb 10:00-20:00; Dom 12:00-20:00",
+    "price": "5 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Catedral_de_Santiago_Bilbao.jpg/1280px-Catedral_de_Santiago_Bilbao.jpg"
+  },
+  {
+    "name": "Museo de Bellas Artes de Bilbao",
+    "city": "Bilbao",
+    "description": "Segundo museo más importante del País Vasco, con la mejor colección de arte vasco y español (Goya, El Greco, Zurbarán, Ribera, Sorolla, Zuloaga). Más de 11.000 obras desde el siglo XII al XXI. En el Parque Doña Casilda, a 5 min andando del Guggenheim.",
+    "duration_min": 90,
+    "address": "Museo Plaza, 2, 48009 Bilbao",
+    "lat": 43.2638,
+    "lng": -2.9354,
+    "wikipedia_title": "Bilbao Fine Arts Museum",
+    "images": null,
+    "tips": [
+      "Entrada GRATIS todos los días de 18:00 a 20:00 (excepto sábados, que es 14:00-20:00 y domingos enteros).",
+      "Está cerrado temporalmente por ampliación (renovación de Foster + Partners). Reapertura prevista 2025-2026.",
+      "Combínalo con el Guggenheim — entre los dos cubres todo el arte de Bilbao en una jornada."
+    ],
+    "hours": "Mié-Lun 10:00-20:00; cerrado por obras (verificar)",
+    "price": "10 €; gratis 18:00-20:00",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Bilboko_Arte_Ederren_Museoa_-_Wikipedia.jpg/1280px-Bilboko_Arte_Ederren_Museoa_-_Wikipedia.jpg"
+  },
+  {
+    "name": "Parque Doña Casilda",
+    "city": "Bilbao",
+    "description": "Parque urbano de 1907, también llamado 'Parque de los Patos' por su estanque. Estilo francés con paseos arbolados, jardines, una pérgola, fuentes y kioscos. Aquí está el Museo de Bellas Artes. Es el pulmón verde del centro de Bilbao.",
+    "duration_min": 60,
+    "address": "Parque Doña Casilda Iturrizar, 48011 Bilbao",
+    "lat": 43.2645,
+    "lng": -2.9411,
+    "wikipedia_title": "Doña Casilda Iturrizar Park",
+    "images": null,
+    "tips": [
+      "Asiste a un concierto matinal gratuito los domingos en el kiosco principal (banda municipal).",
+      "Está a 5 min andando del Guggenheim — perfecto para descansar entre visitas.",
+      "El estanque tiene patos, gallinas y pavos reales — diversión para niños."
+    ],
+    "hours": "7:00-23:00",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Parque_Do%C3%B1a_Casilda_-_Bilbao.jpg/1280px-Parque_Do%C3%B1a_Casilda_-_Bilbao.jpg"
+  },
+  {
+    "name": "Teatro Arriaga",
+    "city": "Bilbao",
+    "description": "Teatro neobarroco inaugurado en 1890, en pleno corazón del Casco Viejo a orillas del Nervión. Fachada espectacular y sala con palcos y techos pintados. Programación de ópera, teatro y conciertos. Lleva el nombre del compositor vasco Juan Crisóstomo Arriaga (el 'Mozart español').",
+    "duration_min": 30,
+    "address": "Plaza Arriaga, 1, 48005 Bilbao",
+    "lat": 43.2574,
+    "lng": -2.9259,
+    "wikipedia_title": "Teatro Arriaga",
+    "images": null,
+    "tips": [
+      "Visita guiada los sábados a las 12:00 (5 €) — verifica disponibilidad en teatroarriaga.eus.",
+      "La fachada iluminada de noche es una de las mejores fotos de Bilbao; cruza al Arenal para el ángulo completo.",
+      "Combínalo con el cercano paseo por el Arenal y la Estación de Abando (joya modernista con vidrieras)."
+    ],
+    "hours": "Taquilla 12:00-14:00 y 17:00-21:00",
+    "price": "Espectáculos desde 15 €; visita guiada 5 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Teatro_Arriaga_-_Bilbao.jpg/1280px-Teatro_Arriaga_-_Bilbao.jpg"
+  },
+  {
+    "name": "Puente Zubizuri",
+    "city": "Bilbao",
+    "description": "Puente peatonal en arco diseñado por Santiago Calatrava (1997), con piso de cristal y arco de acero blanco. Nombre significa 'Puente Blanco' en euskera. Conecta el ensanche con Uribitarte y el Guggenheim.",
+    "duration_min": 20,
+    "address": "Calle Campo Volantín, 48007 Bilbao",
+    "lat": 43.268,
+    "lng": -2.9286,
+    "wikipedia_title": "Zubizuri",
+    "images": null,
+    "tips": [
+      "Atraviésalo de noche cuando se ilumina — espectacular reflejado en el Nervión.",
+      "Cuidado con el piso de cristal cuando llueve; está cubierto con material antideslizante pero conviene precaución.",
+      "Combínalo con un paseo por la ría desde aquí hasta el Guggenheim (5 min) y luego San Mamés."
+    ],
+    "hours": "24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Zubizuri_Bridge_Bilbao.jpg/1280px-Zubizuri_Bridge_Bilbao.jpg"
+  },
+  {
+    "name": "Azkuna Zentroa",
+    "city": "Bilbao",
+    "description": "Centro cultural y de ocio diseñado por Philippe Starck dentro de una antigua alhóndiga vinícola de 1909. Contiene 43 columnas de diferentes estilos arquitectónicos diseñadas por Starck, biblioteca, cines, gimnasio (con piscina de suelo de cristal visible desde abajo) y restaurantes.",
+    "duration_min": 60,
+    "address": "Plaza Arrikibar, 4, 48010 Bilbao",
+    "lat": 43.2626,
+    "lng": -2.9391,
+    "wikipedia_title": "Azkuna Zentroa",
+    "images": null,
+    "tips": [
+      "Aunque parezca un centro comercial, las exposiciones son gratis y muy interesantes (fotografía, arte contemporáneo).",
+      "Las 43 columnas únicas (cada una diferente) son obra de Lorenzo Baraldi — observa los detalles.",
+      "Las piscinas en azotea son privadas, pero el techo de cristal con vistas desde abajo es una experiencia única."
+    ],
+    "hours": "7:00-23:00",
+    "price": "Acceso libre; exposiciones gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Azkuna_Zentroa_-_Bilbao.jpg/1280px-Azkuna_Zentroa_-_Bilbao.jpg"
+  },
+  {
+    "name": "Ría del Nervión — Paseo",
+    "city": "Bilbao",
+    "description": "Ría que da forma a Bilbao y antiguo motor industrial de la ciudad. Hoy es un paseo peatonal a ambas orillas (Paseo del Arenal, Campo Volantín, Abandoibarra) que conecta el Casco Viejo con el Guggenheim, pasando por Zubizuri y muelles.",
+    "duration_min": 90,
+    "address": "Paseo Uribitarte, 48001 Bilbao",
+    "lat": 43.2647,
+    "lng": -2.9295,
+    "wikipedia_title": "Nervión",
+    "images": null,
+    "tips": [
+      "Recorrido completo a pie: Casco Viejo → Teatro Arriaga → Arenal → Zubizuri → Guggenheim (30 min).",
+      "Hay barcos turísticos por la ría (Bilboats, 14 €/h) — incluyen comentario histórico.",
+      "El paseo del Campo Volantín (margen derecha) es la zona favorita de los locales para correr."
+    ],
+    "hours": "24h",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/R%C3%ADa_de_Bilbao_-_Wikipedia.jpg/1280px-R%C3%ADa_de_Bilbao_-_Wikipedia.jpg"
   },
   {
     "name": "Estadio San Mamés",
     "city": "Bilbao",
-    "description": "El nuevo estadio del Athletic Club de Bilbao, inaugurado en 2013 y apodado 'La Catedral'. Su arquitectura de vanguardia con fachada de paneles translúcidos y capacidad para 53.000 espectadores es una obra de arte en sí misma.",
+    "description": "Conocido como 'La Catedral' del fútbol, estadio del Athletic Club de Bilbao desde 1913 (nueva versión inaugurada 2013). Capacidad 53.331 espectadores, fachada de paneles ETFE iluminados. Premio al mejor estadio del mundo en 2015.",
     "duration_min": 60,
     "address": "Rafael Moreno Pitxitxi Kalea, s/n, 48013 Bilbao",
-    "lat": 43.2640,
+    "lat": 43.264,
     "lng": -2.9495,
-    "wikipedia_title": "San Mamés Stadium"
+    "wikipedia_title": "San Mamés Stadium",
+    "images": null,
+    "tips": [
+      "Visita el tour 'San Mamés Experience' (16 €): incluye vestuarios, túnel de jugadores, campo y museo.",
+      "Ver un partido del Athletic es experiencia única — ambiente increíble por la política de fichar solo vascos.",
+      "Combina con el Museo del Athletic en el propio estadio; horario tour 10:00-19:00."
+    ],
+    "hours": "Tour 10:00-19:00 (varía días de partido)",
+    "price": "Tour 16 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/San_Mam%C3%A9s_Bilbao_2014.jpg/1280px-San_Mam%C3%A9s_Bilbao_2014.jpg"
+  },
+  {
+    "name": "Funicular de Artxanda",
+    "city": "Bilbao",
+    "description": "Funicular histórico de 1915 que sube en 3 minutos al Monte Artxanda (251 m), con la mejor vista panorámica de Bilbao. En lo alto hay un parque, restaurantes y miradores.",
+    "duration_min": 60,
+    "address": "Plaza del Funicular, s/n, 48007 Bilbao",
+    "lat": 43.263,
+    "lng": -2.938,
+    "wikipedia_title": "Artxanda funicular",
+    "images": null,
+    "tips": [
+      "Sube al atardecer para ver Bilbao iluminándose; baja en el último funicular.",
+      "Sólo 2,50 € ida y vuelta — uno de los planes más baratos y espectaculares de Bilbao.",
+      "Arriba puedes comer en asadores como el Txakoli Simón o el Asador Artxanda — carnes a la brasa con vistas."
+    ],
+    "hours": "Lun-Sáb 7:15-22:00; Dom 8:15-22:00",
+    "price": "2,50 € ida y vuelta",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Funicular_de_Artxanda_-_Bilbao.jpg/1280px-Funicular_de_Artxanda_-_Bilbao.jpg"
+  },
+  {
+    "name": "Puente Colgante de Vizcaya",
+    "city": "Bilbao",
+    "description": "Puente transbordador más antiguo del mundo (1893), Patrimonio UNESCO desde 2006. Conecta Portugalete y Getxo a través de la ría, transportando coches y pasajeros en una barquilla colgante. 45 m de altura y 160 m de luz.",
+    "duration_min": 60,
+    "address": "Don Salustiano Orive Plaza, 4, 48930 Getxo",
+    "lat": 43.3214,
+    "lng": -3.017,
+    "wikipedia_title": "Vizcaya Bridge",
+    "images": null,
+    "tips": [
+      "Cruza en la barquilla (0,50 €/persona, 90 segundos) — la forma original y barata de cruzar.",
+      "Sube a la pasarela elevada (10 € adulto) para una vista única de la desembocadura del Nervión.",
+      "Está a 20 min en metro desde Bilbao (estación Areeta línea 1); combínalo con la playa de Ereaga."
+    ],
+    "hours": "Barquilla 24h (continuo); pasarela 10:00-14:00 y 16:00-20:00",
+    "price": "Barquilla 0,50 €; pasarela 10 €",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Puente_de_Vizcaya_-_Getxo.jpg/1280px-Puente_de_Vizcaya_-_Getxo.jpg"
+  },
+  {
+    "name": "Basílica de Begoña",
+    "city": "Bilbao",
+    "description": "Santuario gótico-renacentista del siglo XVI dedicado a la Virgen de Begoña ('Amatxu de Begoña'), patrona de Vizcaya. Está en lo alto de una colina sobre el Casco Viejo, con vistas panorámicas. Lugar de peregrinación regional.",
+    "duration_min": 45,
+    "address": "Virgen de Begoña, 38, 48006 Bilbao",
+    "lat": 43.2588,
+    "lng": -2.9219,
+    "wikipedia_title": "Basílica de Begoña",
+    "images": null,
+    "tips": [
+      "Sube en el ascensor de Begoña (gratuito, junto a la calle Esperanza) o por las 'Calzadas de Mallona'.",
+      "Visita gratis; el interior es austero pero la talla gótica de la Virgen es muy venerada.",
+      "Después de la basílica, baja por las Calzadas de Mallona — bonita ruta de descenso con miradores."
+    ],
+    "hours": "Diario 9:00-20:30",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Bas%C3%ADlica_de_Begona_-_Bilbao.jpg/1280px-Bas%C3%ADlica_de_Begona_-_Bilbao.jpg"
+  },
+  {
+    "name": "Museo Marítimo del Nervión",
+    "city": "Bilbao",
+    "description": "Museo dedicado a la historia naval y portuaria de Bilbao, en los antiguos diques de Euskalduna junto al Guggenheim. Combina exposición interior y barcos históricos al aire libre, todo a orillas del Nervión.",
+    "duration_min": 60,
+    "address": "Muelle Ramón de la Sota, 1, 48013 Bilbao",
+    "lat": 43.2613,
+    "lng": -2.9319,
+    "wikipedia_title": "Bilbao Maritime Museum",
+    "images": null,
+    "tips": [
+      "Es gratis los martes; muy infravalorado y excelente para entender la historia industrial de Bilbao.",
+      "No te pierdas el 'Consulado', la grúa Carola (último símbolo de los astilleros) y los barcos restaurados.",
+      "Combínalo con el Guggenheim (5 min andando) y el palacio Euskalduna (centro de congresos)."
+    ],
+    "hours": "Mar-Dom 10:00-18:00",
+    "price": "6 €; gratis martes",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Museo_Maritimo_Bilbao.jpg/1280px-Museo_Maritimo_Bilbao.jpg"
+  },
+  {
+    "name": "Mercado del Ensanche",
+    "city": "Bilbao",
+    "description": "Mercado gourmet en el ensanche bilbaíno, segundo mercado más conocido de Bilbao después de la Ribera. Reformado y modernizado, hoy es punto de encuentro para tapeo gourmet con pintxos creativos y productos vascos.",
+    "duration_min": 60,
+    "address": "Calle Colón de Larreátegui, 8, 48001 Bilbao",
+    "lat": 43.2615,
+    "lng": -2.9301,
+    "wikipedia_title": null,
+    "images": null,
+    "tips": [
+      "Su zona gastronómica es más tranquila y selecta que la Ribera; ideal para almuerzo en grupo pequeño.",
+      "Está cerca de Azkuna Zentroa y la Plaza Moyúa; perfecto para combinar visitas en el Ensanche.",
+      "Prueba los pintxos de bacalao y atún rojo en los puestos especializados."
+    ],
+    "hours": "Lun-Sáb 8:30-20:00",
+    "price": "Gratis",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Mercado_del_Ensanche_Bilbao.jpg/1280px-Mercado_del_Ensanche_Bilbao.jpg"
   }
 ]

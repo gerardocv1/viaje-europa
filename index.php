@@ -775,6 +775,21 @@ main { padding: 20px 16px calc(96px + env(safe-area-inset-bottom)); max-width: 7
   font-size: 13px; color: var(--text-dim);
   line-height: 1.65; margin-bottom: 4px;
 }
+.dm-tips-label {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--text-faint);
+  margin: 14px 0 8px;
+}
+.dm-tips-list { display: flex; flex-direction: column; gap: 7px; margin-bottom: 4px; }
+.dm-tip-card {
+  background: rgba(233,163,107,0.08);
+  border: 1px solid rgba(233,163,107,0.18);
+  border-left: 3px solid var(--accent);
+  border-radius: 6px;
+  padding: 9px 11px;
+  font-size: 12.5px; color: var(--text-dim);
+  line-height: 1.55;
+}
 .dm-actions {
   display: flex; gap: 8px; flex-wrap: wrap;
   margin-top: 18px;
@@ -1247,6 +1262,18 @@ header.top button.icon.location-active {
         <div id="dm-addr-row" class="dm-info-row" style="display:none">
           <span class="dm-info-icon">🗺️</span>
           <span id="dm-addr-text" style="font-size:12px;"></span>
+        </div>
+        <div id="dm-hours-row" class="dm-info-row" style="display:none">
+          <span class="dm-info-icon">🕐</span>
+          <span id="dm-hours-text" style="font-size:12px;"></span>
+        </div>
+        <div id="dm-price-row" class="dm-info-row" style="display:none">
+          <span class="dm-info-icon">🎟️</span>
+          <span id="dm-price-text" style="font-size:12px;"></span>
+        </div>
+        <div id="dm-tips-section" style="display:none">
+          <div class="dm-tips-label">Consejos prácticos</div>
+          <div id="dm-tips-list" class="dm-tips-list"></div>
         </div>
       </div>
 
@@ -1863,7 +1890,6 @@ function showThumbInEl(thumbEl, imgUrl, altText) {
 async function loadPlaceThumb(place, thumbEl) {
   const cached = STATE.imageCache[place.id];
   if (cached !== undefined) {
-    // Usar el último elemento del cache = URL original de Wikipedia (siempre válida)
     if (cached.length) showThumbInEl(thumbEl, cached[cached.length - 1], place.name);
     return;
   }
@@ -1881,7 +1907,7 @@ async function loadPlaceThumb(place, thumbEl) {
       const orig = data.thumbnail.source;
       const hi   = orig.replace(/\/\d+px-/, '/800px-');
       images = hi !== orig ? [hi, orig] : [orig];
-      thumbUrl = orig; // URL original siempre funciona
+      thumbUrl = orig;
     }
     STATE.imageCache[place.id] = images;
     if (thumbUrl) showThumbInEl(thumbEl, thumbUrl, place.name);
@@ -2151,12 +2177,40 @@ async function openDetailModal(e) {
   const descSection = $('#dm-desc-section');
   if (placeObj && placeObj.description) {
     $('#dm-desc-text').textContent = placeObj.description;
+
     const durRow = $('#dm-dur-row');
     if (placeObj.duration_min) { $('#dm-dur-text').textContent = `Visita estimada: ${fmtDuration(parseInt(placeObj.duration_min))}`; durRow.style.display = ''; }
     else { durRow.style.display = 'none'; }
+
     const addrRow = $('#dm-addr-row');
     if (placeObj.address) { $('#dm-addr-text').textContent = placeObj.address; addrRow.style.display = ''; }
     else { addrRow.style.display = 'none'; }
+
+    const hoursRow = $('#dm-hours-row');
+    if (placeObj.hours) { $('#dm-hours-text').textContent = placeObj.hours; hoursRow.style.display = ''; }
+    else { hoursRow.style.display = 'none'; }
+
+    const priceRow = $('#dm-price-row');
+    if (placeObj.price) { $('#dm-price-text').textContent = placeObj.price; priceRow.style.display = ''; }
+    else { priceRow.style.display = 'none'; }
+
+    const tipsSection = $('#dm-tips-section');
+    let tips = placeObj.tips;
+    if (typeof tips === 'string') { try { tips = JSON.parse(tips); } catch(_) { tips = null; } }
+    if (Array.isArray(tips) && tips.length) {
+      const list = $('#dm-tips-list');
+      list.innerHTML = '';
+      tips.forEach(t => {
+        const card = document.createElement('div');
+        card.className = 'dm-tip-card';
+        card.textContent = t;
+        list.appendChild(card);
+      });
+      tipsSection.style.display = '';
+    } else {
+      tipsSection.style.display = 'none';
+    }
+
     descSection.style.display = '';
   } else {
     descSection.style.display = 'none';
@@ -2193,12 +2247,13 @@ async function loadDetailImages(place) {
   }
 
   let images = [];
+
   // Imágenes almacenadas en BD
   if (place.images) {
     try { images = JSON.parse(place.images).filter(Boolean); } catch (_) {}
   }
 
-  // Si no hay imágenes almacenadas, buscar en Wikipedia
+  // Wikipedia API como fuente de imágenes
   if (!images.length && place.wikipedia_title) {
     const carousel = $('#dm-carousel');
     carousel.style.display = '';
@@ -2212,7 +2267,6 @@ async function loadDetailImages(place) {
         const data = await r.json();
         if (data.thumbnail && data.thumbnail.source) {
           const original = data.thumbnail.source;
-          // Intentar 800px; si falla onerror volverá al original
           const highRes = original.replace(/\/\d+px-/, '/800px-');
           images = highRes !== original ? [highRes, original] : [original];
         }

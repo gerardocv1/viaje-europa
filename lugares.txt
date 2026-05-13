@@ -1,76 +1,95 @@
-=== Madrid ===
-  - Bogotá → Madrid (Vuelo internacional de salida)
-  - Madrid (Llegada estimada a Madrid)
-  - Madrid (Hospedaje Madrid)
-  - Madrid hotel → Barajas (Traslado al aeropuerto)
-  - Bilbao → Madrid (Vuelo)
-  - Madrid estación → Barajas (Traslado al aeropuerto)
-  - Madrid → Bogotá (Vuelo internacional de regreso)
-  - Plaza Mayor (Plaza Mayor)
-  - Puerta del Sol (Puerta del Sol)
-  - Gran Vía (Gran Vía)
-  - Plaza de Cibeles (Plaza de Cibeles)
-  - Puerta de Alcalá (Puerta de Alcalá)
-  - Parque del Retiro (Parque del Retiro)
-  - Plaza de España (Plaza de España)
+=== Madrid (20 lugares) ===
+  - Museo del Prado
+  - Palacio Real de Madrid
+  - Plaza Mayor
+  - Puerta del Sol
+  - Templo de Debod
+  - Museo Reina Sofía
+  - Parque del Retiro
+  - Museo Thyssen-Bornemisza
+  - Catedral de la Almudena
+  - Mercado de San Miguel
+  - Barrio de La Latina
+  - El Rastro
+  - Barrio de Malasaña
+  - Gran Vía
+  - Estadio Santiago Bernabéu
+  - Ermita de San Antonio de la Florida
+  - Plaza de Cibeles
+  - Real Basílica de San Francisco el Grande
+  - Puerta de Alcalá
+  - Plaza de España
 
-=== Paris ===
-  - Madrid → París (Vuelo directo)
-  - París aeropuerto → hotel (Traslado a hospedaje)
-  - París (Hospedaje París)
-  - París (Parques Disney)
-  - París hotel → aeropuerto (Traslado al aeropuerto)
-  - Torre Eiffel + Trocadéro (Torre Eiffel)
-  - Arco del Triunfo (Arco del Triunfo)
-  - Museo del Louvre (Museo del Louvre)
-  - Jardines de las Tullerías + Plaza de la Concordia (Tullerías - Plaza Concordia)
-  - Île de la Cité (Notre Dame + Île de la Cité)
-  - Shakespeare & Company (Shakespeare & Company)
-  - Panteón de París (Panteón)
-  - Jardines de Luxemburgo (Jardines de Luxemburgo)
-  - Río Sena (Paseo por el Sena)
-  - Palacio de Versalles (Versalles)
-  - Galerías Lafayette (Galerías Lafayette)
-  - Montmartre + Sacré-Cœur (Montmartre)
+=== Paris (20 lugares) ===
+  - Torre Eiffel
+  - Museo del Louvre
+  - Catedral de Notre-Dame
+  - Arco del Triunfo
+  - Campos Elíseos
+  - Basílica del Sacré-Cœur
+  - Montmartre
+  - Museo de Orsay
+  - Palacio de Versalles
+  - Sainte-Chapelle
+  - Panteón de París
+  - Barrio del Marais
+  - Museo Picasso París
+  - Jardines de Luxemburgo
+  - Barrio Latino
+  - Moulin Rouge
+  - Île de la Cité
+  - Disneyland París
+  - Centro Pompidou
+  - Jardines de las Tullerías
 
-=== Milan ===
-  - París → Milán (Vuelo directo)
-  - Milán aeropuerto → hotel (Traslado a hospedaje)
-  - Milán (Hospedaje Milán)
-  - Milán → Tirano (Tren tirano)
-  - Tirano →  ST Morin (Tren Berlina express (regional))
-  - Tirano → Milán (Tren tirano - milan)
-  - Milán hotel → estación (Traslado a estación)
-  - Duomo de Milán (Duomo + Galería Vittorio Emanuele)
-  - Castillo Sforzesco (Castillo Sforzesco)
+=== Milan (15 lugares) ===
+  - Duomo de Milán
+  - Galería Vittorio Emanuele II
+  - Teatro alla Scala
+  - Castillo Sforzesco
+  - Santa Maria delle Grazie — La Última Cena
+  - Pinacoteca di Brera
+  - Barrio de Brera
+  - Basílica de Sant'Ambrogio
+  - Barrio de Navigli
+  - Parque Sempione
+  - Arco della Pace
+  - Cementerio Monumental
+  - Pinacoteca Ambrosiana
+  - Via Montenapoleone
+  - Piazza Gae Aulenti
 
-=== Roma ===
-  - Milán → Florencia (Tren alta velocidad)
-  - Florencia → Roma (Tren alta velocidad)
-  - Roma estación → hotel (Traslado a hospedaje)
-  - Roma (Hospedaje Roma)
-  - Roma hotel → aeropuerto (Traslado al aeropuerto)
-  - Roma centro (Cena cerca del hotel)
-  - Coliseo + Foro Romano + Palatino (Coliseo, Foro y Palatino)
-  - Piazza Venezia (Piazza Venezia + Altar de la Patria)
-  - Trastevere (Barrio Trastevere)
-  - Ciudad del Vaticano (Basílica de San Pedro + Museos Vaticanos)
-  - Castel Sant'Angelo (Castel Sant'Angelo)
-  - Fontana di Trevi (Fontana di Trevi)
-  - Panteón de Roma (Panteón de Roma)
-  - Piazza Navona (Piazza Navona)
-  - Plaza de España (Roma) (Plaza de España + Escalinata)
+=== Roma (20 lugares) ===
+  - Basílica de San Pedro
+  - Museos Vaticanos
+  - Coliseo
+  - Foro Romano
+  - Panteón de Roma
+  - Fontana di Trevi
+  - Museos Capitolinos
+  - Castel Sant'Angelo
+  - Piazza Navona
+  - Escalinata de España
+  - Trastevere
+  - Basílica de Santa María en Trastevere
+  - Galería Borghese
+  - Parque Villa Borghese
+  - Monte Palatino
+  - Campo de' Fiori
+  - Basílica de San Juan de Letrán
+  - Circo Máximo
+  - Barrio Judío de Roma
+  - Piazza Venezia
 
-=== Bilbao ===
-  - Roma → Bilbao (Vuelo directo)
-  - Bilbao (Hospedaje Bilbao)
-  - Casco Viejo de Bilbao (Casco Viejo + Catedral de Santiago)
-  - Mercado de la Ribera (Mercado de la Ribera (pintxos))
-  - Puente Zubizuri + Ría (Paseo por la Ría + Puente Zubizuri)
-  - Museo Guggenheim (Museo Guggenheim Bilbao)
-  - Parque Doña Casilda (Parque Doña Casilda)
-  - Estadio San Mamés (San Mamés (exterior))
-
-=== General ===
-  - Seguro ASSIST 365
-
+=== Bilbao (11 lugares) ===
+  - Museo Guggenheim Bilbao
+  - Casco Viejo de Bilbao
+  - Mercado de la Ribera
+  - Catedral de Santiago de Bilbao
+  - Museo de Bellas Artes de Bilbao
+  - Parque Doña Casilda
+  - Teatro Arriaga
+  - Puente Zubizuri
+  - Azkuna Zentroa
+  - Ría del Nervión — Paseo
+  - Estadio San Mamés

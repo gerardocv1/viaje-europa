@@ -15,7 +15,14 @@
       "Bash(curl -s -I -A \"Mozilla/5.0\" \"https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Museo_del_Prado_2016_%2825185969599%29.jpg/200px-Museo_del_Prado_2016_%2825185969599%29.jpg\")",
       "Bash(curl -s -o /dev/null -w 'HTTP: %{http_code}\\\\n' -A Mozilla/5.0 https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Museo_del_Prado_2016_%2825185969599%29.jpg/330px-Museo_del_Prado_2016_%2825185969599%29.jpg)",
       "Bash(curl -s -o /dev/null -w 'HTTP 320px: %{http_code}\\\\n' -A Mozilla/5.0 https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Museo_del_Prado_2016_%2825185969599%29.jpg/320px-Museo_del_Prado_2016_%2825185969599%29.jpg)",
-      "Bash(curl -s -o /dev/null -w 'HTTP 120px: %{http_code}\\\\n' -A Mozilla/5.0 https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Museo_del_Prado_2016_%2825185969599%29.jpg/120px-Museo_del_Prado_2016_%2825185969599%29.jpg)"
+      "Bash(curl -s -o /dev/null -w 'HTTP 120px: %{http_code}\\\\n' -A Mozilla/5.0 https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Museo_del_Prado_2016_%2825185969599%29.jpg/120px-Museo_del_Prado_2016_%2825185969599%29.jpg)",
+      "Bash(python3 gen_places.py)",
+      "Bash(python3 /tmp/gen_paris.py)",
+      "Bash(python3 /tmp/gen_milan.py)",
+      "Bash(python3 /tmp/gen_roma.py)",
+      "Bash(python3 /tmp/gen_bilbao_final.py)",
+      "Bash(curl -s -o /dev/null -w '%{http_code} | %{size_download} bytes | %{url_effective}\\\\n' https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Museo_del_Prado_2016_%2825185969599%29.jpg/1280px-Museo_del_Prado_2016_%2825185969599%29.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Palacio_Real_de_Madrid_-_03.jpg/1280px-Palacio_Real_de_Madrid_-_03.jpg https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Plaza_Mayor_de_Madrid_06.jpg/1280px-Plaza_Mayor_de_Madrid_06.jpg)",
+      "Bash(curl -s -H 'User-Agent: Mozilla/5.0' https://en.wikipedia.org/api/rest_v1/page/summary/Museo_del_Prado)"
     ]
   }
 }

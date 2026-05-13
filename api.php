@@ -59,14 +59,21 @@ function getDB() {
             lat REAL,
             lng REAL,
             wikipedia_title TEXT,
-            images TEXT
+            images TEXT,
+            tips TEXT,
+            hours TEXT,
+            price TEXT,
+            image_url TEXT
         )
     ");
 
     // Migraciones de columnas en places (seguras para BD existente)
-    $wikiAdded = false;
-    try { $db->exec("ALTER TABLE places ADD COLUMN wikipedia_title TEXT"); $wikiAdded = true; } catch (Exception $e) {}
+    try { $db->exec("ALTER TABLE places ADD COLUMN wikipedia_title TEXT"); } catch (Exception $e) {}
     try { $db->exec("ALTER TABLE places ADD COLUMN images TEXT"); } catch (Exception $e) {}
+    try { $db->exec("ALTER TABLE places ADD COLUMN tips TEXT"); } catch (Exception $e) {}
+    try { $db->exec("ALTER TABLE places ADD COLUMN hours TEXT"); } catch (Exception $e) {}
+    try { $db->exec("ALTER TABLE places ADD COLUMN price TEXT"); } catch (Exception $e) {}
+    try { $db->exec("ALTER TABLE places ADD COLUMN image_url TEXT"); } catch (Exception $e) {}
 
     // Sincronizar places desde JSON (siembra, renombres y nuevas entradas)
     $jsonFile = __DIR__ . '/places.json';
@@ -77,8 +84,8 @@ function getDB() {
         if ($dbCount == 0) {
             // Siembra inicial completa
             $stmt = $db->prepare("
-                INSERT INTO places (name, city, description, duration_min, address, lat, lng, wikipedia_title, images)
-                VALUES (:name, :city, :description, :duration_min, :address, :lat, :lng, :wikipedia_title, :images)
+                INSERT INTO places (name, city, description, duration_min, address, lat, lng, wikipedia_title, images, tips, hours, price, image_url)
+                VALUES (:name, :city, :description, :duration_min, :address, :lat, :lng, :wikipedia_title, :images, :tips, :hours, :price, :image_url)
             ");
             foreach ($jsonPlaces as $p) {
                 $stmt->execute([
@@ -91,34 +98,49 @@ function getDB() {
                     ':lng'             => isset($p['lng']) ? floatval($p['lng']) : null,
                     ':wikipedia_title' => $p['wikipedia_title'] ?? null,
                     ':images'          => isset($p['images']) ? json_encode($p['images']) : null,
+                    ':tips'            => isset($p['tips']) ? json_encode($p['tips'], JSON_UNESCAPED_UNICODE) : null,
+                    ':hours'           => $p['hours'] ?? null,
+                    ':price'           => $p['price'] ?? null,
+                    ':image_url'       => $p['image_url'] ?? null,
                 ]);
             }
         } else {
             // Sincronización incremental usando lat/lng como clave natural:
-            // actualiza nombre y datos, inserta lugares nuevos
+            // actualiza todos los campos, inserta lugares nuevos
             $stmtUpdate = $db->prepare("
-                UPDATE places SET name=:name, description=:desc, wikipedia_title=:wt
+                UPDATE places SET
+                    name=:name, city=:city, description=:desc, duration_min=:duration_min,
+                    address=:address, wikipedia_title=:wt,
+                    tips=:tips, hours=:hours, price=:price, image_url=:image_url
                 WHERE ABS(lat - :lat) < 0.001 AND ABS(lng - :lng) < 0.001
             ");
             $stmtExists = $db->prepare("
                 SELECT COUNT(*) FROM places WHERE ABS(lat - :lat) < 0.001 AND ABS(lng - :lng) < 0.001
             ");
             $stmtInsert = $db->prepare("
-                INSERT INTO places (name, city, description, duration_min, address, lat, lng, wikipedia_title, images)
-                VALUES (:name, :city, :description, :duration_min, :address, :lat, :lng, :wikipedia_title, :images)
+                INSERT INTO places (name, city, description, duration_min, address, lat, lng, wikipedia_title, images, tips, hours, price, image_url)
+                VALUES (:name, :city, :description, :duration_min, :address, :lat, :lng, :wikipedia_title, :images, :tips, :hours, :price, :image_url)
             ");
             foreach ($jsonPlaces as $p) {
                 $lat = isset($p['lat']) ? floatval($p['lat']) : null;
                 $lng = isset($p['lng']) ? floatval($p['lng']) : null;
                 if (!$lat || !$lng) continue;
+                $tipsJson = isset($p['tips']) ? json_encode($p['tips'], JSON_UNESCAPED_UNICODE) : null;
                 $stmtExists->execute([':lat' => $lat, ':lng' => $lng]);
                 if ($stmtExists->fetchColumn()) {
                     $stmtUpdate->execute([
-                        ':name' => $p['name'] ?? '',
-                        ':desc' => $p['description'] ?? '',
-                        ':wt'   => $p['wikipedia_title'] ?? null,
-                        ':lat'  => $lat,
-                        ':lng'  => $lng,
+                        ':name'         => $p['name'] ?? '',
+                        ':city'         => $p['city'] ?? '',
+                        ':desc'         => $p['description'] ?? '',
+                        ':duration_min' => isset($p['duration_min']) ? intval($p['duration_min']) : null,
+                        ':address'      => $p['address'] ?? '',
+                        ':wt'           => $p['wikipedia_title'] ?? null,
+                        ':tips'         => $tipsJson,
+                        ':hours'        => $p['hours'] ?? null,
+                        ':price'        => $p['price'] ?? null,
+                        ':image_url'    => $p['image_url'] ?? null,
+                        ':lat'          => $lat,
+                        ':lng'          => $lng,
                     ]);
                 } else {
                     $stmtInsert->execute([
@@ -131,6 +153,10 @@ function getDB() {
                         ':lng'             => $lng,
                         ':wikipedia_title' => $p['wikipedia_title'] ?? null,
                         ':images'          => isset($p['images']) ? json_encode($p['images']) : null,
+                        ':tips'            => $tipsJson,
+                        ':hours'           => $p['hours'] ?? null,
+                        ':price'           => $p['price'] ?? null,
+                        ':image_url'       => $p['image_url'] ?? null,
                     ]);
                 }
             }
