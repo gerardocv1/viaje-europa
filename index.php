@@ -3,7 +3,7 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <meta name="theme-color" content="#0a0a0c">
 <title><?= htmlspecialchars(TRIP_NAME) ?></title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -486,6 +486,42 @@ main { padding: 20px 16px 100px; max-width: 720px; margin: 0 auto; }
 .modal button.danger { background: transparent; border: 1px solid var(--danger); color: var(--danger); flex: 0 0 auto; padding: 14px 18px; }
 .modal button:disabled { opacity: 0.5; cursor: wait; }
 
+/* ========== FORMULARIO MÓVIL — CARDS ========== */
+.form-section {
+  font-size: 10px; letter-spacing: .2em; text-transform: uppercase;
+  color: var(--text-faint); margin: 18px 0 6px; padding: 0 2px;
+}
+.form-section:first-of-type { margin-top: 4px; }
+.form-card {
+  background: var(--bg-3); border: 1px solid var(--line);
+  border-radius: 12px; overflow: hidden; margin-bottom: 2px;
+}
+.form-card .field {
+  margin-bottom: 0; padding: 0 16px;
+  border-bottom: 1px solid var(--line);
+}
+.form-card .field:last-child { border-bottom: none; }
+.form-card label { padding-top: 10px; margin-bottom: 1px; }
+.form-card input,
+.form-card select,
+.form-card textarea {
+  background: transparent !important; border: none !important;
+  border-radius: 0 !important; padding: 8px 0 13px !important;
+  font-size: 16px !important; /* evita zoom en iOS al hacer focus */
+}
+.form-card input:focus, .form-card select:focus, .form-card textarea:focus { outline: none; }
+.form-card textarea { min-height: 60px; }
+.form-card .row-2i { display: grid; grid-template-columns: 1fr 1fr; }
+.form-card .row-2i .field:first-child { border-right: 1px solid var(--line); }
+.toggle-row {
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 4px; cursor: pointer; color: var(--text-dim); font-size: 14px;
+}
+.toggle-row input[type=checkbox] {
+  width: 20px !important; height: 20px !important; flex-shrink: 0;
+  accent-color: var(--accent); border: none !important; padding: 0 !important;
+}
+
 /* ========== TOAST ========== */
 .toast {
   position: fixed;
@@ -635,66 +671,15 @@ main { padding: 20px 16px 100px; max-width: 720px; margin: 0 auto; }
   <div class="modal">
     <div class="handle"></div>
     <h2 id="modalTitle">Nuevo evento</h2>
-    <div class="field">
-      <label>Actividad</label>
-      <input type="text" id="f_activity" placeholder="Ej: Visita al Louvre">
-    </div>
-    <div class="field">
-      <label>Lugar</label>
-      <input type="text" id="f_place" list="places-list" placeholder="Buscar lugar…" autocomplete="off">
-      <datalist id="places-list"></datalist>
-    </div>
-    <div class="field">
-      <label>Tipo</label>
-      <select id="f_type">
-        <option value="Vuelo">✈️ Vuelo</option>
-        <option value="Tren">🚆 Tren</option>
-        <option value="Traslado">🚕 Traslado</option>
-        <option value="Hospedaje">🏨 Hospedaje</option>
-        <option value="Actividad" selected>📍 Actividad</option>
-        <option value="Comida">🍽️ Comida</option>
-        <option value="Desplazamiento">🚶 Desplazamiento</option>
-        <option value="Seguro">🛡️ Seguro</option>
-        <option value="Otro">⭐ Otro</option>
-      </select>
-    </div>
-    <div class="row-2">
-      <div class="field">
-        <label>Fecha inicio</label>
-        <input type="date" id="f_start_date" min="2026-05-14" max="2026-05-29">
-      </div>
-      <div class="field">
-        <label>Hora inicio</label>
-        <select id="f_start_time">
-          <option value="">— sin hora —</option>
-          <?php for ($h = 0; $h < 24; $h++): ?>
-            <option value="<?= sprintf('%02d:00', $h) ?>"><?= sprintf('%02d:00', $h) ?></option>
-            <option value="<?= sprintf('%02d:30', $h) ?>"><?= sprintf('%02d:30', $h) ?></option>
-          <?php endfor; ?>
-        </select>
-      </div>
-    </div>
-    <div class="row-2">
-      <div class="field">
-        <label>Fecha fin</label>
-        <input type="date" id="f_end_date" min="2026-05-14" max="2026-05-29">
-      </div>
-      <div class="field">
-        <label>Hora fin</label>
-        <select id="f_end_time">
-          <option value="">— sin hora —</option>
-          <?php for ($h = 0; $h < 24; $h++): ?>
-            <option value="<?= sprintf('%02d:00', $h) ?>"><?= sprintf('%02d:00', $h) ?></option>
-            <option value="<?= sprintf('%02d:30', $h) ?>"><?= sprintf('%02d:30', $h) ?></option>
-          <?php endfor; ?>
-        </select>
-      </div>
-    </div>
-    <div class="row-2">
+
+    <!-- Ciudad: primero para filtrar lugares -->
+    <div class="form-section">Ciudad</div>
+    <div class="form-card">
       <div class="field">
         <label>Ciudad</label>
         <select id="f_city">
           <option value="">— elegir —</option>
+          <option value="Bogota">Bogotá</option>
           <option value="Madrid">Madrid</option>
           <option value="Paris">París</option>
           <option value="Milan">Milán</option>
@@ -702,25 +687,99 @@ main { padding: 20px 16px 100px; max-width: 720px; margin: 0 auto; }
           <option value="Bilbao">Bilbao</option>
         </select>
       </div>
+    </div>
+
+    <!-- Qué -->
+    <div class="form-section">¿Qué?</div>
+    <div class="form-card">
+      <div class="field">
+        <label>Actividad</label>
+        <input type="text" id="f_activity" placeholder="Ej: Visita al Louvre">
+      </div>
+      <div class="field">
+        <label>Tipo</label>
+        <select id="f_type">
+          <option value="Vuelo">✈️ Vuelo</option>
+          <option value="Tren">🚆 Tren</option>
+          <option value="Traslado">🚕 Traslado</option>
+          <option value="Hospedaje">🏨 Hospedaje</option>
+          <option value="Actividad" selected>📍 Actividad</option>
+          <option value="Comida">🍽️ Comida</option>
+          <option value="Desplazamiento">🚶 Desplazamiento</option>
+          <option value="Seguro">🛡️ Seguro</option>
+          <option value="Otro">⭐ Otro</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Lugar</label>
+        <input type="text" id="f_place" list="places-list" placeholder="Buscar lugar…">
+        <datalist id="places-list"></datalist>
+      </div>
+    </div>
+
+    <!-- Cuándo -->
+    <div class="form-section">¿Cuándo?</div>
+    <div class="form-card">
+      <div class="row-2i">
+        <div class="field">
+          <label>Fecha</label>
+          <input type="date" id="f_start_date" min="2026-05-14" max="2026-05-29">
+        </div>
+        <div class="field">
+          <label>Hora inicio</label>
+          <select id="f_start_time">
+            <option value="">— hora —</option>
+            <?php for ($h = 0; $h < 24; $h++): ?>
+              <option value="<?= sprintf('%02d:00', $h) ?>"><?= sprintf('%02d:00', $h) ?></option>
+            <?php endfor; ?>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label>Duración</label>
+        <select id="f_duration">
+          <option value="">— duración —</option>
+          <option value="0.5">30 min</option>
+          <option value="1">1 hora</option>
+          <option value="1.5">1 h 30 min</option>
+          <option value="2">2 horas</option>
+          <option value="3">3 horas</option>
+          <option value="4">4 horas</option>
+          <option value="5">5 horas</option>
+          <option value="6">6 horas</option>
+          <option value="8">8 horas</option>
+          <option value="12">12 horas</option>
+          <option value="24">Todo el día</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Extras -->
+    <div class="form-section">Extras</div>
+    <div class="form-card">
       <div class="field">
         <label>Costo</label>
         <input type="text" id="f_cost" placeholder="$0">
       </div>
+      <div class="field">
+        <label>Notas</label>
+        <textarea id="f_notes" rows="2" placeholder="Notas opcionales…"></textarea>
+      </div>
+      <div class="field">
+        <label>Link / URL</label>
+        <input type="url" id="f_url" placeholder="https://...">
+      </div>
     </div>
-    <div class="field">
-      <label>Notas</label>
-      <textarea id="f_notes" rows="2"></textarea>
-    </div>
-    <div class="field">
-      <label>Link / URL</label>
-      <input type="url" id="f_url" placeholder="https://...">
-    </div>
-    <div class="field">
-      <label style="display:flex; align-items:center; gap:8px; text-transform:none; letter-spacing:normal; font-size:13px; color:var(--text-dim);">
-        <input type="checkbox" id="f_tentative" style="width:auto;">
-        Sin fecha asignada (va a "Por asignar")
-      </label>
-    </div>
+
+    <label class="toggle-row">
+      <input type="checkbox" id="f_tentative">
+      Sin fecha asignada (va a "Por asignar")
+    </label>
+
+    <!-- Campos ocultos: se calculan desde duración o se preservan al editar -->
+    <input type="hidden" id="f_end_date">
+    <input type="hidden" id="f_end_time">
+
     <div class="actions">
       <button type="button" class="secondary" id="cancelBtn">Cancelar</button>
       <button type="button" class="danger" id="deleteBtn" style="display:none;" title="Eliminar">
@@ -814,6 +873,14 @@ const CITY_DATES = [
   ['2026-05-28', '2026-05-29', 'Madrid'],
 ];
 const PLACES_BY_CITY = {
+  Bogota: [
+    'Aeropuerto El Dorado','La Candelaria','Monserrate','Museo del Oro',
+    'Museo Nacional','Parque Simón Bolívar','Zona Rosa','Usaquén',
+    'Chapinero','Parque de la 93','Andrés Carne de Res','Plaza de Bolívar',
+    'Mercado de las Pulgas','Paloquemao','Centro Comercial Andino',
+    'Cerro de Monserrate','Jardín Botánico','Planetario de Bogotá',
+    'Biblioteca Luis Ángel Arango','Chía','Zipaquirá — Catedral de Sal',
+  ],
   Madrid: [
     'Plaza Mayor','Puerta del Sol','Gran Vía','Parque del Retiro',
     'Museo del Prado','Museo Reina Sofía','Museo Thyssen-Bornemisza',
@@ -871,7 +938,7 @@ function cityForDate(dateStr) {
   for (const [from, to, city] of CITY_DATES) {
     if (dateStr >= from && dateStr <= to) return city;
   }
-  return '';
+  return 'Bogota'; // antes o después del viaje
 }
 function updatePlacesList(city) {
   const dl = document.getElementById('places-list');
@@ -882,14 +949,41 @@ function updatePlacesList(city) {
 }
 function setTimeSelect(id, val) {
   const sel = document.getElementById(id);
-  sel.value = val || '';
-  if (val && sel.value !== val) {
-    // Hora no estándar (ej. 12:35) — agregarla temporalmente
-    const o = document.createElement('option');
-    o.value = val; o.textContent = val;
-    sel.insertBefore(o, sel.options[1]);
-    sel.value = val;
+  // Normalizar a HH:00 si solo tenemos la hora o minutos no estándar
+  if (val) {
+    const [h] = val.split(':');
+    const norm = `${h.padStart(2,'0')}:00`;
+    sel.value = norm;
+    if (sel.value !== norm) {
+      // Hora no en opciones — agregar temporalmente
+      const o = document.createElement('option');
+      o.value = val; o.textContent = val;
+      sel.insertBefore(o, sel.options[1]);
+      sel.value = val;
+    }
+  } else {
+    sel.value = '';
   }
+}
+function applyDuration() {
+  const startDate = $('#f_start_date').value;
+  const startTime = $('#f_start_time').value;
+  const dur = parseFloat($('#f_duration').value);
+  if (!startDate || !startTime || isNaN(dur)) return;
+  const startH = parseInt(startTime.split(':')[0]);
+  const totalMins = startH * 60 + Math.round(dur * 60);
+  const endH = Math.floor(totalMins / 60) % 24;
+  const endM = totalMins % 60;
+  const endTime = `${String(endH).padStart(2,'0')}:${String(endM).padStart(2,'0')}`;
+  const extraDays = Math.floor(totalMins / (60 * 24));
+  if (extraDays > 0) {
+    const [y, m, d] = startDate.split('-').map(Number);
+    const dt = new Date(y, m - 1, d + extraDays);
+    $('#f_end_date').value = dt.toISOString().split('T')[0];
+  } else {
+    $('#f_end_date').value = startDate;
+  }
+  $('#f_end_time').value = endTime;
 }
 
 function daysUntil(dateStr) {
@@ -1166,9 +1260,10 @@ function openNewModal() {
   $('#f_type').value = 'Actividad';
   const initDate = STATE.today || '';
   $('#f_start_date').value = initDate;
-  setTimeSelect('f_start_time', '');
+  $('#f_start_time').value = '';
+  $('#f_duration').value = '';
   $('#f_end_date').value = '';
-  setTimeSelect('f_end_time', '');
+  $('#f_end_time').value = '';
   const autoCity = (STATE.filterCity !== 'all' ? STATE.filterCity : '') || cityForDate(initDate);
   $('#f_city').value = autoCity;
   updatePlacesList(autoCity);
@@ -1188,8 +1283,9 @@ function openEditModal(e) {
   $('#f_type').value = e.type || 'Actividad';
   $('#f_start_date').value = e.start_date || '';
   setTimeSelect('f_start_time', e.start_time || '');
-  $('#f_end_date').value = e.end_date || '';
-  setTimeSelect('f_end_time', e.end_time || '');
+  $('#f_duration').value = '';          // duración vacía al editar
+  $('#f_end_date').value = e.end_date || '';   // preservar fin existente
+  $('#f_end_time').value = e.end_time || '';
   $('#f_city').value = e.city || '';
   updatePlacesList(e.city || '');
   $('#f_cost').value = e.cost || '';
@@ -1203,11 +1299,16 @@ $('#addBtn').addEventListener('click', openNewModal);
 $('#cancelBtn').addEventListener('click', closeModal);
 $('#modal').addEventListener('click', (e) => { if (e.target === $('#modal')) closeModal(); });
 
-// Auto-fill ciudad y lugares al elegir fecha
+// Auto-fill ciudad y lugares al elegir fecha; recalcular fin si hay duración
 $('#f_start_date').addEventListener('change', () => {
   const city = cityForDate($('#f_start_date').value);
   if (city) { $('#f_city').value = city; updatePlacesList(city); }
+  applyDuration();
 });
+// Recalcular fin al cambiar hora de inicio
+$('#f_start_time').addEventListener('change', applyDuration);
+// Recalcular fin al cambiar duración
+$('#f_duration').addEventListener('change', applyDuration);
 // Actualizar lista de lugares al cambiar ciudad manualmente
 $('#f_city').addEventListener('change', () => {
   updatePlacesList($('#f_city').value);
