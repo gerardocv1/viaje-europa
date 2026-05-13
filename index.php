@@ -693,8 +693,13 @@ main { padding: 20px 16px 100px; max-width: 720px; margin: 0 auto; }
     <div class="form-section">¿Qué?</div>
     <div class="form-card">
       <div class="field">
+        <label>Lugar</label>
+        <input type="text" id="f_place" list="places-list" placeholder="Buscar lugar…">
+        <datalist id="places-list"></datalist>
+      </div>
+      <div class="field">
         <label>Actividad</label>
-        <input type="text" id="f_activity" placeholder="Ej: Visita al Louvre">
+        <input type="text" id="f_activity" placeholder="Ej: Visitar Gran Vía">
       </div>
       <div class="field">
         <label>Tipo</label>
@@ -709,11 +714,6 @@ main { padding: 20px 16px 100px; max-width: 720px; margin: 0 auto; }
           <option value="Seguro">🛡️ Seguro</option>
           <option value="Otro">⭐ Otro</option>
         </select>
-      </div>
-      <div class="field">
-        <label>Lugar</label>
-        <input type="text" id="f_place" list="places-list" placeholder="Buscar lugar…">
-        <datalist id="places-list"></datalist>
       </div>
     </div>
 
@@ -940,6 +940,30 @@ function cityForDate(dateStr) {
   }
   return 'Bogota'; // antes o después del viaje
 }
+
+// Rango de fechas válidas por ciudad para el selector de fecha
+const CITY_DATE_RANGE = {
+  Bogota: { min: '',           max: ''           },
+  Madrid: { min: '2026-05-14', max: '2026-05-29' }, // 14-15 + 28-29 (dos períodos)
+  Paris:  { min: '2026-05-16', max: '2026-05-19' },
+  Milan:  { min: '2026-05-20', max: '2026-05-21' },
+  Roma:   { min: '2026-05-22', max: '2026-05-24' },
+  Bilbao: { min: '2026-05-25', max: '2026-05-27' },
+};
+function updateDateRange(city) {
+  const r = CITY_DATE_RANGE[city] || { min: '2026-05-14', max: '2026-05-29' };
+  const inp = $('#f_start_date');
+  inp.min = r.min; inp.max = r.max;
+  // Si la fecha actual queda fuera del nuevo rango, ajustar al primer día válido
+  if (r.min && inp.value && inp.value < r.min) { inp.value = r.min; applyDuration(); }
+  if (r.max && inp.value && inp.value > r.max) { inp.value = r.max; applyDuration(); }
+}
+
+// Prefijo para autosugerir nombre de actividad según tipo
+const ACTIVITY_PREFIX = {
+  Comida: 'Comer en ', Hospedaje: 'Hospedaje en ',
+  Vuelo: '', Tren: '', Traslado: '', Desplazamiento: '', Seguro: '',
+};
 function updatePlacesList(city) {
   const dl = document.getElementById('places-list');
   dl.innerHTML = '';
@@ -1267,6 +1291,7 @@ function openNewModal() {
   const autoCity = (STATE.filterCity !== 'all' ? STATE.filterCity : '') || cityForDate(initDate);
   $('#f_city').value = autoCity;
   updatePlacesList(autoCity);
+  updateDateRange(autoCity);
   $('#f_cost').value = '';
   $('#f_notes').value = '';
   $('#f_url').value = '';
@@ -1288,6 +1313,7 @@ function openEditModal(e) {
   $('#f_end_time').value = e.end_time || '';
   $('#f_city').value = e.city || '';
   updatePlacesList(e.city || '');
+  updateDateRange(e.city || '');
   $('#f_cost').value = e.cost || '';
   $('#f_notes').value = e.notes || '';
   $('#f_url').value = e.url || '';
@@ -1299,19 +1325,27 @@ $('#addBtn').addEventListener('click', openNewModal);
 $('#cancelBtn').addEventListener('click', closeModal);
 $('#modal').addEventListener('click', (e) => { if (e.target === $('#modal')) closeModal(); });
 
-// Auto-fill ciudad y lugares al elegir fecha; recalcular fin si hay duración
+// Al elegir fecha: confirmar ciudad y recalcular fin
 $('#f_start_date').addEventListener('change', () => {
   const city = cityForDate($('#f_start_date').value);
   if (city) { $('#f_city').value = city; updatePlacesList(city); }
   applyDuration();
 });
-// Recalcular fin al cambiar hora de inicio
+// Al cambiar hora o duración: recalcular fin
 $('#f_start_time').addEventListener('change', applyDuration);
-// Recalcular fin al cambiar duración
 $('#f_duration').addEventListener('change', applyDuration);
-// Actualizar lista de lugares al cambiar ciudad manualmente
+// Al cambiar ciudad: filtrar fechas válidas + actualizar lista de lugares
 $('#f_city').addEventListener('change', () => {
-  updatePlacesList($('#f_city').value);
+  const city = $('#f_city').value;
+  updatePlacesList(city);
+  updateDateRange(city);
+});
+// Al elegir lugar: autosugerir nombre de actividad si está vacío
+$('#f_place').addEventListener('change', () => {
+  const place = $('#f_place').value.trim();
+  if (!place || $('#f_activity').value.trim()) return;
+  const prefix = ACTIVITY_PREFIX[$('#f_type').value] ?? 'Visitar ';
+  if (prefix !== '') $('#f_activity').value = prefix + place;
 });
 
 $('#saveBtn').addEventListener('click', async () => {
