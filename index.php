@@ -204,7 +204,7 @@ header.top button.icon svg { width: 16px; height: 16px; }
 }
 
 /* ========== CONTENIDO ========== */
-main { padding: 20px 16px 100px; max-width: 720px; margin: 0 auto; }
+main { padding: 20px 16px calc(96px + env(safe-area-inset-bottom)); max-width: 720px; margin: 0 auto; }
 
 .day-group { margin-bottom: 36px; }
 .day-group.is-today {
@@ -385,7 +385,7 @@ main { padding: 20px 16px 100px; max-width: 720px; margin: 0 auto; }
 .fab {
   position: fixed;
   right: 20px;
-  bottom: calc(24px + env(safe-area-inset-bottom));
+  bottom: calc(72px + env(safe-area-inset-bottom));
   width: 56px; height: 56px;
   background: var(--accent);
   color: var(--bg);
@@ -819,6 +819,167 @@ main { padding: 20px 16px 100px; max-width: 720px; margin: 0 auto; }
   position: fixed; inset: 0; pointer-events: none; opacity: 0.025; z-index: 1;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
+
+/* ========== LUGARES CERCANOS ========== */
+.modal.nearby-modal {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  max-height: 85vh;
+  overflow: hidden;
+}
+.nearby-modal-hd {
+  padding: 12px 20px 14px;
+  border-bottom: 1px solid var(--line);
+  flex-shrink: 0;
+}
+.nearby-modal-hd h2 {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+.nearby-modal-hd p {
+  font-size: 12px;
+  color: var(--text-dim);
+  line-height: 1.4;
+  margin: 0;
+}
+#nearby-list {
+  overflow-y: auto;
+  flex: 1;
+  padding: 8px 8px calc(24px + env(safe-area-inset-bottom));
+  -webkit-overflow-scrolling: touch;
+}
+.nearby-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.15s;
+  margin-bottom: 2px;
+}
+.nearby-item:hover, .nearby-item:active { background: var(--bg-3); }
+.nearby-info { flex: 1; min-width: 0; }
+.nearby-name { font-size: 14px; font-weight: 500; margin-bottom: 2px; line-height: 1.3; }
+.nearby-city {
+  font-size: 10px;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 4px;
+}
+.nearby-desc {
+  font-size: 12px;
+  color: var(--text-dim);
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.nearby-dist {
+  flex-shrink: 0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--accent);
+  min-width: 54px;
+  text-align: right;
+  padding-top: 2px;
+}
+.nearby-dist.far { color: var(--text-faint); font-size: 11px; }
+.dist-chip {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--text-faint);
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+header.top button.icon.location-active {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(233, 163, 107, 0.08);
+}
+
+/* ========== TAB BAR ========== */
+.tab-bar {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 50;
+  background: rgba(10, 10, 12, 0.92);
+  backdrop-filter: blur(20px) saturate(1.2);
+  -webkit-backdrop-filter: blur(20px) saturate(1.2);
+  border-top: 1px solid var(--line);
+  display: flex;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.tab-btn {
+  flex: 1;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 4px;
+  padding: 10px 8px 12px;
+  background: transparent; border: none; cursor: pointer;
+  color: var(--text-faint);
+  transition: color 0.15s;
+  -webkit-tap-highlight-color: transparent;
+}
+.tab-btn.active { color: var(--accent); }
+.tab-btn svg { width: 22px; height: 22px; flex-shrink: 0; }
+.tab-btn span {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* ========== THUMBNAIL LUGAR ========== */
+.place-thumb {
+  flex-shrink: 0;
+  width: 64px; height: 64px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--bg-3);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px;
+  align-self: center;
+}
+.place-thumb img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.35s;
+  display: block;
+}
+.place-thumb img.loaded { opacity: 1; }
+
+/* ========== VISTA LUGARES ========== */
+.places-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 20px 4px 14px;
+}
+.places-header h2 {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+}
+.loc-request-btn {
+  font-size: 12px;
+  background: var(--bg-3);
+  border: 1px solid var(--line);
+  color: var(--accent);
+  padding: 6px 14px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.loc-request-btn:active { opacity: 0.7; }
 </style>
 </head>
 <body>
@@ -854,6 +1015,9 @@ main { padding: 20px 16px 100px; max-width: 720px; margin: 0 auto; }
         <button class="icon" id="exportBtn" title="Descargar backup">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         </button>
+        <button class="icon" id="nearbyBtn" title="Lugares cercanos">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="16" height="16"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
         <button class="icon" id="refreshBtn" title="Actualizar">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
         </button>
@@ -871,6 +1035,25 @@ main { padding: 20px 16px 100px; max-width: 720px; margin: 0 auto; }
   </main>
 
   <button class="fab" id="addBtn" title="Agregar evento">+</button>
+
+  <nav class="tab-bar" id="tab-bar">
+    <button class="tab-btn active" id="tab-itinerario">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <rect x="3" y="5" width="18" height="16" rx="2"/>
+        <line x1="3" y1="10" x2="21" y2="10"/>
+        <line x1="8" y1="3" x2="8" y2="7"/>
+        <line x1="16" y1="3" x2="16" y2="7"/>
+      </svg>
+      <span>Itinerario</span>
+    </button>
+    <button class="tab-btn" id="tab-lugares">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+        <circle cx="12" cy="10" r="3"/>
+      </svg>
+      <span>Lugares</span>
+    </button>
+  </nav>
 </div>
 
 <!-- ========== MODAL ========== -->
@@ -1089,6 +1272,18 @@ main { padding: 20px 16px 100px; max-width: 720px; margin: 0 auto; }
   </div>
 </div>
 
+<!-- ========== MODAL LUGARES CERCANOS ========== -->
+<div class="modal-backdrop" id="nearby-modal">
+  <div class="modal nearby-modal">
+    <div class="handle" style="margin: 16px auto 0;"></div>
+    <div class="nearby-modal-hd">
+      <h2 id="nearby-title"></h2>
+      <p id="nearby-sub"></p>
+    </div>
+    <div id="nearby-list"></div>
+  </div>
+</div>
+
 <div class="toast" id="toast"></div>
 
 <script>
@@ -1116,8 +1311,10 @@ let STATE = {
   user: null,
   filterCity: 'all',
   editingId: null,
-  imageCache: {},   // place_id → [url, ...]
-  detailEvent: null // evento abierto en modal de detalle
+  imageCache: {},      // place_id → [url, ...]
+  detailEvent: null,   // evento abierto en modal de detalle
+  userLocation: null,  // { lat, lng } si geolocalización disponible
+  activeTab: 'itinerario',
 };
 let dmImages = [];
 let dmCurrentImg = 0;
@@ -1164,6 +1361,37 @@ function fmtDate(d) {
   return `${da} ${MONTHS[mo-1]}`;
 }
 function dayKey(d) { return d || 'sin-fecha'; }
+
+function haversine(lat1, lng1, lat2, lng2) {
+  const R = 6371;
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLng = (lng2 - lng1) * Math.PI / 180;
+  const a = Math.sin(dLat/2)**2 + Math.cos(lat1 * Math.PI/180) * Math.cos(lat2 * Math.PI/180) * Math.sin(dLng/2)**2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+function fmtDistance(km) {
+  if (km < 1) return `${Math.round(km * 1000)} m`;
+  if (km < 10) return `${km.toFixed(1)} km`;
+  return `${Math.round(km)} km`;
+}
+// Busca el lugar del catálogo correspondiente a un evento (igual lógica que el modal detalle)
+function findPlaceForEvent(e) {
+  let p = e.place_id ? STATE.places.find(pl => pl.id == e.place_id) : null;
+  if (!p) p = findPlace(e.place) || findPlace(e.activity) || null;
+  if (!p && STATE.places.length) {
+    const act = (e.activity || '').toLowerCase().trim();
+    const plc = (e.place || '').toLowerCase().trim();
+    p = STATE.places.find(pl => {
+      const n = pl.name.toLowerCase();
+      if (n.length <= 3) return false;
+      if (act.includes(n) || plc.includes(n)) return true;
+      if (act.length > 7 && n.includes(act)) return true;
+      if (plc.length > 7 && n.includes(plc)) return true;
+      return false;
+    }) || null;
+  }
+  return p;
+}
 
 // ============================================================
 // DATOS DEL VIAJE — autocompletado
@@ -1473,6 +1701,7 @@ async function loadEvents() {
     const r = await api('list');
     STATE.events = r.events;
     render();
+    silentLocationRequest();
   } catch (err) {
     $('#main').innerHTML = `<div class="empty"><h3>Error</h3><p>${err.message}</p></div>`;
   }
@@ -1505,20 +1734,27 @@ function renderCityNav() {
 
 function render() {
   renderCityNav();
+  if (STATE.activeTab === 'lugares') {
+    $('#addBtn').style.display = 'none';
+    renderPlacesView();
+  } else {
+    $('#addBtn').style.display = '';
+    renderItinerarioView();
+  }
+}
+
+function renderItinerarioView() {
   const main = $('#main'); main.innerHTML = '';
 
-  // Filtrar
   let events = STATE.events;
   if (STATE.filterCity !== 'all') {
     events = events.filter(e => e.city === STATE.filterCity || e.tentative);
   }
 
-  // Separar tentativos
   const tentatives = events.filter(e => e.tentative);
-  const dated = events.filter(e => !e.tentative && e.start_date);
-  const noDate = events.filter(e => !e.tentative && !e.start_date);
+  const dated      = events.filter(e => !e.tentative && e.start_date);
+  const noDate     = events.filter(e => !e.tentative && !e.start_date);
 
-  // Agrupar por fecha
   const byDay = {};
   dated.forEach(e => {
     const k = dayKey(e.start_date);
@@ -1536,15 +1772,10 @@ function render() {
     return;
   }
 
-  // Render días
-  let todayElement = null;
   for (const dk of dayKeys) {
-    const group = renderDayGroup(dk, byDay[dk]);
-    main.appendChild(group);
-    if (group.classList.contains('is-today')) todayElement = group;
+    main.appendChild(renderDayGroup(dk, byDay[dk]));
   }
 
-  // Render "sin fecha pero del viaje"
   if (noDate.length) {
     const sec = el('div', { class: 'tentative-section' },
       el('h2', {}, 'Sin fecha'),
@@ -1556,7 +1787,6 @@ function render() {
     main.appendChild(sec);
   }
 
-  // Render tentativos
   if (tentatives.length) {
     const sec = el('div', { class: 'tentative-section' },
       el('h2', {}, 'Por asignar'),
@@ -1567,8 +1797,159 @@ function render() {
     sec.appendChild(list);
     main.appendChild(sec);
   }
+}
 
-  // (botón flotante removido: el de calendar del header ya hace esta función)
+function renderPlacesView() {
+  const main = $('#main'); main.innerHTML = '';
+
+  if (!STATE.places.length) {
+    main.appendChild(el('div', { class: 'loader' }));
+    loadPlaces().then(() => renderPlacesView());
+    return;
+  }
+
+  let places = STATE.places.filter(p => p.lat && p.lng);
+  if (STATE.filterCity !== 'all') {
+    places = places.filter(p => p.city === STATE.filterCity);
+  }
+
+  if (STATE.userLocation) {
+    const { lat, lng } = STATE.userLocation;
+    places = places.map(p => ({ ...p, _dist: haversine(lat, lng, p.lat, p.lng) }));
+    places.sort((a, b) => a._dist - b._dist);
+  } else {
+    places.sort((a, b) => (b.duration_min || 0) - (a.duration_min || 0));
+  }
+
+  const hdr = el('div', { class: 'places-header' },
+    el('h2', {}, STATE.userLocation ? 'Cerca de ti' : 'Todos los lugares')
+  );
+  if (!STATE.userLocation) {
+    const btn = el('button', { class: 'loc-request-btn',
+      onclick: () => requestLocation(() => renderPlacesView())
+    }, '📍 Activar ubicación');
+    hdr.appendChild(btn);
+  }
+  main.appendChild(hdr);
+
+  const list = el('div', { class: 'event-list' });
+  places.forEach(p => list.appendChild(renderPlaceCard(p)));
+  main.appendChild(list);
+  // Cargar miniaturas ahora que los elementos están en el DOM
+  loadAllThumbs();
+}
+
+// ---- Thumbnails para tarjetas de lugares ----
+// Carga todas las miniaturas visibles en la vista de lugares
+function loadAllThumbs() {
+  document.querySelectorAll('.place-thumb[data-place-id]').forEach(thumbEl => {
+    if (thumbEl.querySelector('img')) return; // ya tiene imagen
+    const placeId = thumbEl.dataset.placeId;
+    const place = STATE.places.find(p => String(p.id) === String(placeId));
+    if (place) loadPlaceThumb(place, thumbEl);
+  });
+}
+
+function showThumbInEl(thumbEl, imgUrl, altText) {
+  const img = document.createElement('img');
+  img.alt = altText || '';
+  img.onload  = () => img.classList.add('loaded');
+  img.onerror = () => { img.remove(); thumbEl.textContent = '📍'; };
+  img.src = imgUrl;
+  thumbEl.textContent = '';
+  thumbEl.appendChild(img);
+}
+
+async function loadPlaceThumb(place, thumbEl) {
+  const cached = STATE.imageCache[place.id];
+  if (cached !== undefined) {
+    // Usar el último elemento del cache = URL original de Wikipedia (siempre válida)
+    if (cached.length) showThumbInEl(thumbEl, cached[cached.length - 1], place.name);
+    return;
+  }
+  if (!place.wikipedia_title) { STATE.imageCache[place.id] = []; return; }
+  try {
+    const r = await fetch(
+      `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(place.wikipedia_title)}`,
+      { signal: AbortSignal.timeout ? AbortSignal.timeout(6000) : undefined }
+    );
+    if (!r.ok) { STATE.imageCache[place.id] = []; return; }
+    const data = await r.json();
+    let images = [];
+    let thumbUrl = null;
+    if (data.thumbnail?.source) {
+      const orig = data.thumbnail.source;
+      const hi   = orig.replace(/\/\d+px-/, '/800px-');
+      images = hi !== orig ? [hi, orig] : [orig];
+      thumbUrl = orig; // URL original siempre funciona
+    }
+    STATE.imageCache[place.id] = images;
+    if (thumbUrl) showThumbInEl(thumbEl, thumbUrl, place.name);
+  } catch (_) {
+    STATE.imageCache[place.id] = STATE.imageCache[place.id] || [];
+  }
+}
+
+function renderPlaceCard(place) {
+  const card = el('div', {
+    class: 'event-card',
+    style: '--type-color: #8ec59a;',
+    onclick: () => openPlaceDetailModal(place)
+  });
+  card.appendChild(el('div', { class: 'accent-bar' }));
+
+  // Thumbnail en vez del icono genérico
+  const thumb = el('div', { class: 'place-thumb', 'data-place-id': place.id });
+  const cachedImgs = STATE.imageCache[place.id];
+  if (cachedImgs && cachedImgs.length) {
+    showThumbInEl(thumb, cachedImgs[cachedImgs.length - 1], place.name);
+  } else {
+    thumb.textContent = '📍';
+  }
+  card.appendChild(thumb);
+
+  const body = el('div', { class: 'body' });
+
+  if (place._dist !== undefined) {
+    body.appendChild(el('div', { class: 'time' }, fmtDistance(place._dist)));
+  }
+
+  body.appendChild(el('div', { class: 'activity' }, place.name));
+  if (place.address) {
+    body.appendChild(el('div', { class: 'place' }, place.address));
+  }
+
+  const meta_row = el('div', { class: 'place-meta' });
+  meta_row.appendChild(el('span', { class: 'tag', style: '--type-color: #8ec59a;' }, place.city || ''));
+  if (place.duration_min) {
+    meta_row.appendChild(el('span', { class: 'dist-chip' }, `⏱ ${fmtDuration(parseInt(place.duration_min))}`));
+  }
+
+  if (place.lat && place.lng) {
+    const distText = STATE.userLocation
+      ? ` · ${fmtDistance(haversine(STATE.userLocation.lat, STATE.userLocation.lng, place.lat, place.lng))}`
+      : '';
+    const mapBtn = el('a', {
+      class: 'map-btn',
+      href: `https://www.google.com/maps?q=${place.lat},${place.lng}`,
+      target: '_blank', rel: 'noopener',
+      onclick: (ev) => ev.stopPropagation()
+    });
+    mapBtn.innerHTML = `<svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Mapa${distText}`;
+    meta_row.appendChild(mapBtn);
+  }
+
+  body.appendChild(meta_row);
+
+  if (place.description) {
+    const preview = place.description.length > 110
+      ? place.description.substring(0, 110) + '…'
+      : place.description;
+    body.appendChild(el('div', { class: 'notes' }, preview));
+  }
+
+  card.appendChild(body);
+  return card;
 }
 
 function renderDayGroup(dateStr, events) {
@@ -1649,10 +2030,13 @@ function renderCard(e) {
   meta_row.appendChild(el('span', { class: 'tag' }, e.type || 'Otro'));
   if (happening) meta_row.appendChild(el('span', { class: 'now-badge' }, 'Ahora'));
 
-  // Botón Google Maps si el lugar tiene coordenadas
-  const placeObj = e.place_id ? STATE.places.find(p => p.id == e.place_id) : null;
+  // Botón Google Maps + distancia si el lugar tiene coordenadas en el catálogo
+  const placeObj = findPlaceForEvent(e);
   if (placeObj && placeObj.lat && placeObj.lng) {
     const mapUrl = `https://www.google.com/maps?q=${placeObj.lat},${placeObj.lng}`;
+    const distText = STATE.userLocation
+      ? ` · ${fmtDistance(haversine(STATE.userLocation.lat, STATE.userLocation.lng, placeObj.lat, placeObj.lng))}`
+      : '';
     const mapBtn = el('a', {
       class: 'map-btn',
       href: mapUrl,
@@ -1660,7 +2044,7 @@ function renderCard(e) {
       rel: 'noopener',
       onclick: (ev) => ev.stopPropagation()
     });
-    mapBtn.innerHTML = '<svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Mapa';
+    mapBtn.innerHTML = `<svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Mapa${distText}`;
     meta_row.appendChild(mapBtn);
   }
 
@@ -1750,11 +2134,18 @@ async function openDetailModal(e) {
     placeObj = findPlace(e.place) || findPlace(e.activity) || null;
   }
   if (!placeObj && STATE.places.length) {
-    const act = (e.activity || '').toLowerCase();
-    const plc = (e.place || '').toLowerCase();
+    const act = (e.activity || '').toLowerCase().trim();
+    const plc = (e.place || '').toLowerCase().trim();
     placeObj = STATE.places.find(p => {
       const n = p.name.toLowerCase();
-      return n.length > 3 && (act.includes(n) || plc.includes(n));
+      if (n.length <= 3) return false;
+      // catálogo en evento (ej. "coliseo" en "coliseo, foro y palatino")
+      if (act.includes(n) || plc.includes(n)) return true;
+      // evento en catálogo (ej. "montmartre" en "barrio de montmartre")
+      // umbral > 7 para no matchear con nombres de ciudad sueltos ("París", "Roma")
+      if (act.length > 7 && n.includes(act)) return true;
+      if (plc.length > 7 && n.includes(plc)) return true;
+      return false;
     }) || null;
   }
   const descSection = $('#dm-desc-section');
@@ -1771,12 +2162,19 @@ async function openDetailModal(e) {
     descSection.style.display = 'none';
   }
 
-  // Botón Mapa
+  // Botón Mapa con distancia
   const mapBtn = $('#dm-map-btn');
   if (placeObj && placeObj.lat && placeObj.lng) {
     mapBtn.href = `https://www.google.com/maps?q=${placeObj.lat},${placeObj.lng}`;
+    const distText = STATE.userLocation
+      ? ` · ${fmtDistance(haversine(STATE.userLocation.lat, STATE.userLocation.lng, placeObj.lat, placeObj.lng))}`
+      : '';
+    mapBtn.innerHTML = `<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Mapa${distText}`;
     mapBtn.style.display = '';
   } else { mapBtn.style.display = 'none'; }
+
+  // Ocultar editar cuando se abre desde "Lugares cercanos" (sin id de evento)
+  $('#dm-edit-btn').style.display = (e.id !== null && e.id !== undefined) ? '' : 'none';
 
   $('#detail-modal').classList.add('show');
 
@@ -1805,7 +2203,6 @@ async function loadDetailImages(place) {
     const carousel = $('#dm-carousel');
     carousel.style.display = '';
     $('#dm-spinner').style.display = '';
-    $('#dm-img').style.opacity = '0';
     try {
       const r = await fetch(
         `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(place.wikipedia_title)}`,
@@ -1845,6 +2242,7 @@ function renderDmCarousel() {
   const spinner = $('#dm-spinner');
 
   spinner.style.display = 'none';
+  img.style.opacity = '';   // limpiar cualquier inline style residual
   img.classList.remove('loaded');
   img.src = '';
 
@@ -2094,6 +2492,143 @@ setInterval(() => {
     }
   });
 }, 60000);
+
+// ============================================================
+// GEOLOCALIZACIÓN Y LUGARES CERCANOS
+// ============================================================
+function requestLocation(onSuccess) {
+  if (!navigator.geolocation) {
+    toast('Geolocalización no disponible en este navegador');
+    return;
+  }
+  navigator.geolocation.getCurrentPosition(
+    (pos) => {
+      STATE.userLocation = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+      $('#nearbyBtn').classList.add('location-active');
+      if (onSuccess) onSuccess();
+      else render(); // actualizar distancias en tarjetas
+    },
+    (err) => {
+      if (err.code === 1) toast('Permiso de ubicación denegado');
+      else toast('No se pudo obtener la ubicación');
+      if (onSuccess) onSuccess(); // mostrar modal sin distancias
+    },
+    { enableHighAccuracy: false, timeout: 10000, maximumAge: 120000 }
+  );
+}
+
+function silentLocationRequest() {
+  if (!navigator.geolocation || STATE.userLocation) return;
+  navigator.geolocation.getCurrentPosition(
+    (pos) => {
+      STATE.userLocation = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+      $('#nearbyBtn').classList.add('location-active');
+      render();
+    },
+    () => { /* silencioso */ },
+    { enableHighAccuracy: false, timeout: 5000, maximumAge: 300000 }
+  );
+}
+
+function openPlaceDetailModal(place) {
+  openDetailModal({
+    id: null,
+    activity: place.name,
+    place: place.address || '',
+    type: 'Actividad',
+    start_date: null, start_time: null,
+    end_date: null, end_time: null,
+    cost: null, notes: null, url: null,
+    city: place.city,
+    place_id: place.id
+  });
+}
+
+async function showNearbyModal() {
+  if (!STATE.places.length) await loadPlaces();
+
+  let places = STATE.places.filter(p => p.lat && p.lng);
+  let title, subtitle;
+  let allFar = false;
+
+  if (STATE.userLocation) {
+    const { lat, lng } = STATE.userLocation;
+    places = places.map(p => ({ ...p, _dist: haversine(lat, lng, p.lat, p.lng) }));
+    places.sort((a, b) => a._dist - b._dist);
+    const nearest = places[0]?._dist ?? Infinity;
+    allFar = nearest > 100;
+    if (allFar) {
+      title = 'Lugares de interés';
+      subtitle = `Todos los sitios están a más de 100 km. Estos son los más destacados del viaje:`;
+      places.sort((a, b) => (b.duration_min || 0) - (a.duration_min || 0));
+    } else {
+      const nearby = places.filter(p => p._dist <= 100).length;
+      title = 'Lugares cercanos';
+      subtitle = `${nearby} lugar${nearby !== 1 ? 'es' : ''} a menos de 100 km de ti`;
+    }
+  } else {
+    title = 'Lugares cercanos';
+    subtitle = 'Obteniendo tu ubicación…';
+    places.sort((a, b) => (b.duration_min || 0) - (a.duration_min || 0));
+  }
+
+  $('#nearby-title').textContent = title;
+  $('#nearby-sub').textContent = subtitle;
+
+  const list = $('#nearby-list');
+  list.innerHTML = '';
+
+  places.slice(0, 25).forEach(place => {
+    const item = el('div', { class: 'nearby-item', onclick: () => {
+      $('#nearby-modal').classList.remove('show');
+      openPlaceDetailModal(place);
+    }});
+
+    const info = el('div', { class: 'nearby-info' },
+      el('div', { class: 'nearby-name' }, place.name),
+      el('div', { class: 'nearby-city' }, place.city),
+      el('div', { class: 'nearby-desc' }, place.description || '')
+    );
+
+    item.appendChild(info);
+
+    if (place._dist !== undefined) {
+      const far = place._dist > 100;
+      const distEl = el('div', { class: 'nearby-dist' + (far ? ' far' : '') },
+        fmtDistance(place._dist)
+      );
+      item.appendChild(distEl);
+    }
+
+    list.appendChild(item);
+  });
+
+  $('#nearby-modal').classList.add('show');
+
+  if (!STATE.userLocation) {
+    requestLocation(() => showNearbyModal());
+  }
+}
+
+$('#nearbyBtn').addEventListener('click', () => showNearbyModal());
+$('#nearby-modal').addEventListener('click', (ev) => {
+  if (ev.target === $('#nearby-modal')) $('#nearby-modal').classList.remove('show');
+});
+
+// ============================================================
+// TAB BAR
+// ============================================================
+function setActiveTab(tab) {
+  STATE.activeTab = tab;
+  $('#tab-itinerario').classList.toggle('active', tab === 'itinerario');
+  $('#tab-lugares').classList.toggle('active', tab === 'lugares');
+  render();
+}
+$('#tab-itinerario').addEventListener('click', () => setActiveTab('itinerario'));
+$('#tab-lugares').addEventListener('click', () => {
+  setActiveTab('lugares');
+  if (!STATE.userLocation) silentLocationRequest();
+});
 
 // ============================================================
 // INIT

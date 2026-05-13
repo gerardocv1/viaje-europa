@@ -4,6 +4,15 @@
 // ============================================================
 require_once __DIR__ . '/config.php';
 
+$thirtyDays = 30 * 24 * 60 * 60;
+ini_set('session.gc_maxlifetime', $thirtyDays);
+session_set_cookie_params([
+    'lifetime' => $thirtyDays,
+    'path'     => '/',
+    'secure'   => false,
+    'httponly' => true,
+    'samesite' => 'Lax',
+]);
 session_start();
 header('Content-Type: application/json; charset=utf-8');
 
@@ -59,35 +68,71 @@ function getDB() {
     try { $db->exec("ALTER TABLE places ADD COLUMN wikipedia_title TEXT"); $wikiAdded = true; } catch (Exception $e) {}
     try { $db->exec("ALTER TABLE places ADD COLUMN images TEXT"); } catch (Exception $e) {}
 
-    // Sembrar lugares si la tabla está vacía
-    $count = $db->query("SELECT COUNT(*) FROM places")->fetchColumn();
+    // Sincronizar places desde JSON (siembra, renombres y nuevas entradas)
     $jsonFile = __DIR__ . '/places.json';
-    if ($count == 0 && file_exists($jsonFile)) {
-        $places = json_decode(file_get_contents($jsonFile), true) ?: [];
-        $stmt = $db->prepare("
-            INSERT INTO places (name, city, description, duration_min, address, lat, lng, wikipedia_title, images)
-            VALUES (:name, :city, :description, :duration_min, :address, :lat, :lng, :wikipedia_title, :images)
-        ");
-        foreach ($places as $p) {
-            $stmt->execute([
-                ':name'            => $p['name'] ?? '',
-                ':city'            => $p['city'] ?? '',
-                ':description'     => $p['description'] ?? '',
-                ':duration_min'    => isset($p['duration_min']) ? intval($p['duration_min']) : null,
-                ':address'         => $p['address'] ?? '',
-                ':lat'             => isset($p['lat']) ? floatval($p['lat']) : null,
-                ':lng'             => isset($p['lng']) ? floatval($p['lng']) : null,
-                ':wikipedia_title' => $p['wikipedia_title'] ?? null,
-                ':images'          => isset($p['images']) ? json_encode($p['images']) : null,
-            ]);
-        }
-    } elseif ($wikiAdded && file_exists($jsonFile)) {
-        // Backfill wikipedia_title para places ya existentes
-        $places = json_decode(file_get_contents($jsonFile), true) ?: [];
-        $stmt = $db->prepare("UPDATE places SET wikipedia_title = :wt WHERE name = :name AND (wikipedia_title IS NULL OR wikipedia_title = '')");
-        foreach ($places as $p) {
-            if (!empty($p['wikipedia_title'])) {
-                $stmt->execute([':wt' => $p['wikipedia_title'], ':name' => $p['name']]);
+    if (file_exists($jsonFile)) {
+        $jsonPlaces = json_decode(file_get_contents($jsonFile), true) ?: [];
+        $dbCount    = $db->query("SELECT COUNT(*) FROM places")->fetchColumn();
+
+        if ($dbCount == 0) {
+            // Siembra inicial completa
+            $stmt = $db->prepare("
+                INSERT INTO places (name, city, description, duration_min, address, lat, lng, wikipedia_title, images)
+                VALUES (:name, :city, :description, :duration_min, :address, :lat, :lng, :wikipedia_title, :images)
+            ");
+            foreach ($jsonPlaces as $p) {
+                $stmt->execute([
+                    ':name'            => $p['name'] ?? '',
+                    ':city'            => $p['city'] ?? '',
+                    ':description'     => $p['description'] ?? '',
+                    ':duration_min'    => isset($p['duration_min']) ? intval($p['duration_min']) : null,
+                    ':address'         => $p['address'] ?? '',
+                    ':lat'             => isset($p['lat']) ? floatval($p['lat']) : null,
+                    ':lng'             => isset($p['lng']) ? floatval($p['lng']) : null,
+                    ':wikipedia_title' => $p['wikipedia_title'] ?? null,
+                    ':images'          => isset($p['images']) ? json_encode($p['images']) : null,
+                ]);
+            }
+        } else {
+            // Sincronización incremental usando lat/lng como clave natural:
+            // actualiza nombre y datos, inserta lugares nuevos
+            $stmtUpdate = $db->prepare("
+                UPDATE places SET name=:name, description=:desc, wikipedia_title=:wt
+                WHERE ABS(lat - :lat) < 0.001 AND ABS(lng - :lng) < 0.001
+            ");
+            $stmtExists = $db->prepare("
+                SELECT COUNT(*) FROM places WHERE ABS(lat - :lat) < 0.001 AND ABS(lng - :lng) < 0.001
+            ");
+            $stmtInsert = $db->prepare("
+                INSERT INTO places (name, city, description, duration_min, address, lat, lng, wikipedia_title, images)
+                VALUES (:name, :city, :description, :duration_min, :address, :lat, :lng, :wikipedia_title, :images)
+            ");
+            foreach ($jsonPlaces as $p) {
+                $lat = isset($p['lat']) ? floatval($p['lat']) : null;
+                $lng = isset($p['lng']) ? floatval($p['lng']) : null;
+                if (!$lat || !$lng) continue;
+                $stmtExists->execute([':lat' => $lat, ':lng' => $lng]);
+                if ($stmtExists->fetchColumn()) {
+                    $stmtUpdate->execute([
+                        ':name' => $p['name'] ?? '',
+                        ':desc' => $p['description'] ?? '',
+                        ':wt'   => $p['wikipedia_title'] ?? null,
+                        ':lat'  => $lat,
+                        ':lng'  => $lng,
+                    ]);
+                } else {
+                    $stmtInsert->execute([
+                        ':name'            => $p['name'] ?? '',
+                        ':city'            => $p['city'] ?? '',
+                        ':description'     => $p['description'] ?? '',
+                        ':duration_min'    => isset($p['duration_min']) ? intval($p['duration_min']) : null,
+                        ':address'         => $p['address'] ?? '',
+                        ':lat'             => $lat,
+                        ':lng'             => $lng,
+                        ':wikipedia_title' => $p['wikipedia_title'] ?? null,
+                        ':images'          => isset($p['images']) ? json_encode($p['images']) : null,
+                    ]);
+                }
             }
         }
     }

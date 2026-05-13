@@ -130,7 +130,7 @@
     "wikipedia_title": "Malasaña"
   },
   {
-    "name": "Calle Gran Vía",
+    "name": "Gran Vía",
     "city": "Madrid",
     "description": "La gran avenida comercial de Madrid, con arquitectura ecléctica de principios del siglo XX. Teatros, cines, tiendas de moda, restaurantes y el icónico edificio Metrópolis.",
     "duration_min": 90,
@@ -210,7 +210,7 @@
     "wikipedia_title": "Notre-Dame de Paris"
   },
   {
-    "name": "Arco de Triunfo",
+    "name": "Arco del Triunfo",
     "city": "Paris",
     "description": "Monumento neoclásico encargado por Napoleón en 1806. En el centro de la Place Charles de Gaulle, donde confluyen 12 avenidas. Desde la cima, vistas de los Campos Elíseos.",
     "duration_min": 60,
@@ -240,7 +240,7 @@
     "wikipedia_title": "Sacré-Cœur, Paris"
   },
   {
-    "name": "Barrio de Montmartre",
+    "name": "Montmartre",
     "city": "Paris",
     "description": "Pintoresco barrio de artistas en la colina más alta de París. Calles adoquinadas, Place du Tertre con pintores en vivo, el cabaré Moulin Rouge y el ambiente más bohemio de la ciudad.",
     "duration_min": 120,
@@ -310,7 +310,7 @@
     "wikipedia_title": "Musée Picasso, Paris"
   },
   {
-    "name": "Jardín de Luxemburgo",
+    "name": "Jardines de Luxemburgo",
     "city": "Paris",
     "description": "El parque más querido por los parisinos, con 26 hectáreas de jardines formales, una gran piscina octagonal, estatuas y el Palacio del Senado. Perfecto para un picnic.",
     "duration_min": 90,
@@ -610,7 +610,7 @@
     "wikipedia_title": "Piazza Navona"
   },
   {
-    "name": "Plaza de España y Escalinata",
+    "name": "Escalinata de España",
     "city": "Roma",
     "description": "La famosa Escalinata de la Trinidad del siglo XVIII con 135 escalones. Punto de encuentro icónico de Roma, con la fuente Barcaccia de Bernini y la vista hacia Villa Medici.",
     "duration_min": 60,
@@ -620,7 +620,7 @@
     "wikipedia_title": "Spanish Steps"
   },
   {
-    "name": "Barrio de Trastevere",
+    "name": "Trastevere",
     "city": "Roma",
     "description": "El barrio más auténtico y romántico de Roma a orillas del Tíber. Callejuelas medievales, hiedra en las fachadas, restaurantes de cocina romana tradicional y mucho ambiente nocturno.",
     "duration_min": 120,
@@ -760,7 +760,7 @@
     "wikipedia_title": "Bilbao Fine Arts Museum"
   },
   {
-    "name": "Parque de Doña Casilda",
+    "name": "Parque Doña Casilda",
     "city": "Bilbao",
     "description": "Romántico parque histórico de finales del siglo XIX junto al Museo de Bellas Artes. Con lago, patos, quiosco de música y jardines arbolados. Uno de los rincones más tranquilos de Bilbao.",
     "duration_min": 60,
@@ -808,5 +808,55 @@
     "lat": 43.2647,
     "lng": -2.9295,
     "wikipedia_title": "Nervión"
+  },
+  {
+    "name": "Puerta de Alcalá",
+    "city": "Madrid",
+    "description": "Arco de triunfo neoclásico del siglo XVIII encargado por Carlos III, uno de los cinco accesos originales a la ciudad. Símbolo icónico de Madrid ubicado en la Plaza de la Independencia, junto al Parque del Retiro.",
+    "duration_min": 20,
+    "address": "Plaza de la Independencia, 28001 Madrid",
+    "lat": 40.4190,
+    "lng": -3.6885,
+    "wikipedia_title": "Puerta de Alcalá"
+  },
+  {
+    "name": "Plaza de España",
+    "city": "Madrid",
+    "description": "Amplia plaza en el extremo oeste de la Gran Vía dominada por el Edificio España y la Torre de Madrid. En el centro, la fuente monumental con las estatuas de Don Quijote y Sancho Panza.",
+    "duration_min": 30,
+    "address": "Plaza de España, 28008 Madrid",
+    "lat": 40.4233,
+    "lng": -3.7124,
+    "wikipedia_title": "Plaza de España, Madrid"
+  },
+  {
+    "name": "Jardines de las Tullerías",
+    "city": "Paris",
+    "description": "Jardín formal de 28 hectáreas entre el Louvre y la Place de la Concorde, creado por Catalina de Médici en el siglo XVI. Esculturas modernas de Rodin, Giacometti y Maillol. Paseo favorito de los parisinos.",
+    "duration_min": 60,
+    "address": "Jardin des Tuileries, 75001 Paris",
+    "lat": 48.8638,
+    "lng": 2.3283,
+    "wikipedia_title": "Tuileries Garden"
+  },
+  {
+    "name": "Piazza Venezia",
+    "city": "Roma",
+    "description": "La plaza central de Roma, dominada por el imponente Vittoriano (Altar de la Patria), monumento al rey Víctor Manuel II inaugurado en 1911. Desde sus terrazas gratuitas se tiene la mejor vista panorámica de Roma.",
+    "duration_min": 45,
+    "address": "Piazza Venezia, 00186 Roma",
+    "lat": 41.8958,
+    "lng": 12.4823,
+    "wikipedia_title": "Piazza Venezia"
+  },
+  {
+    "name": "Estadio San Mamés",
+    "city": "Bilbao",
+    "description": "El nuevo estadio del Athletic Club de Bilbao, inaugurado en 2013 y apodado 'La Catedral'. Su arquitectura de vanguardia con fachada de paneles translúcidos y capacidad para 53.000 espectadores es una obra de arte en sí misma.",
+    "duration_min": 60,
+    "address": "Rafael Moreno Pitxitxi Kalea, s/n, 48013 Bilbao",
+    "lat": 43.2640,
+    "lng": -2.9495,
+    "wikipedia_title": "San Mamés Stadium"
   }
 ]

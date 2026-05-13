@@ -7,7 +7,15 @@
       "Bash(php -l /Users/gerardocarvajalvargas/www/viaje/init.php)",
       "Bash(php -l /Users/gerardocarvajalvargas/www/viaje/api.php)",
       "Bash(php -r ' *)",
-      "Bash(sqlite3 /Users/gerardocarvajalvargas/www/viaje/itinerario.db \".tables\")"
+      "Bash(sqlite3 /Users/gerardocarvajalvargas/www/viaje/itinerario.db \".tables\")",
+      "Bash(python3 -c ' *)",
+      "Bash(curl -s http://localhost:8888/)",
+      "Bash(curl -s \"https://en.wikipedia.org/api/rest_v1/page/summary/Museo%20del%20Prado\")",
+      "Bash(sqlite3 /Users/gerardocarvajalvargas/www/viaje/itinerario.db \"SELECT city, place, activity FROM events ORDER BY city, start_date, start_time;\")",
+      "Bash(curl -s -I -A \"Mozilla/5.0\" \"https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Museo_del_Prado_2016_%2825185969599%29.jpg/200px-Museo_del_Prado_2016_%2825185969599%29.jpg\")",
+      "Bash(curl -s -o /dev/null -w 'HTTP: %{http_code}\\\\n' -A Mozilla/5.0 https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Museo_del_Prado_2016_%2825185969599%29.jpg/330px-Museo_del_Prado_2016_%2825185969599%29.jpg)",
+      "Bash(curl -s -o /dev/null -w 'HTTP 320px: %{http_code}\\\\n' -A Mozilla/5.0 https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Museo_del_Prado_2016_%2825185969599%29.jpg/320px-Museo_del_Prado_2016_%2825185969599%29.jpg)",
+      "Bash(curl -s -o /dev/null -w 'HTTP 120px: %{http_code}\\\\n' -A Mozilla/5.0 https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Museo_del_Prado_2016_%2825185969599%29.jpg/120px-Museo_del_Prado_2016_%2825185969599%29.jpg)"
     ]
   }
 }
