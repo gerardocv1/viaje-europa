@@ -641,7 +641,8 @@ main { padding: 20px 16px 100px; max-width: 720px; margin: 0 auto; }
     </div>
     <div class="field">
       <label>Lugar</label>
-      <input type="text" id="f_place" placeholder="Ej: París — Museo del Louvre">
+      <input type="text" id="f_place" list="places-list" placeholder="Buscar lugar…" autocomplete="off">
+      <datalist id="places-list"></datalist>
     </div>
     <div class="field">
       <label>Tipo</label>
@@ -660,27 +661,46 @@ main { padding: 20px 16px 100px; max-width: 720px; margin: 0 auto; }
     <div class="row-2">
       <div class="field">
         <label>Fecha inicio</label>
-        <input type="date" id="f_start_date">
+        <input type="date" id="f_start_date" min="2026-05-14" max="2026-05-29">
       </div>
       <div class="field">
         <label>Hora inicio</label>
-        <input type="time" id="f_start_time">
+        <select id="f_start_time">
+          <option value="">— sin hora —</option>
+          <?php for ($h = 0; $h < 24; $h++): ?>
+            <option value="<?= sprintf('%02d:00', $h) ?>"><?= sprintf('%02d:00', $h) ?></option>
+            <option value="<?= sprintf('%02d:30', $h) ?>"><?= sprintf('%02d:30', $h) ?></option>
+          <?php endfor; ?>
+        </select>
       </div>
     </div>
     <div class="row-2">
       <div class="field">
         <label>Fecha fin</label>
-        <input type="date" id="f_end_date">
+        <input type="date" id="f_end_date" min="2026-05-14" max="2026-05-29">
       </div>
       <div class="field">
         <label>Hora fin</label>
-        <input type="time" id="f_end_time">
+        <select id="f_end_time">
+          <option value="">— sin hora —</option>
+          <?php for ($h = 0; $h < 24; $h++): ?>
+            <option value="<?= sprintf('%02d:00', $h) ?>"><?= sprintf('%02d:00', $h) ?></option>
+            <option value="<?= sprintf('%02d:30', $h) ?>"><?= sprintf('%02d:30', $h) ?></option>
+          <?php endfor; ?>
+        </select>
       </div>
     </div>
     <div class="row-2">
       <div class="field">
         <label>Ciudad</label>
-        <input type="text" id="f_city" placeholder="Ej: Paris">
+        <select id="f_city">
+          <option value="">— elegir —</option>
+          <option value="Madrid">Madrid</option>
+          <option value="Paris">París</option>
+          <option value="Milan">Milán</option>
+          <option value="Roma">Roma</option>
+          <option value="Bilbao">Bilbao</option>
+        </select>
       </div>
       <div class="field">
         <label>Costo</label>
@@ -781,6 +801,97 @@ function fmtDate(d) {
   return `${da} ${MONTHS[mo-1]}`;
 }
 function dayKey(d) { return d || 'sin-fecha'; }
+
+// ============================================================
+// DATOS DEL VIAJE — autocompletado
+// ============================================================
+const CITY_DATES = [
+  ['2026-05-14', '2026-05-15', 'Madrid'],
+  ['2026-05-16', '2026-05-19', 'Paris'],
+  ['2026-05-20', '2026-05-21', 'Milan'],
+  ['2026-05-22', '2026-05-24', 'Roma'],
+  ['2026-05-25', '2026-05-27', 'Bilbao'],
+  ['2026-05-28', '2026-05-29', 'Madrid'],
+];
+const PLACES_BY_CITY = {
+  Madrid: [
+    'Plaza Mayor','Puerta del Sol','Gran Vía','Parque del Retiro',
+    'Museo del Prado','Museo Reina Sofía','Museo Thyssen-Bornemisza',
+    'Palacio Real','Plaza de Cibeles','Puerta de Alcalá','Plaza de España',
+    'Templo de Debod','El Rastro','Mercado de San Miguel','La Latina',
+    'Malasaña','Lavapiés','Chueca','Barrio de Salamanca',
+    'Santiago Bernabéu','Aeropuerto Barajas T4',
+    'Mercado de San Antón','El Corte Inglés Callao',
+  ],
+  Paris: [
+    'Torre Eiffel','Trocadéro','Museo del Louvre','Catedral Notre-Dame',
+    'Sacré-Cœur','Montmartre','Palacio de Versalles','Campos Elíseos',
+    'Arco del Triunfo','Musée d\'Orsay','Centro Pompidou',
+    'Jardines de Tuileries','Jardines de Luxemburgo','Île de la Cité',
+    'Shakespeare & Company','Galerías Lafayette','Moulin Rouge',
+    'Panteón de París','Plaza de la República','Bastille','Le Marais',
+    'Saint-Germain-des-Prés','Río Sena','Palais Royal',
+    'Disneyland París','Aeropuerto CDG','Aeropuerto Orly',
+    'Montparnasse','Père Lachaise','Sainte-Chapelle',
+  ],
+  Milan: [
+    'Duomo de Milán','Galería Vittorio Emanuele II','Castillo Sforzesco',
+    'Teatro alla Scala','Navigli','Brera','Pinacoteca di Brera',
+    'Parque Sempione','Arco della Pace','Porta Garibaldi',
+    'Via Montenapoleone','Cementerio Monumental','Isola',
+    'Aeropuerto Malpensa','Aeropuerto Linate',
+    'Santa Maria delle Grazie (La Última Cena)',
+    'Piazza Gae Aulenti','Corso Como',
+    'Tirano','Bernina Express','San Moritz',
+  ],
+  Roma: [
+    'Coliseo','Foro Romano','Palatino',
+    'Basílica de San Pedro','Museos Vaticanos','Capilla Sixtina',
+    'Fontana di Trevi','Panteón de Roma','Piazza Navona',
+    'Plaza de España + Escalinata','Castel Sant\'Angelo','Trastevere',
+    'Piazza Venezia','Altar de la Patria','Villa Borghese',
+    'Campo de\' Fiori','Termas de Caracalla','Circo Máximo',
+    'Bocca della Verità','Aventino + Jardín de los Naranjos',
+    'Ghetto Judío','Pigneto','EUR','Aeropuerto Fiumicino',
+    'Florencia — Duomo','Florencia — Uffizi','Florencia — Ponte Vecchio',
+  ],
+  Bilbao: [
+    'Museo Guggenheim','Casco Viejo','Catedral de Santiago de Bilbao',
+    'Mercado de la Ribera','Puente Zubizuri','Parque Doña Casilda',
+    'Estadio San Mamés','Ría del Nervión','Basílica de Begoña',
+    'Teatro Arriaga','Azkuna Zentroa','Gran Vía de Bilbao',
+    'Playa de la Zurriola','San Sebastián — Parte Vieja',
+    'San Sebastián — Playa de la Concha','Lekeitio','Getxo',
+    'Vitoria-Gasteiz','Gernika','Bermeo',
+  ],
+};
+
+function cityForDate(dateStr) {
+  if (!dateStr) return '';
+  for (const [from, to, city] of CITY_DATES) {
+    if (dateStr >= from && dateStr <= to) return city;
+  }
+  return '';
+}
+function updatePlacesList(city) {
+  const dl = document.getElementById('places-list');
+  dl.innerHTML = '';
+  (PLACES_BY_CITY[city] || []).forEach(p => {
+    const o = document.createElement('option'); o.value = p; dl.appendChild(o);
+  });
+}
+function setTimeSelect(id, val) {
+  const sel = document.getElementById(id);
+  sel.value = val || '';
+  if (val && sel.value !== val) {
+    // Hora no estándar (ej. 12:35) — agregarla temporalmente
+    const o = document.createElement('option');
+    o.value = val; o.textContent = val;
+    sel.insertBefore(o, sel.options[1]);
+    sel.value = val;
+  }
+}
+
 function daysUntil(dateStr) {
   if (!STATE.today || !dateStr) return Infinity;
   const [ty, tm, td] = STATE.today.split('-').map(Number);
@@ -1053,11 +1164,14 @@ function openNewModal() {
   $('#f_activity').value = '';
   $('#f_place').value = '';
   $('#f_type').value = 'Actividad';
-  $('#f_start_date').value = STATE.today || '';
-  $('#f_start_time').value = '';
+  const initDate = STATE.today || '';
+  $('#f_start_date').value = initDate;
+  setTimeSelect('f_start_time', '');
   $('#f_end_date').value = '';
-  $('#f_end_time').value = '';
-  $('#f_city').value = STATE.filterCity !== 'all' ? STATE.filterCity : '';
+  setTimeSelect('f_end_time', '');
+  const autoCity = (STATE.filterCity !== 'all' ? STATE.filterCity : '') || cityForDate(initDate);
+  $('#f_city').value = autoCity;
+  updatePlacesList(autoCity);
   $('#f_cost').value = '';
   $('#f_notes').value = '';
   $('#f_url').value = '';
@@ -1073,10 +1187,11 @@ function openEditModal(e) {
   $('#f_place').value = e.place || '';
   $('#f_type').value = e.type || 'Actividad';
   $('#f_start_date').value = e.start_date || '';
-  $('#f_start_time').value = e.start_time || '';
+  setTimeSelect('f_start_time', e.start_time || '');
   $('#f_end_date').value = e.end_date || '';
-  $('#f_end_time').value = e.end_time || '';
+  setTimeSelect('f_end_time', e.end_time || '');
   $('#f_city').value = e.city || '';
+  updatePlacesList(e.city || '');
   $('#f_cost').value = e.cost || '';
   $('#f_notes').value = e.notes || '';
   $('#f_url').value = e.url || '';
@@ -1087,6 +1202,16 @@ function openEditModal(e) {
 $('#addBtn').addEventListener('click', openNewModal);
 $('#cancelBtn').addEventListener('click', closeModal);
 $('#modal').addEventListener('click', (e) => { if (e.target === $('#modal')) closeModal(); });
+
+// Auto-fill ciudad y lugares al elegir fecha
+$('#f_start_date').addEventListener('change', () => {
+  const city = cityForDate($('#f_start_date').value);
+  if (city) { $('#f_city').value = city; updatePlacesList(city); }
+});
+// Actualizar lista de lugares al cambiar ciudad manualmente
+$('#f_city').addEventListener('change', () => {
+  updatePlacesList($('#f_city').value);
+});
 
 $('#saveBtn').addEventListener('click', async () => {
   const btn = $('#saveBtn'); btn.disabled = true;

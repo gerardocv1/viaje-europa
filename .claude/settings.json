@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git remote *)",
+      "Bash(python3 -c \"import json,sys; events=json.load\\(sys.stdin\\); [print\\(e['start_date'], e['city'], e['activity']\\) for e in events if e.get\\('start_date'\\)]\")",
+      "Bash(php -l /Users/gerardocarvajalvargas/www/viaje/index.php)"
+    ]
+  }
+}
