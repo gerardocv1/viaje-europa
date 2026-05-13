@@ -431,6 +431,16 @@ main { padding: 20px 16px calc(96px + env(safe-area-inset-bottom)); max-width: 7
   background: var(--line);
   border-radius: 100px;
   margin: 0 auto 16px;
+  cursor: grab;
+}
+/* Zona táctil generosa para el handle */
+.modal .handle::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0; right: 0;
+  height: 28px;
+  transform: translateY(-12px);
 }
 .modal h2 {
   font-family: 'Fraunces', serif;
@@ -730,6 +740,7 @@ main { padding: 20px 16px calc(96px + env(safe-area-inset-bottom)); max-width: 7
 .dm-handle {
   text-align: center;
   padding: 12px 0 4px;
+  cursor: grab;
 }
 .dm-handle::after {
   content: '';
@@ -2668,6 +2679,95 @@ $('#nearbyBtn').addEventListener('click', () => showNearbyModal());
 $('#nearby-modal').addEventListener('click', (ev) => {
   if (ev.target === $('#nearby-modal')) $('#nearby-modal').classList.remove('show');
 });
+
+// ============================================================
+// SWIPE PARA CERRAR MODALES
+// ============================================================
+function enableSwipeDismiss(backdrop, sheet, getScrollable, closeFn) {
+  let startY = 0, dragY = 0, t0 = 0;
+  let tracking = false, mayTrack = false, fromHandle = false;
+
+  sheet.addEventListener('touchstart', (e) => {
+    startY     = e.touches[0].clientY;
+    dragY      = 0;
+    t0         = Date.now();
+    tracking   = false;
+    mayTrack   = true;
+    fromHandle = !!e.target.closest('.dm-handle, .handle');
+  }, { passive: true });
+
+  sheet.addEventListener('touchmove', (e) => {
+    if (!mayTrack) return;
+    const dy = e.touches[0].clientY - startY;
+
+    if (!tracking) {
+      if (dy <= 4) return;
+      const scrollable = getScrollable();
+      const st = scrollable ? scrollable.scrollTop : 0;
+      if (!fromHandle && st > 4) { mayTrack = false; return; }
+      tracking = true;
+      sheet.style.transition = 'none';
+    }
+
+    dragY = dy;
+    const visual = dy < 160 ? dy : 160 + (dy - 160) * 0.28;
+    sheet.style.transform = `translateY(${visual}px)`;
+    const alpha = Math.max(0, 0.7 * (1 - visual / 300)).toFixed(3);
+    backdrop.style.background = `rgba(0,0,0,${alpha})`;
+    e.preventDefault();
+  }, { passive: false });
+
+  function onEnd() {
+    mayTrack = false;
+    if (!tracking) return;
+    tracking = false; fromHandle = false;
+
+    const velocity = dragY / Math.max(Date.now() - t0, 1);
+    const dismiss  = dragY > 110 || velocity > 0.45;
+
+    if (dismiss) {
+      sheet.style.transition    = 'transform 0.27s cubic-bezier(0.4,0,1,1)';
+      sheet.style.transform     = 'translateY(110%)';
+      backdrop.style.transition = 'background 0.27s';
+      backdrop.style.background = 'rgba(0,0,0,0)';
+      setTimeout(() => {
+        closeFn();
+        sheet.style.transform     = '';
+        sheet.style.transition    = '';
+        backdrop.style.background = '';
+        backdrop.style.transition = '';
+      }, 270);
+    } else {
+      sheet.style.transition = 'transform 0.35s cubic-bezier(0.2,0.8,0.2,1)';
+      sheet.style.transform  = '';
+      backdrop.style.background = '';
+      setTimeout(() => { sheet.style.transition = ''; }, 350);
+    }
+    dragY = 0;
+  }
+
+  sheet.addEventListener('touchend',    onEnd, { passive: true });
+  sheet.addEventListener('touchcancel', onEnd, { passive: true });
+}
+
+enableSwipeDismiss(
+  $('#detail-modal'),
+  $('#detail-modal').querySelector('.modal'),
+  () => $('#dm-body'),
+  closeDetailModal
+);
+enableSwipeDismiss(
+  $('#modal'),
+  $('#modal').querySelector('.modal'),
+  () => $('#modal').querySelector('.modal'),
+  closeModal
+);
+enableSwipeDismiss(
+  $('#nearby-modal'),
+  $('#nearby-modal').querySelector('.modal'),
+  () => $('#nearby-modal').querySelector('.modal'),
+  () => $('#nearby-modal').classList.remove('show')
+);
 
 // ============================================================
 // TAB BAR
