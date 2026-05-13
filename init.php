@@ -33,7 +33,7 @@ $db->exec("
 
 $existing = (int) $db->query("SELECT COUNT(*) FROM events")->fetchColumn();
 if ($existing > 0) {
-    die("⚠️  La BD ya tiene $existing eventos. Si quieres recargar, primero borra el archivo itinerario.db del servidor.<br><br>Si todo está bien, BORRA init.php del servidor por seguridad.");
+    die("⚠️  La BD ya tiene $existing eventos. Si quieres recargar, primero borra el archivo data/itinerario.db del servidor.<br><br>Si todo está bien, BORRA init.php del servidor por seguridad.");
 }
 
 $seedFile = __DIR__ . '/seed.json';

@@ -7,8 +7,8 @@
 // CÁMBIALA por algo que solo ustedes sepan
 define('SHARED_PASSWORD', 'europa2026');
 
-// Nombre del archivo de base de datos (no lo cambies a menos que sepas)
-define('DB_FILE', __DIR__ . '/itinerario.db');
+// Base de datos en carpeta separada para que no se sobreescriba en cada deploy
+define('DB_FILE', __DIR__ . '/data/itinerario.db');
 
 // Nombre del viaje (se muestra en el header)
 define('TRIP_NAME', 'Europa 2026');
