@@ -179,7 +179,39 @@ function ok($data = []) {
     echo json_encode(['ok' => true] + $data);
     exit;
 }
+
+// Cookie persistente firmada con HMAC (sobrevive reinicios del servidor)
+function setRememberCookie($name) {
+    $encoded = base64_encode($name);
+    $sig     = hash_hmac('sha256', $encoded, SHARED_PASSWORD);
+    setcookie('_viaje_auth', $encoded . '.' . $sig, [
+        'expires'  => time() + 30 * 24 * 60 * 60,
+        'path'     => '/',
+        'secure'   => false,
+        'httponly' => true,
+        'samesite' => 'Lax',
+    ]);
+}
+function clearRememberCookie() {
+    setcookie('_viaje_auth', '', ['expires' => time() - 3600, 'path' => '/']);
+}
+function nameFromRememberCookie() {
+    $cookie = $_COOKIE['_viaje_auth'] ?? '';
+    if (!$cookie) return null;
+    $parts = explode('.', $cookie, 2);
+    if (count($parts) !== 2) return null;
+    [$encoded, $sig] = $parts;
+    if (!hash_equals(hash_hmac('sha256', $encoded, SHARED_PASSWORD), $sig)) return null;
+    return base64_decode($encoded) ?: null;
+}
+function restoreSessionFromCookie() {
+    if (!empty($_SESSION['auth'])) return;
+    $name = nameFromRememberCookie();
+    if ($name) { $_SESSION['auth'] = true; $_SESSION['user'] = $name; }
+}
+
 function requireAuth() {
+    restoreSessionFromCookie();
     if (empty($_SESSION['auth'])) fail('No autenticado', 401);
 }
 
@@ -194,6 +226,7 @@ try {
             if (($in['password'] ?? '') === SHARED_PASSWORD) {
                 $_SESSION['auth'] = true;
                 $_SESSION['user'] = trim($in['name'] ?? 'viajero') ?: 'viajero';
+                setRememberCookie($_SESSION['user']);
                 ok(['user' => $_SESSION['user']]);
             }
             fail('Clave incorrecta', 401);
@@ -202,10 +235,12 @@ try {
         case 'logout': {
             $_SESSION = [];
             session_destroy();
+            clearRememberCookie();
             ok();
         }
 
         case 'me': {
+            restoreSessionFromCookie();
             ok([
                 'auth' => !empty($_SESSION['auth']),
                 'user' => $_SESSION['user'] ?? null,
