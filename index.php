@@ -610,6 +610,210 @@ main { padding: 20px 16px 100px; max-width: 720px; margin: 0 auto; }
   50%       { opacity: 0.4; transform: scale(0.65); }
 }
 
+/* ========== INFO DE LUGAR (panel en modal) ========== */
+.place-info-panel {
+  margin: 6px 0 10px;
+  padding: 10px 12px;
+  background: var(--bg);
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+}
+.place-info-panel .pi-desc {
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+.place-info-panel .pi-chips {
+  display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+}
+.place-info-panel .pi-chip {
+  font-size: 11px;
+  color: var(--text-faint);
+  display: flex; align-items: center; gap: 4px;
+  line-height: 1.3;
+}
+.place-info-panel .pi-map-link {
+  font-size: 11px;
+  color: var(--accent);
+  text-decoration: none;
+  display: inline-flex; align-items: center; gap: 4px;
+}
+.place-info-panel .pi-map-link:hover { text-decoration: underline; }
+
+/* ========== BOTÓN EDITAR EN TARJETA ========== */
+.card-edit-btn {
+  position: absolute;
+  top: 9px; right: 9px;
+  width: 26px; height: 26px;
+  background: var(--bg-3);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  color: var(--text-faint);
+  z-index: 2;
+  transition: all 0.15s;
+  flex-shrink: 0;
+}
+.card-edit-btn:hover, .card-edit-btn:active { color: var(--accent); border-color: rgba(233,163,107,0.5); }
+
+/* ========== MODAL DETALLE ========== */
+.modal.detail-modal {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  max-height: 92vh;
+}
+.dm-carousel {
+  width: 100%;
+  height: 220px;
+  background: var(--bg-3);
+  border-radius: 16px 16px 0 0;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+.dm-img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.4s;
+  display: block;
+}
+.dm-img.loaded { opacity: 1; }
+.dm-spinner {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--bg-3);
+  z-index: 2;
+}
+.dm-spinner::after {
+  content: '';
+  width: 22px; height: 22px;
+  border: 2px solid rgba(255,255,255,0.12);
+  border-top-color: rgba(255,255,255,0.6);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+.dm-carousel-btn {
+  position: absolute;
+  top: 50%; transform: translateY(-50%);
+  background: rgba(0,0,0,0.45);
+  border: none; color: white;
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  z-index: 3;
+  transition: background 0.15s;
+}
+.dm-carousel-btn:hover { background: rgba(0,0,0,0.65); }
+.dm-carousel-btn.dm-prev { left: 10px; }
+.dm-carousel-btn.dm-next { right: 10px; }
+.dm-dots {
+  position: absolute;
+  bottom: 8px; left: 0; right: 0;
+  display: flex; justify-content: center; gap: 5px;
+  z-index: 3;
+}
+.dm-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.35);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.dm-dot.active { background: white; transform: scale(1.2); }
+.dm-handle {
+  text-align: center;
+  padding: 12px 0 4px;
+}
+.dm-handle::after {
+  content: '';
+  display: inline-block;
+  width: 40px; height: 4px;
+  background: var(--line);
+  border-radius: 100px;
+}
+.dm-body {
+  overflow-y: auto;
+  flex: 1;
+  padding: 12px 20px calc(20px + env(safe-area-inset-bottom));
+  -webkit-overflow-scrolling: touch;
+}
+.dm-type-row {
+  display: flex; align-items: center; gap: 8px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.dm-icon-wrap {
+  width: 36px; height: 36px;
+  border-radius: 8px;
+  background: var(--bg-3);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; flex-shrink: 0;
+}
+.dm-activity {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+.dm-info-row {
+  display: flex; align-items: flex-start; gap: 8px;
+  font-size: 13px; color: var(--text-dim);
+  margin-bottom: 7px; line-height: 1.5;
+}
+.dm-info-icon { color: var(--text-faint); flex-shrink: 0; }
+.dm-divider { height: 1px; background: var(--line); margin: 14px 0; }
+.dm-place-desc {
+  font-size: 13px; color: var(--text-dim);
+  line-height: 1.65; margin-bottom: 4px;
+}
+.dm-actions {
+  display: flex; gap: 8px; flex-wrap: wrap;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+.dm-action-btn {
+  flex: 1; min-width: 72px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 12px; font-weight: 600;
+  letter-spacing: 0.07em; text-transform: uppercase;
+  text-align: center; cursor: pointer;
+  transition: all 0.15s; text-decoration: none;
+  display: inline-flex; align-items: center; justify-content: center; gap: 5px;
+  border: 1px solid var(--line);
+  color: var(--text-dim); background: transparent;
+}
+.dm-action-btn:hover { border-color: var(--accent); color: var(--accent); }
+.dm-action-btn.dm-edit-action {
+  background: var(--accent); color: #1a0f08; border-color: var(--accent);
+}
+.dm-action-btn.dm-edit-action:hover { background: var(--accent-2); border-color: var(--accent-2); }
+
+/* ========== BOTÓN MAPA EN TARJETA ========== */
+.map-btn {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 11px;
+  color: var(--text-faint);
+  text-decoration: none;
+  background: var(--bg-3);
+  border: 1px solid var(--line);
+  padding: 2px 8px;
+  border-radius: 100px;
+  transition: color 0.15s, border-color 0.15s;
+}
+.map-btn:hover { color: var(--accent); border-color: rgba(233,163,107,0.5); }
+.map-btn svg { flex-shrink: 0; }
+
 /* ========== AMBIENTE ========== */
 .grain {
   position: fixed; inset: 0; pointer-events: none; opacity: 0.025; z-index: 1;
@@ -697,8 +901,19 @@ main { padding: 20px 16px 100px; max-width: 720px; margin: 0 auto; }
     <div class="form-card">
       <div class="field">
         <label>Lugar</label>
-        <input type="text" id="f_place" list="places-list" placeholder="Buscar lugar…">
+        <input type="text" id="f_place" list="places-list" placeholder="Buscar lugar…" autocomplete="off">
         <datalist id="places-list"></datalist>
+        <div id="place-info-panel" class="place-info-panel" style="display:none">
+          <div id="pi-desc" class="pi-desc"></div>
+          <div class="pi-chips">
+            <span id="pi-duration" class="pi-chip"></span>
+            <span id="pi-address" class="pi-chip"></span>
+            <a id="pi-map" class="pi-map-link" target="_blank" rel="noopener" style="display:none">
+              <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Ver en mapa
+            </a>
+          </div>
+        </div>
       </div>
       <div class="field">
         <label>Actividad</label>
@@ -796,6 +1011,84 @@ main { padding: 20px 16px 100px; max-width: 720px; margin: 0 auto; }
   </div>
 </div>
 
+<!-- ========== MODAL DETALLE ========== -->
+<div class="modal-backdrop" id="detail-modal">
+  <div class="modal detail-modal">
+    <!-- Carrusel de imágenes -->
+    <div id="dm-carousel" class="dm-carousel" style="display:none">
+      <div id="dm-spinner" class="dm-spinner"></div>
+      <img id="dm-img" class="dm-img" src="" alt="">
+      <button class="dm-carousel-btn dm-prev" id="dm-prev" style="display:none">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button class="dm-carousel-btn dm-next" id="dm-next" style="display:none">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+      <div id="dm-dots" class="dm-dots"></div>
+    </div>
+    <!-- Handle + contenido -->
+    <div class="dm-handle"></div>
+    <div class="dm-body">
+      <div class="dm-type-row">
+        <div class="dm-icon-wrap" id="dm-icon-wrap"></div>
+        <span id="dm-type-tag" class="tag"></span>
+        <span id="dm-now-badge" class="now-badge" style="display:none">Ahora</span>
+      </div>
+      <div id="dm-activity" class="dm-activity"></div>
+
+      <div id="dm-time-row" class="dm-info-row" style="display:none">
+        <span class="dm-info-icon">🕐</span>
+        <span id="dm-time-text" class="mono"></span>
+      </div>
+      <div id="dm-place-row" class="dm-info-row" style="display:none">
+        <span class="dm-info-icon">📍</span>
+        <span id="dm-place-text"></span>
+      </div>
+      <div id="dm-cost-row" class="dm-info-row" style="display:none">
+        <span class="dm-info-icon">💰</span>
+        <span id="dm-cost-text"></span>
+      </div>
+      <div id="dm-notes-row" class="dm-info-row" style="display:none">
+        <span class="dm-info-icon">📝</span>
+        <span id="dm-notes-text" style="font-style:italic;"></span>
+      </div>
+
+      <!-- Descripción del lugar del catálogo -->
+      <div id="dm-desc-section" style="display:none">
+        <div class="dm-divider"></div>
+        <div id="dm-desc-text" class="dm-place-desc"></div>
+        <div id="dm-dur-row" class="dm-info-row" style="display:none">
+          <span class="dm-info-icon">⏱</span>
+          <span id="dm-dur-text"></span>
+        </div>
+        <div id="dm-addr-row" class="dm-info-row" style="display:none">
+          <span class="dm-info-icon">🗺️</span>
+          <span id="dm-addr-text" style="font-size:12px;"></span>
+        </div>
+      </div>
+
+      <div class="dm-actions">
+        <a id="dm-map-btn" class="dm-action-btn" target="_blank" rel="noopener" style="display:none">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Mapa
+        </a>
+        <a id="dm-url-btn" class="dm-action-btn" target="_blank" rel="noopener" style="display:none">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          Reserva
+        </a>
+        <button id="dm-close-btn" class="dm-action-btn">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          Cerrar
+        </button>
+        <button id="dm-edit-btn" class="dm-action-btn dm-edit-action">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          Editar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="toast" id="toast"></div>
 
 <script>
@@ -818,11 +1111,16 @@ const WEEKDAYS = ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','S�
 
 let STATE = {
   events: [],
+  places: [],
   today: null,
   user: null,
   filterCity: 'all',
-  editingId: null
+  editingId: null,
+  imageCache: {},   // place_id → [url, ...]
+  detailEvent: null // evento abierto en modal de detalle
 };
+let dmImages = [];
+let dmCurrentImg = 0;
 
 // ============================================================
 // HELPERS
@@ -1001,11 +1299,57 @@ function updateActivityList() {
     dl.appendChild(o);
   });
 }
+function fmtDuration(mins) {
+  if (!mins) return '';
+  const h = Math.floor(mins / 60);
+  const m = mins % 60;
+  if (h === 0) return `${m} min`;
+  return m ? `${h} h ${m} min` : `${h} h`;
+}
+function findPlace(name) {
+  if (!name || !STATE.places.length) return null;
+  const q = name.trim().toLowerCase();
+  return STATE.places.find(p => p.name.toLowerCase() === q) || null;
+}
+function updatePlaceInfo(name) {
+  const panel = $('#place-info-panel');
+  const place = findPlace(name);
+  if (place) {
+    $('#pi-desc').textContent = place.description || '';
+    $('#pi-duration').textContent = place.duration_min ? `⏱ ${fmtDuration(parseInt(place.duration_min))}` : '';
+    $('#pi-address').textContent = place.address ? `📍 ${place.address}` : '';
+    const mapLink = $('#pi-map');
+    if (place.lat && place.lng) {
+      mapLink.href = `https://www.google.com/maps?q=${place.lat},${place.lng}`;
+      mapLink.style.display = '';
+    } else {
+      mapLink.style.display = 'none';
+    }
+    panel.style.display = '';
+    // Auto-sugerir duración si el campo está vacío
+    if (place.duration_min && !$('#f_duration').value) {
+      const h = parseInt(place.duration_min) / 60;
+      const opts = [0.5, 1, 1.5, 2, 3, 4, 5, 6, 8, 12, 24];
+      const closest = opts.reduce((a, b) => Math.abs(b - h) < Math.abs(a - h) ? b : a);
+      $('#f_duration').value = String(closest);
+      applyDuration();
+    }
+  } else {
+    panel.style.display = 'none';
+  }
+}
 function updatePlacesList(city) {
   const dl = document.getElementById('places-list');
   dl.innerHTML = '';
-  (PLACES_BY_CITY[city] || []).forEach(p => {
-    const o = document.createElement('option'); o.value = p; dl.appendChild(o);
+  // Lugares del catálogo (con metadata) primero
+  const catalogNames = STATE.places
+    .filter(p => !city || p.city === city)
+    .map(p => p.name);
+  // Lugares estáticos como fallback (aeropuertos, etc.)
+  const staticNames = PLACES_BY_CITY[city] || [];
+  const all = [...new Set([...catalogNames, ...staticNames])];
+  all.forEach(name => {
+    const o = document.createElement('option'); o.value = name; dl.appendChild(o);
   });
 }
 function setTimeSelect(id, val) {
@@ -1113,11 +1457,19 @@ function showApp() {
 // ============================================================
 // CARGA Y RENDER
 // ============================================================
+async function loadPlaces() {
+  try {
+    const r = await api('places');
+    STATE.places = r.places || [];
+  } catch (e) { STATE.places = []; }
+}
+
 async function loadEvents() {
   $('#main').innerHTML = '<div class="loader"></div>';
   try {
     const me = await api('me');
     STATE.today = me.today;
+    if (!STATE.places.length) await loadPlaces();
     const r = await api('list');
     STATE.events = r.events;
     render();
@@ -1260,9 +1612,18 @@ function renderCard(e) {
     class: 'event-card' + (happening ? ' is-happening' : ''),
     style: `--type-color: ${meta.color};`,
     'data-event-id': e.id,
-    onclick: () => openEditModal(e)
+    onclick: () => openDetailModal(e)
   });
   card.appendChild(el('div', { class: 'accent-bar' }));
+
+  // Botón editar (esquina superior derecha)
+  const editBtn = el('button', {
+    class: 'card-edit-btn',
+    title: 'Editar evento',
+    onclick: (ev) => { ev.stopPropagation(); openEditModal(e); }
+  });
+  editBtn.innerHTML = '<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>';
+  card.appendChild(editBtn);
   card.appendChild(el('div', { class: 'icon-wrap' }, meta.icon));
 
   const body = el('div', { class: 'body' });
@@ -1287,6 +1648,22 @@ function renderCard(e) {
   const meta_row = el('div', { class: 'place-meta' });
   meta_row.appendChild(el('span', { class: 'tag' }, e.type || 'Otro'));
   if (happening) meta_row.appendChild(el('span', { class: 'now-badge' }, 'Ahora'));
+
+  // Botón Google Maps si el lugar tiene coordenadas
+  const placeObj = e.place_id ? STATE.places.find(p => p.id == e.place_id) : null;
+  if (placeObj && placeObj.lat && placeObj.lng) {
+    const mapUrl = `https://www.google.com/maps?q=${placeObj.lat},${placeObj.lng}`;
+    const mapBtn = el('a', {
+      class: 'map-btn',
+      href: mapUrl,
+      target: '_blank',
+      rel: 'noopener',
+      onclick: (ev) => ev.stopPropagation()
+    });
+    mapBtn.innerHTML = '<svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Mapa';
+    meta_row.appendChild(mapBtn);
+  }
+
   body.appendChild(meta_row);
 
   if (e.notes) body.appendChild(el('div', { class: 'notes' }, e.notes));
@@ -1307,6 +1684,215 @@ function renderCard(e) {
 }
 
 // ============================================================
+// MODAL DETALLE
+// ============================================================
+function closeDetailModal() {
+  $('#detail-modal').classList.remove('show');
+  STATE.detailEvent = null;
+  dmImages = [];
+  dmCurrentImg = 0;
+  const img = $('#dm-img');
+  img.src = '';
+  img.classList.remove('loaded');
+}
+
+async function openDetailModal(e) {
+  STATE.detailEvent = e;
+  if (!STATE.places.length) await loadPlaces();
+  const meta = TYPE_META[e.type] || TYPE_META['Otro'];
+  const happening = isHappeningNow(e);
+
+  // Icono y tipo
+  $('#dm-icon-wrap').textContent = meta.icon;
+  const tag = $('#dm-type-tag');
+  tag.textContent = e.type || 'Otro';
+  tag.style.setProperty('--type-color', meta.color);
+  $('#dm-now-badge').style.display = happening ? '' : 'none';
+
+  // Título
+  $('#dm-activity').textContent = e.activity || '(Sin nombre)';
+
+  // Hora
+  let timeText = '';
+  if (e.start_time && e.end_time && e.start_date === e.end_date) {
+    timeText = `${fmtTime(e.start_time)} — ${fmtTime(e.end_time)}`;
+  } else if (e.start_time) {
+    timeText = fmtTime(e.start_time);
+    if (e.end_date && e.end_date !== e.start_date) timeText += ` · hasta ${fmtDate(e.end_date)} ${fmtTime(e.end_time)}`;
+  }
+  const timeRow = $('#dm-time-row');
+  if (timeText) { $('#dm-time-text').textContent = timeText; timeRow.style.display = ''; }
+  else { timeRow.style.display = 'none'; }
+
+  // Lugar
+  const placeRow = $('#dm-place-row');
+  if (e.place && e.place !== e.activity) { $('#dm-place-text').textContent = e.place; placeRow.style.display = ''; }
+  else { placeRow.style.display = 'none'; }
+
+  // Costo
+  const costRow = $('#dm-cost-row');
+  if (e.cost) { $('#dm-cost-text').textContent = e.cost; costRow.style.display = ''; }
+  else { costRow.style.display = 'none'; }
+
+  // Notas
+  const notesRow = $('#dm-notes-row');
+  if (e.notes) { $('#dm-notes-text').textContent = e.notes; notesRow.style.display = ''; }
+  else { notesRow.style.display = 'none'; }
+
+  // URL reserva
+  const urlBtn = $('#dm-url-btn');
+  if (e.url) { urlBtn.href = e.url; urlBtn.style.display = ''; }
+  else { urlBtn.style.display = 'none'; }
+
+  // Lugar del catálogo: intentar por place_id, luego por nombre exacto, luego por contención
+  let placeObj = e.place_id ? STATE.places.find(p => p.id == e.place_id) : null;
+  if (!placeObj) {
+    placeObj = findPlace(e.place) || findPlace(e.activity) || null;
+  }
+  if (!placeObj && STATE.places.length) {
+    const act = (e.activity || '').toLowerCase();
+    const plc = (e.place || '').toLowerCase();
+    placeObj = STATE.places.find(p => {
+      const n = p.name.toLowerCase();
+      return n.length > 3 && (act.includes(n) || plc.includes(n));
+    }) || null;
+  }
+  const descSection = $('#dm-desc-section');
+  if (placeObj && placeObj.description) {
+    $('#dm-desc-text').textContent = placeObj.description;
+    const durRow = $('#dm-dur-row');
+    if (placeObj.duration_min) { $('#dm-dur-text').textContent = `Visita estimada: ${fmtDuration(parseInt(placeObj.duration_min))}`; durRow.style.display = ''; }
+    else { durRow.style.display = 'none'; }
+    const addrRow = $('#dm-addr-row');
+    if (placeObj.address) { $('#dm-addr-text').textContent = placeObj.address; addrRow.style.display = ''; }
+    else { addrRow.style.display = 'none'; }
+    descSection.style.display = '';
+  } else {
+    descSection.style.display = 'none';
+  }
+
+  // Botón Mapa
+  const mapBtn = $('#dm-map-btn');
+  if (placeObj && placeObj.lat && placeObj.lng) {
+    mapBtn.href = `https://www.google.com/maps?q=${placeObj.lat},${placeObj.lng}`;
+    mapBtn.style.display = '';
+  } else { mapBtn.style.display = 'none'; }
+
+  $('#detail-modal').classList.add('show');
+
+  // Carrusel de imágenes (async)
+  $('#dm-carousel').style.display = 'none';
+  dmImages = [];
+  dmCurrentImg = 0;
+  if (placeObj) await loadDetailImages(placeObj);
+}
+
+async function loadDetailImages(place) {
+  const cacheKey = place.id;
+  if (STATE.imageCache[cacheKey] !== undefined) {
+    applyDetailImages(STATE.imageCache[cacheKey]);
+    return;
+  }
+
+  let images = [];
+  // Imágenes almacenadas en BD
+  if (place.images) {
+    try { images = JSON.parse(place.images).filter(Boolean); } catch (_) {}
+  }
+
+  // Si no hay imágenes almacenadas, buscar en Wikipedia
+  if (!images.length && place.wikipedia_title) {
+    const carousel = $('#dm-carousel');
+    carousel.style.display = '';
+    $('#dm-spinner').style.display = '';
+    $('#dm-img').style.opacity = '0';
+    try {
+      const r = await fetch(
+        `https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(place.wikipedia_title)}`,
+        { signal: AbortSignal.timeout ? AbortSignal.timeout(6000) : undefined }
+      );
+      if (r.ok) {
+        const data = await r.json();
+        if (data.thumbnail && data.thumbnail.source) {
+          const original = data.thumbnail.source;
+          // Intentar 800px; si falla onerror volverá al original
+          const highRes = original.replace(/\/\d+px-/, '/800px-');
+          images = highRes !== original ? [highRes, original] : [original];
+        }
+      }
+    } catch (_) {}
+    $('#dm-spinner').style.display = 'none';
+  }
+
+  STATE.imageCache[cacheKey] = images;
+  applyDetailImages(images);
+}
+
+function applyDetailImages(images) {
+  dmImages = images.filter(Boolean);
+  dmCurrentImg = 0;
+  const carousel = $('#dm-carousel');
+  if (!dmImages.length) { carousel.style.display = 'none'; return; }
+  carousel.style.display = '';
+  renderDmCarousel();
+}
+
+function renderDmCarousel() {
+  const img = $('#dm-img');
+  const prev = $('#dm-prev');
+  const next = $('#dm-next');
+  const dots = $('#dm-dots');
+  const spinner = $('#dm-spinner');
+
+  spinner.style.display = 'none';
+  img.classList.remove('loaded');
+  img.src = '';
+
+  if (!dmImages.length) { $('#dm-carousel').style.display = 'none'; return; }
+
+  // Dots
+  dots.innerHTML = '';
+  if (dmImages.length > 1) {
+    dmImages.forEach((_, i) => {
+      const d = el('span', { class: 'dm-dot' + (i === dmCurrentImg ? ' active' : ''), onclick: () => { dmCurrentImg = i; renderDmCarousel(); } });
+      dots.appendChild(d);
+    });
+  }
+
+  prev.style.display = dmImages.length > 1 ? '' : 'none';
+  next.style.display = dmImages.length > 1 ? '' : 'none';
+
+  img.onload = () => img.classList.add('loaded');
+  img.onerror = () => {
+    // Imagen fallida: intentar siguiente o esconder
+    if (dmCurrentImg < dmImages.length - 1) {
+      dmCurrentImg++;
+      renderDmCarousel();
+    } else {
+      $('#dm-carousel').style.display = 'none';
+    }
+  };
+  img.src = dmImages[dmCurrentImg];
+}
+
+$('#dm-prev').addEventListener('click', () => {
+  dmCurrentImg = (dmCurrentImg - 1 + dmImages.length) % dmImages.length;
+  renderDmCarousel();
+});
+$('#dm-next').addEventListener('click', () => {
+  dmCurrentImg = (dmCurrentImg + 1) % dmImages.length;
+  renderDmCarousel();
+});
+$('#dm-close-btn').addEventListener('click', closeDetailModal);
+$('#detail-modal').addEventListener('click', (ev) => { if (ev.target === $('#detail-modal')) closeDetailModal(); });
+$('#dm-edit-btn').addEventListener('click', () => {
+  const e = STATE.detailEvent;
+  if (!e) return;
+  closeDetailModal();
+  openEditModal(e);
+});
+
+// ============================================================
 // MODAL
 // ============================================================
 function openModal() { $('#modal').classList.add('show'); }
@@ -1318,6 +1904,7 @@ function openNewModal() {
   $('#deleteBtn').style.display = 'none';
   $('#f_activity').value = '';
   $('#f_place').value = '';
+  $('#place-info-panel').style.display = 'none';
   $('#f_type').value = 'Actividad';
   const initDate = STATE.today || '';
   $('#f_start_date').value = initDate;
@@ -1344,6 +1931,7 @@ function openEditModal(e) {
   $('#deleteBtn').style.display = 'flex';
   $('#f_activity').value = e.activity || '';
   $('#f_place').value = e.place || '';
+  updatePlaceInfo(e.place || '');
   $('#f_type').value = e.type || 'Actividad';
   $('#f_start_date').value = e.start_date || '';
   setTimeSelect('f_start_time', e.start_time || '');
@@ -1378,15 +1966,24 @@ $('#f_city').addEventListener('change', () => {
   updateDateSelect(city);
   updateActivityList();
 });
-// Al elegir lugar o tipo: actualizar sugerencias de actividad
-$('#f_place').addEventListener('change', updateActivityList);
+// Al elegir lugar o tipo: actualizar sugerencias de actividad + info del lugar
+$('#f_place').addEventListener('input', () => {
+  updateActivityList();
+  updatePlaceInfo($('#f_place').value);
+});
+$('#f_place').addEventListener('change', () => {
+  updateActivityList();
+  updatePlaceInfo($('#f_place').value);
+});
 $('#f_type').addEventListener('change', updateActivityList);
 
 $('#saveBtn').addEventListener('click', async () => {
   const btn = $('#saveBtn'); btn.disabled = true;
+  const placeName = $('#f_place').value.trim();
+  const placeObj  = findPlace(placeName);
   const data = {
     activity:   $('#f_activity').value.trim(),
-    place:      $('#f_place').value.trim(),
+    place:      placeName,
     type:       $('#f_type').value,
     start_date: $('#f_start_date').value,
     start_time: $('#f_start_time').value,
@@ -1396,7 +1993,8 @@ $('#saveBtn').addEventListener('click', async () => {
     cost:       $('#f_cost').value.trim(),
     notes:      $('#f_notes').value.trim(),
     url:        $('#f_url').value.trim(),
-    tentative:  $('#f_tentative').checked ? 1 : 0
+    tentative:  $('#f_tentative').checked ? 1 : 0,
+    place_id:   placeObj ? placeObj.id : null
   };
   try {
     if (STATE.editingId) {

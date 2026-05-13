@@ -1,0 +1,812 @@
+[
+  {
+    "name": "Museo del Prado",
+    "city": "Madrid",
+    "description": "Uno de los museos de arte más importantes del mundo. Alberga obras maestras de Velázquez, Goya, El Greco y Bosch. Colección de pintura europea del siglo XII al XIX.",
+    "duration_min": 180,
+    "address": "Paseo del Prado, s/n, 28014 Madrid",
+    "lat": 40.4138,
+    "lng": -3.6921,
+    "wikipedia_title": "Museo del Prado"
+  },
+  {
+    "name": "Palacio Real de Madrid",
+    "city": "Madrid",
+    "description": "El palacio real más grande de Europa occidental. Residencia oficial de la Familia Real española. Destaca por sus salones decorados, la Armería Real y los jardines de Sabatini.",
+    "duration_min": 150,
+    "address": "Calle de Bailén, s/n, 28013 Madrid",
+    "lat": 40.4175,
+    "lng": -3.7145,
+    "wikipedia_title": "Royal Palace of Madrid"
+  },
+  {
+    "name": "Plaza Mayor",
+    "city": "Madrid",
+    "description": "Plaza rectangular del siglo XVII en el corazón de Madrid. Rodeada de edificios de ladrillo rojo con soportales, bares y restaurantes. Escenario histórico de mercados, corridas y festividades.",
+    "duration_min": 60,
+    "address": "Plaza Mayor, 28012 Madrid",
+    "lat": 40.4155,
+    "lng": -3.6873,
+    "wikipedia_title": "Plaza Mayor, Madrid"
+  },
+  {
+    "name": "Puerta del Sol",
+    "city": "Madrid",
+    "description": "La plaza más céntrica de Madrid y punto kilométrico cero de la red de carreteras españolas. Aquí está el famoso reloj de fin de año y la estatua del oso y el madroño.",
+    "duration_min": 30,
+    "address": "Puerta del Sol, 28013 Madrid",
+    "lat": 40.4168,
+    "lng": -3.7038,
+    "wikipedia_title": "Puerta del Sol"
+  },
+  {
+    "name": "Templo de Debod",
+    "city": "Madrid",
+    "description": "Templo funerario egipcio del siglo II a.C. trasladado desde Nubia como regalo de Egipto a España. Ofrece vistas panorámicas espectaculares de Madrid al atardecer.",
+    "duration_min": 60,
+    "address": "Calle de Ferraz, 1, 28008 Madrid",
+    "lat": 40.4262,
+    "lng": -3.7194,
+    "wikipedia_title": "Temple of Debod"
+  },
+  {
+    "name": "Museo Reina Sofía",
+    "city": "Madrid",
+    "description": "Museo nacional de arte moderno y contemporáneo. Alberga el Guernica de Picasso, obras de Salvador Dalí y Joan Miró. Edificio histórico con icónicos ascensores exteriores de cristal.",
+    "duration_min": 150,
+    "address": "Calle de Santa Isabel, 52, 28012 Madrid",
+    "lat": 40.4065,
+    "lng": -3.6917,
+    "wikipedia_title": "Museo Reina Sofía"
+  },
+  {
+    "name": "Parque del Retiro",
+    "city": "Madrid",
+    "description": "Parque histórico de 125 hectáreas, pulmón verde de Madrid. Con lago navegable, jardines temáticos, el Palacio de Cristal y el Velódromo. Perfecto para pasear y descansar.",
+    "duration_min": 120,
+    "address": "Plaza de la Independencia, 7, 28001 Madrid",
+    "lat": 40.4153,
+    "lng": -3.6830,
+    "wikipedia_title": "Buen Retiro Park"
+  },
+  {
+    "name": "Museo Thyssen-Bornemisza",
+    "city": "Madrid",
+    "description": "Complementa al Prado y al Reina Sofía en el Triángulo del Arte madrileño. Colección que abarca desde el siglo XIII hasta el arte contemporáneo, con impresionistas y expresionistas.",
+    "duration_min": 120,
+    "address": "Paseo del Prado, 8, 28014 Madrid",
+    "lat": 40.4167,
+    "lng": -3.6950,
+    "wikipedia_title": "Museo Thyssen-Bornemisza"
+  },
+  {
+    "name": "Catedral de la Almudena",
+    "city": "Madrid",
+    "description": "Catedral de estilo neogótico construida entre 1883 y 1993. Ubicada frente al Palacio Real, es la sede del arzobispado de Madrid. Interior luminoso con vidrieras modernas.",
+    "duration_min": 45,
+    "address": "Calle de Bailén, 10, 28013 Madrid",
+    "lat": 40.4155,
+    "lng": -3.7155,
+    "wikipedia_title": "Almudena Cathedral"
+  },
+  {
+    "name": "Mercado de San Miguel",
+    "city": "Madrid",
+    "description": "Mercado gastronómico en un edificio de hierro del siglo XIX. Ofrece tapas, pinchos, vinos, mariscos y cocina de autor. Uno de los mercados más bonitos de Europa.",
+    "duration_min": 60,
+    "address": "Plaza de San Miguel, s/n, 28005 Madrid",
+    "lat": 40.4150,
+    "lng": -3.6898,
+    "wikipedia_title": "Mercado de San Miguel"
+  },
+  {
+    "name": "Barrio de La Latina",
+    "city": "Madrid",
+    "description": "El barrio más antiguo de Madrid con calles medievales empedradas. Centro del tapeo madrileño, especialmente los domingos. Aquí se encuentra el mercado de El Rastro.",
+    "duration_min": 120,
+    "address": "La Latina, 28005 Madrid",
+    "lat": 40.4101,
+    "lng": -3.6978,
+    "wikipedia_title": "La Latina"
+  },
+  {
+    "name": "El Rastro",
+    "city": "Madrid",
+    "description": "El mercadillo más famoso de Madrid, activo los domingos y festivos desde el siglo XVI. Cientos de puestos de antigüedades, ropa vintage, libros y curiosidades en La Latina.",
+    "duration_min": 90,
+    "address": "Calle de la Ribera de Curtidores, 28005 Madrid",
+    "lat": 40.4085,
+    "lng": -3.7060,
+    "wikipedia_title": "El Rastro"
+  },
+  {
+    "name": "Barrio de Malasaña",
+    "city": "Madrid",
+    "description": "Barrio bohemio y alternativo, corazón de la Movida Madrileña. Tiendas vintage, galerías de arte, cafés con encanto y vida nocturna intensa. Muy popular entre jóvenes.",
+    "duration_min": 90,
+    "address": "Malasaña, 28004 Madrid",
+    "lat": 40.4227,
+    "lng": -3.7040,
+    "wikipedia_title": "Malasaña"
+  },
+  {
+    "name": "Calle Gran Vía",
+    "city": "Madrid",
+    "description": "La gran avenida comercial de Madrid, con arquitectura ecléctica de principios del siglo XX. Teatros, cines, tiendas de moda, restaurantes y el icónico edificio Metrópolis.",
+    "duration_min": 90,
+    "address": "Gran Vía, 28013 Madrid",
+    "lat": 40.4196,
+    "lng": -3.7022,
+    "wikipedia_title": "Gran Vía (Madrid)"
+  },
+  {
+    "name": "Estadio Santiago Bernabéu",
+    "city": "Madrid",
+    "description": "Estadio del Real Madrid C.F. con capacidad para más de 81.000 espectadores. Ofrece visitas guiadas al estadio renovado, museo del club e impresionante sala de trofeos.",
+    "duration_min": 90,
+    "address": "Avenida de Concha Espina, 1, 28036 Madrid",
+    "lat": 40.4530,
+    "lng": -3.6883,
+    "wikipedia_title": "Santiago Bernabéu Stadium"
+  },
+  {
+    "name": "Ermita de San Antonio de la Florida",
+    "city": "Madrid",
+    "description": "Iglesia neoclásica del siglo XVIII con frescos originales de Francisco de Goya en la cúpula. También conocida como Panteón de Goya, aquí reposan sus restos.",
+    "duration_min": 45,
+    "address": "Glorieta de San Antonio de la Florida, 5, 28008 Madrid",
+    "lat": 40.4372,
+    "lng": -3.7289,
+    "wikipedia_title": "Ermita de San Antonio de la Florida"
+  },
+  {
+    "name": "Plaza de Cibeles",
+    "city": "Madrid",
+    "description": "Emblemática plaza con la Fuente de Cibeles al centro. Rodeada por el Palacio de Comunicaciones (actual Ayuntamiento), el Banco de España y el Palacio de Linares.",
+    "duration_min": 30,
+    "address": "Plaza de Cibeles, 28014 Madrid",
+    "lat": 40.4193,
+    "lng": -3.6917,
+    "wikipedia_title": "Plaza de Cibeles"
+  },
+  {
+    "name": "Real Basílica de San Francisco el Grande",
+    "city": "Madrid",
+    "description": "Basílica neoclásica del siglo XVIII con una de las cúpulas más grandes del mundo. Decorada con frescos de Goya y colecciones de arte religioso español.",
+    "duration_min": 60,
+    "address": "Plaza de San Francisco, 1, 28005 Madrid",
+    "lat": 40.4078,
+    "lng": -3.7042,
+    "wikipedia_title": "Basilica of San Francisco el Grande"
+  },
+  {
+    "name": "Torre Eiffel",
+    "city": "Paris",
+    "description": "Símbolo de París y de Francia, construida en 1889 por Gustave Eiffel. Estructura de hierro forjado de 330 metros con plataformas de observación en 3 niveles. Imprescindible.",
+    "duration_min": 120,
+    "address": "Champ de Mars, 5 Av. Anatole France, 75007 Paris",
+    "lat": 48.8584,
+    "lng": 2.2945,
+    "wikipedia_title": "Eiffel Tower"
+  },
+  {
+    "name": "Museo del Louvre",
+    "city": "Paris",
+    "description": "El museo más visitado del mundo con más de 35.000 obras. Alberga la Mona Lisa, la Venus de Milo y la Victoria de Samotracia. Antiguo palacio real con pirámide de cristal.",
+    "duration_min": 240,
+    "address": "Rue de Rivoli, 75001 Paris",
+    "lat": 48.8606,
+    "lng": 2.3352,
+    "wikipedia_title": "Louvre"
+  },
+  {
+    "name": "Catedral de Notre-Dame",
+    "city": "Paris",
+    "description": "Majestuosa catedral gótica del siglo XII en la Île de la Cité. Famosa por sus rosetones, gárgolas y torres. Actualmente en restauración tras el incendio de 2019, reabierta en 2024.",
+    "duration_min": 90,
+    "address": "6 Parvis Notre-Dame, Place Jean-Paul II, 75004 Paris",
+    "lat": 48.8530,
+    "lng": 2.3499,
+    "wikipedia_title": "Notre-Dame de Paris"
+  },
+  {
+    "name": "Arco de Triunfo",
+    "city": "Paris",
+    "description": "Monumento neoclásico encargado por Napoleón en 1806. En el centro de la Place Charles de Gaulle, donde confluyen 12 avenidas. Desde la cima, vistas de los Campos Elíseos.",
+    "duration_min": 60,
+    "address": "Place Charles de Gaulle, 75008 Paris",
+    "lat": 48.8738,
+    "lng": 2.2950,
+    "wikipedia_title": "Arc de Triomphe"
+  },
+  {
+    "name": "Campos Elíseos",
+    "city": "Paris",
+    "description": "La avenida más famosa del mundo, de 1.9 km desde la Place de la Concorde al Arco de Triunfo. Tiendas de lujo, restaurantes, teatros y terrazas de café con mucho ambiente.",
+    "duration_min": 90,
+    "address": "Avenue des Champs-Élysées, 75008 Paris",
+    "lat": 48.8697,
+    "lng": 2.3074,
+    "wikipedia_title": "Champs-Élysées"
+  },
+  {
+    "name": "Basílica del Sacré-Cœur",
+    "city": "Paris",
+    "description": "Basílica de estilo romano-bizantino en lo alto de la colina de Montmartre. Interior con el mayor mosaico del mundo y vistas panorámicas de París desde la cúpula.",
+    "duration_min": 60,
+    "address": "35 Rue du Chevalier de la Barre, 75018 Paris",
+    "lat": 48.8867,
+    "lng": 2.3431,
+    "wikipedia_title": "Sacré-Cœur, Paris"
+  },
+  {
+    "name": "Barrio de Montmartre",
+    "city": "Paris",
+    "description": "Pintoresco barrio de artistas en la colina más alta de París. Calles adoquinadas, Place du Tertre con pintores en vivo, el cabaré Moulin Rouge y el ambiente más bohemio de la ciudad.",
+    "duration_min": 120,
+    "address": "Montmartre, 75018 Paris",
+    "lat": 48.8863,
+    "lng": 2.3388,
+    "wikipedia_title": "Montmartre"
+  },
+  {
+    "name": "Museo de Orsay",
+    "city": "Paris",
+    "description": "Museo de arte impresionista y postimpresionista instalado en una antigua estación de tren. Alberga la mayor colección del mundo de Monet, Renoir, Degas, Van Gogh y Cézanne.",
+    "duration_min": 150,
+    "address": "1 Rue de la Légion d'Honneur, 75007 Paris",
+    "lat": 48.8600,
+    "lng": 2.3266,
+    "wikipedia_title": "Musée d'Orsay"
+  },
+  {
+    "name": "Palacio de Versalles",
+    "city": "Paris",
+    "description": "Antiguo palacio real de Luis XIV a 20 km de París. La Galería de los Espejos, los jardines formales de Le Nôtre y el Palacio del Gran Trianón son imprescindibles. Patrimonio de la Humanidad.",
+    "duration_min": 300,
+    "address": "Place d'Armes, 78000 Versailles",
+    "lat": 48.8047,
+    "lng": 2.1200,
+    "wikipedia_title": "Palace of Versailles"
+  },
+  {
+    "name": "Sainte-Chapelle",
+    "city": "Paris",
+    "description": "Joya del gótico radiante del siglo XIII construida para albergar reliquias de la Pasión. Sus 15 vidrieras medievales de 15 metros de altura son simplemente extraordinarias.",
+    "duration_min": 60,
+    "address": "10 Boulevard du Palais, 75001 Paris",
+    "lat": 48.8550,
+    "lng": 2.3450,
+    "wikipedia_title": "Sainte-Chapelle"
+  },
+  {
+    "name": "Panteón de París",
+    "city": "Paris",
+    "description": "Edificio neoclásico en el Barrio Latino que alberga los restos de figuras ilustres como Voltaire, Rousseau, Víctor Hugo y Marie Curie. La cúpula ofrece vistas privilegiadas.",
+    "duration_min": 60,
+    "address": "Place du Panthéon, 75005 Paris",
+    "lat": 48.8462,
+    "lng": 2.3462,
+    "wikipedia_title": "Panthéon, Paris"
+  },
+  {
+    "name": "Barrio del Marais",
+    "city": "Paris",
+    "description": "Barrio histórico del siglo XVII con mansiones nobles (hôtels particuliers), galerías de arte contemporáneo, el Museo Picasso y el Museo Carnavalet. Ambiente animado y cosmopolita.",
+    "duration_min": 120,
+    "address": "Le Marais, 75003 Paris",
+    "lat": 48.8597,
+    "lng": 2.3626,
+    "wikipedia_title": "Le Marais"
+  },
+  {
+    "name": "Museo Picasso París",
+    "city": "Paris",
+    "description": "Mayor colección de obras de Pablo Picasso del mundo, instalada en el Hôtel Salé del siglo XVII. Más de 5.000 piezas que cubren toda la trayectoria del artista malagueño.",
+    "duration_min": 90,
+    "address": "5 Rue de Thorigny, 75003 Paris",
+    "lat": 48.8607,
+    "lng": 2.3641,
+    "wikipedia_title": "Musée Picasso, Paris"
+  },
+  {
+    "name": "Jardín de Luxemburgo",
+    "city": "Paris",
+    "description": "El parque más querido por los parisinos, con 26 hectáreas de jardines formales, una gran piscina octagonal, estatuas y el Palacio del Senado. Perfecto para un picnic.",
+    "duration_min": 90,
+    "address": "Rue de Médicis, 75006 Paris",
+    "lat": 48.8462,
+    "lng": 2.3371,
+    "wikipedia_title": "Luxembourg Gardens"
+  },
+  {
+    "name": "Barrio Latino",
+    "city": "Paris",
+    "description": "El barrio universitario de París desde el siglo XIII, hogar de la Sorbona. Calles llenas de librerías, cafés filosóficos y restaurantes del mundo entero. Ambiente estudiantil único.",
+    "duration_min": 90,
+    "address": "Quartier Latin, 75005 Paris",
+    "lat": 48.8485,
+    "lng": 2.3450,
+    "wikipedia_title": "Latin Quarter, Paris"
+  },
+  {
+    "name": "Moulin Rouge",
+    "city": "Paris",
+    "description": "El cabaré más famoso del mundo, creado en 1889 en el barrio de Pigalle. Inventó el cancán y marcó el Belle Époque parisino. Espectáculos nocturnos de cabaret cada noche.",
+    "duration_min": 90,
+    "address": "82 Boulevard de Clichy, 75018 Paris",
+    "lat": 48.8844,
+    "lng": 2.3323,
+    "wikipedia_title": "Moulin Rouge"
+  },
+  {
+    "name": "Île de la Cité",
+    "city": "Paris",
+    "description": "La isla corazón de París, donde los galos fundaron la ciudad hace 2.000 años. Aquí están Notre-Dame, la Sainte-Chapelle, la Conciergerie y mercados de flores.",
+    "duration_min": 90,
+    "address": "Île de la Cité, 75001 Paris",
+    "lat": 48.8535,
+    "lng": 2.3490,
+    "wikipedia_title": "Île de la Cité"
+  },
+  {
+    "name": "Disneyland París",
+    "city": "Paris",
+    "description": "El parque de atracciones más visitado de Europa, a 35 km de París. Incluye Disneyland Park y Walt Disney Studios con atracciones para todas las edades.",
+    "duration_min": 600,
+    "address": "Boulevard de Parc, 77700 Coupvray",
+    "lat": 48.8722,
+    "lng": 2.7760,
+    "wikipedia_title": "Disneyland Paris"
+  },
+  {
+    "name": "Centro Pompidou",
+    "city": "Paris",
+    "description": "Controvertido centro cultural con arquitectura high-tech de tuberías de colores expuestas. Alberga el Museo Nacional de Arte Moderno con la mayor colección de arte moderno de Europa.",
+    "duration_min": 120,
+    "address": "Place Georges-Pompidou, 75004 Paris",
+    "lat": 48.8607,
+    "lng": 2.3520,
+    "wikipedia_title": "Centre Georges Pompidou"
+  },
+  {
+    "name": "Duomo de Milán",
+    "city": "Milan",
+    "description": "La catedral gótica más grande de Italia y tercera del mundo. Construida durante 600 años con 135 agujas de mármol. Desde las terrazas, vistas de Milán con los Alpes al fondo.",
+    "duration_min": 90,
+    "address": "Piazza del Duomo, 20122 Milano",
+    "lat": 45.4642,
+    "lng": 9.1920,
+    "wikipedia_title": "Milan Cathedral"
+  },
+  {
+    "name": "Galería Vittorio Emanuele II",
+    "city": "Milan",
+    "description": "Galería comercial del siglo XIX considerada el 'salotto buono' de Milán. Espectacular estructura de hierro y cristal que conecta el Duomo con La Scala. Aquí están las boutiques más exclusivas.",
+    "duration_min": 60,
+    "address": "Piazza del Duomo, 20121 Milano",
+    "lat": 45.4653,
+    "lng": 9.1923,
+    "wikipedia_title": "Galleria Vittorio Emanuele II"
+  },
+  {
+    "name": "Teatro alla Scala",
+    "city": "Milan",
+    "description": "El teatro de ópera más famoso del mundo, fundado en 1778. Ha visto los estrenos de Verdi, Puccini y Bellini. El museo adyacente exhibe trajes, instrumentos y memorabilia única.",
+    "duration_min": 60,
+    "address": "Via Filodrammatici, 2, 20121 Milano",
+    "lat": 45.4685,
+    "lng": 9.1912,
+    "wikipedia_title": "La Scala"
+  },
+  {
+    "name": "Castillo Sforzesco",
+    "city": "Milan",
+    "description": "Imponente castillo del siglo XV de los duques Sforza. Alberga varios museos con la última obra de Michelangelo (la Pietà Rondanini), arte medieval y colecciones de instrumentos musicales.",
+    "duration_min": 120,
+    "address": "Piazza Castello, 20121 Milano",
+    "lat": 45.4708,
+    "lng": 9.1757,
+    "wikipedia_title": "Sforza Castle"
+  },
+  {
+    "name": "Santa Maria delle Grazie — La Última Cena",
+    "city": "Milan",
+    "description": "Iglesia renacentista del siglo XV declarada Patrimonio de la Humanidad. En su refectorio se encuentra La Última Cena de Leonardo da Vinci, uno de los frescos más famosos del mundo. Reserva obligatoria.",
+    "duration_min": 60,
+    "address": "Piazza di Santa Maria delle Grazie, 2, 20123 Milano",
+    "lat": 45.4659,
+    "lng": 9.1708,
+    "wikipedia_title": "Santa Maria delle Grazie, Milan"
+  },
+  {
+    "name": "Pinacoteca di Brera",
+    "city": "Milan",
+    "description": "La principal galería de arte de Milán, en un palacio del siglo XVII. Alberga obras maestras de Mantegna, Piero della Francesca, Caravaggio y Rubens.",
+    "duration_min": 120,
+    "address": "Via Brera, 28, 20121 Milano",
+    "lat": 45.4724,
+    "lng": 9.1872,
+    "wikipedia_title": "Pinacoteca di Brera"
+  },
+  {
+    "name": "Barrio de Brera",
+    "city": "Milan",
+    "description": "El barrio artístico y bohemio de Milán, junto a la Pinacoteca. Boutiques de diseño, galerías, librerías y restaurantes elegantes en calles adoquinadas. El Soho milanés.",
+    "duration_min": 90,
+    "address": "Brera, 20121 Milano",
+    "lat": 45.4724,
+    "lng": 9.1872,
+    "wikipedia_title": "Brera district"
+  },
+  {
+    "name": "Basílica de Sant'Ambrogio",
+    "city": "Milan",
+    "description": "Una de las iglesias más antiguas de Milán, fundada en el siglo IV por San Ambrosio. Ejemplo perfecto del románico lombardo con un magnífico atrio y mosaicos paleocristianos.",
+    "duration_min": 45,
+    "address": "Piazza Sant'Ambrogio, 15, 20123 Milano",
+    "lat": 45.4607,
+    "lng": 9.1732,
+    "wikipedia_title": "Basilica of Sant'Ambrogio"
+  },
+  {
+    "name": "Barrio de Navigli",
+    "city": "Milan",
+    "description": "Sistema de canales históricos del siglo XII diseñado por Leonardo da Vinci. Hoy es el barrio de moda de Milán con bares, restaurantes y aperitivo al atardecer junto al agua.",
+    "duration_min": 90,
+    "address": "Navigli, 20144 Milano",
+    "lat": 45.4527,
+    "lng": 9.1830,
+    "wikipedia_title": "Navigli"
+  },
+  {
+    "name": "Parque Sempione",
+    "city": "Milan",
+    "description": "El pulmón verde de Milán, un parque de estilo inglés de 38 hectáreas detrás del Castillo Sforzesco. Senderos, lago, Arena Cívica y el moderno Arco della Pace a la entrada.",
+    "duration_min": 90,
+    "address": "Parco Sempione, 20154 Milano",
+    "lat": 45.4752,
+    "lng": 9.1780,
+    "wikipedia_title": "Parco Sempione"
+  },
+  {
+    "name": "Arco della Pace",
+    "city": "Milan",
+    "description": "Arco de triunfo neoclásico de 1838 construido por orden de Napoleón. Coronado por una estatua de la Paz en carro tirado por seis caballos. Marca la entrada del Parque Sempione.",
+    "duration_min": 30,
+    "address": "Piazza Sempione, 20154 Milano",
+    "lat": 45.4754,
+    "lng": 9.1751,
+    "wikipedia_title": "Arco della Pace"
+  },
+  {
+    "name": "Cementerio Monumental",
+    "city": "Milan",
+    "description": "Cementerio histórico del siglo XIX considerado un museo al aire libre. Esculturas funerarias de mármol de los grandes artistas italianos de la época. Obra de arte en sí mismo.",
+    "duration_min": 90,
+    "address": "Piazzale Cimitero Monumentale, 20154 Milano",
+    "lat": 45.4922,
+    "lng": 9.1662,
+    "wikipedia_title": "Monumental Cemetery of Milan"
+  },
+  {
+    "name": "Pinacoteca Ambrosiana",
+    "city": "Milan",
+    "description": "Uno de los museos más importantes de Milán, fundado en 1618. Alberga cartones de Rafael, obras de Botticelli, Caravaggio y el Códice Atlántico de Leonardo da Vinci.",
+    "duration_min": 90,
+    "address": "Piazza Pio XI, 2, 20123 Milano",
+    "lat": 45.4636,
+    "lng": 9.1798,
+    "wikipedia_title": "Pinacoteca Ambrosiana"
+  },
+  {
+    "name": "Via Montenapoleone",
+    "city": "Milan",
+    "description": "La calle de moda más famosa de Milán y una de las más exclusivas del mundo. Junto a Via della Spiga forma el Cuadrilátero de Oro, con Gucci, Prada, Versace y Armani.",
+    "duration_min": 90,
+    "address": "Via Montenapoleone, 20121 Milano",
+    "lat": 45.4714,
+    "lng": 9.1965,
+    "wikipedia_title": "Via Montenapoleone"
+  },
+  {
+    "name": "Piazza Gae Aulenti",
+    "city": "Milan",
+    "description": "Plaza moderna en el corazón del nuevo distrito financiero de Porta Nuova. Rodeada de rascacielos de diseño, con el UniCredit Tower y la Biblioteca degli Alberi. Milán del futuro.",
+    "duration_min": 45,
+    "address": "Piazza Gae Aulenti, 20124 Milano",
+    "lat": 45.4840,
+    "lng": 9.1902,
+    "wikipedia_title": "Piazza Gae Aulenti"
+  },
+  {
+    "name": "Basílica de San Pedro",
+    "city": "Roma",
+    "description": "La iglesia más grande del mundo y el corazón del catolicismo. Construida sobre la tumba de San Pedro, con la imponente cúpula de Michelangelo. La Pietà y el baldaquino de Bernini son imperdibles.",
+    "duration_min": 120,
+    "address": "Piazza San Pietro, 00120 Città del Vaticano",
+    "lat": 41.9022,
+    "lng": 12.4534,
+    "wikipedia_title": "St. Peter's Basilica"
+  },
+  {
+    "name": "Museos Vaticanos",
+    "city": "Roma",
+    "description": "Uno de los mayores complejos museísticos del mundo con 54 galerías. El punto culminante es la Capilla Sixtina con los frescos de Michelangelo, incluido El Juicio Final y la Creación.",
+    "duration_min": 180,
+    "address": "Viale Vaticano, 00165 Roma",
+    "lat": 41.9065,
+    "lng": 12.4536,
+    "wikipedia_title": "Vatican Museums"
+  },
+  {
+    "name": "Coliseo",
+    "city": "Roma",
+    "description": "El mayor anfiteatro del mundo antiguo, construido en el siglo I d.C. Aquí se celebraban combates de gladiadores y espectáculos con fieras. Símbolo eterno de Roma.",
+    "duration_min": 120,
+    "address": "Piazza del Colosseo, 1, 00184 Roma",
+    "lat": 41.8902,
+    "lng": 12.4923,
+    "wikipedia_title": "Colosseum"
+  },
+  {
+    "name": "Foro Romano",
+    "city": "Roma",
+    "description": "El corazón político, comercial y religioso de la Roma antigua. Ruinas de templos, arcos de triunfo y basílicas de 2.500 años de historia. Suele combinarse con el Coliseo.",
+    "duration_min": 90,
+    "address": "Via Sacra, 00186 Roma",
+    "lat": 41.8925,
+    "lng": 12.4853,
+    "wikipedia_title": "Roman Forum"
+  },
+  {
+    "name": "Panteón de Roma",
+    "city": "Roma",
+    "description": "El edificio de la antigüedad mejor conservado del mundo, construido en el año 125 d.C. Su cúpula con óculo central sigue siendo la mayor cúpula de hormigón sin refuerzo del mundo.",
+    "duration_min": 60,
+    "address": "Piazza della Rotonda, 00186 Roma",
+    "lat": 41.8986,
+    "lng": 12.4769,
+    "wikipedia_title": "Pantheon, Rome"
+  },
+  {
+    "name": "Fontana di Trevi",
+    "city": "Roma",
+    "description": "La fuente barroca más grande y famosa de Roma, diseñada por Nicola Salvi en el siglo XVIII. La tradición dice que lanzar una moneda garantiza el regreso a Roma.",
+    "duration_min": 45,
+    "address": "Piazza di Trevi, 00187 Roma",
+    "lat": 41.9009,
+    "lng": 12.4833,
+    "wikipedia_title": "Trevi Fountain"
+  },
+  {
+    "name": "Museos Capitolinos",
+    "city": "Roma",
+    "description": "Los museos públicos más antiguos del mundo, inaugurados en 1471. En la colina Capitolina, albergan la estatua ecuestre de Marco Aurelio, el Laocoonte y vistas únicas del Foro.",
+    "duration_min": 90,
+    "address": "Piazza del Campidoglio, 1, 00186 Roma",
+    "lat": 41.8932,
+    "lng": 12.4823,
+    "wikipedia_title": "Capitoline Museums"
+  },
+  {
+    "name": "Castel Sant'Angelo",
+    "city": "Roma",
+    "description": "Mausoleo del emperador Adriano del siglo II, reconvertido en fortaleza papal y hoy museo. Unido a la Basílica de San Pedro por el Passetto di Borgo, un pasaje secreto del Vaticano.",
+    "duration_min": 90,
+    "address": "Lungotevere Castello, 50, 00193 Roma",
+    "lat": 41.9036,
+    "lng": 12.4663,
+    "wikipedia_title": "Castel Sant'Angelo"
+  },
+  {
+    "name": "Piazza Navona",
+    "city": "Roma",
+    "description": "La plaza barroca más bella de Roma, construida sobre el estadio de Domiciano. La Fuente de los Cuatro Ríos de Bernini preside el espacio, rodeado de cafés y pintores.",
+    "duration_min": 60,
+    "address": "Piazza Navona, 00186 Roma",
+    "lat": 41.8990,
+    "lng": 12.4728,
+    "wikipedia_title": "Piazza Navona"
+  },
+  {
+    "name": "Plaza de España y Escalinata",
+    "city": "Roma",
+    "description": "La famosa Escalinata de la Trinidad del siglo XVIII con 135 escalones. Punto de encuentro icónico de Roma, con la fuente Barcaccia de Bernini y la vista hacia Villa Medici.",
+    "duration_min": 60,
+    "address": "Piazza di Spagna, 00187 Roma",
+    "lat": 41.9059,
+    "lng": 12.4823,
+    "wikipedia_title": "Spanish Steps"
+  },
+  {
+    "name": "Barrio de Trastevere",
+    "city": "Roma",
+    "description": "El barrio más auténtico y romántico de Roma a orillas del Tíber. Callejuelas medievales, hiedra en las fachadas, restaurantes de cocina romana tradicional y mucho ambiente nocturno.",
+    "duration_min": 120,
+    "address": "Trastevere, 00153 Roma",
+    "lat": 41.8890,
+    "lng": 12.4699,
+    "wikipedia_title": "Trastevere"
+  },
+  {
+    "name": "Basílica de Santa María en Trastevere",
+    "city": "Roma",
+    "description": "Una de las primeras iglesias de Roma, del siglo IV. Sus mosaicos dorados del siglo XII en el ábside son considerados de los más bellos de Roma. Ubicada en la animada piazza homónima.",
+    "duration_min": 45,
+    "address": "Piazza di Santa Maria in Trastevere, 00153 Roma",
+    "lat": 41.8897,
+    "lng": 12.4689,
+    "wikipedia_title": "Santa Maria in Trastevere"
+  },
+  {
+    "name": "Galería Borghese",
+    "city": "Roma",
+    "description": "Una de las galerías de arte más importantes del mundo en la Villa Borghese. Esculturas de Bernini, pinturas de Caravaggio, Tiziano y Rafael. Entrada limitada — reserva imprescindible.",
+    "duration_min": 90,
+    "address": "Piazzale Scipione Borghese, 5, 00197 Roma",
+    "lat": 41.9140,
+    "lng": 12.4919,
+    "wikipedia_title": "Galleria Borghese"
+  },
+  {
+    "name": "Parque Villa Borghese",
+    "city": "Roma",
+    "description": "El parque más grande y hermoso del centro de Roma con 80 hectáreas. Lagos, jardines formales, la Galería Borghese, el Museo Etrusco y vistas panorámicas de Roma.",
+    "duration_min": 120,
+    "address": "Viale del Museo Borghese, 00197 Roma",
+    "lat": 41.9097,
+    "lng": 12.4883,
+    "wikipedia_title": "Villa Borghese gardens"
+  },
+  {
+    "name": "Monte Palatino",
+    "city": "Roma",
+    "description": "La más mítica de las siete colinas de Roma, donde según la leyenda fue fundada la ciudad. Con ruinas de los palacios imperiales y jardines del siglo XVI, ofrece las mejores vistas del Foro.",
+    "duration_min": 60,
+    "address": "Via Sacra, 00184 Roma",
+    "lat": 41.8878,
+    "lng": 12.4870,
+    "wikipedia_title": "Palatine Hill"
+  },
+  {
+    "name": "Campo de' Fiori",
+    "city": "Roma",
+    "description": "Animada plaza popular sin iglesias ni palacios, famosa por su mercado matinal de frutas y flores. De noche se convierte en uno de los bares al aire libre más concurridos de Roma.",
+    "duration_min": 60,
+    "address": "Campo de' Fiori, 00186 Roma",
+    "lat": 41.8956,
+    "lng": 12.4722,
+    "wikipedia_title": "Campo de' Fiori"
+  },
+  {
+    "name": "Basílica de San Juan de Letrán",
+    "city": "Roma",
+    "description": "La catedral más antigua de Occidente, fundada en el siglo IV y considerada la madre de todas las iglesias católicas. Precede en importancia a la propia Basílica de San Pedro.",
+    "duration_min": 60,
+    "address": "Piazza di San Giovanni in Laterano, 4, 00184 Roma",
+    "lat": 41.8833,
+    "lng": 12.5056,
+    "wikipedia_title": "Archbasilica of Saint John Lateran"
+  },
+  {
+    "name": "Circo Máximo",
+    "city": "Roma",
+    "description": "El mayor recinto de espectáculos de la antigüedad con capacidad para 250.000 espectadores. Aquí se celebraban las carreras de cuadrigas. Hoy es un parque verde con vista al Palatino.",
+    "duration_min": 45,
+    "address": "Via del Circo Massimo, 00153 Roma",
+    "lat": 41.8856,
+    "lng": 12.4876,
+    "wikipedia_title": "Circus Maximus"
+  },
+  {
+    "name": "Barrio Judío de Roma",
+    "city": "Roma",
+    "description": "El gueto judío más antiguo de Europa occidental, habitado desde el siglo II a.C. Sinagoga, museos, restaurantes de cocina judío-romana y una historia de más de 2.000 años.",
+    "duration_min": 60,
+    "address": "Ghetto, 00186 Roma",
+    "lat": 41.8960,
+    "lng": 12.4773,
+    "wikipedia_title": "Jewish Ghetto, Rome"
+  },
+  {
+    "name": "Museo Guggenheim Bilbao",
+    "city": "Bilbao",
+    "description": "Icónico museo de arte contemporáneo diseñado por Frank Gehry en 1997, cubierto de titanio. Su arquitectura revolucionaria transformó Bilbao. Exposiciones permanentes y temporales de arte internacional.",
+    "duration_min": 120,
+    "address": "Avenida Abandoibarra, 2, 48009 Bilbao",
+    "lat": 43.2686,
+    "lng": -2.9340,
+    "wikipedia_title": "Guggenheim Museum Bilbao"
+  },
+  {
+    "name": "Casco Viejo de Bilbao",
+    "city": "Bilbao",
+    "description": "El corazón histórico medieval de Bilbao conocido como Las Siete Calles. Animado ambiente de pintxos, bares y tiendas tradicionales. Aquí está la Catedral de Santiago y el Mercado de la Ribera.",
+    "duration_min": 120,
+    "address": "Casco Viejo, 48005 Bilbao",
+    "lat": 43.2567,
+    "lng": -2.9241,
+    "wikipedia_title": "Casco Viejo (Bilbao)"
+  },
+  {
+    "name": "Mercado de la Ribera",
+    "city": "Bilbao",
+    "description": "El mayor mercado cubierto de Europa, declarado Patrimonio Cultural Vasco. Edificio art déco de 1929 a orillas del Nervión con pescadería, carnicería y pintxos frescos.",
+    "duration_min": 60,
+    "address": "Erribera Kalea, 22, 48005 Bilbao",
+    "lat": 43.2575,
+    "lng": -2.9233,
+    "wikipedia_title": "Mercado de la Ribera"
+  },
+  {
+    "name": "Catedral de Santiago de Bilbao",
+    "city": "Bilbao",
+    "description": "Catedral gótica del siglo XIV en el corazón del Casco Viejo. Etapa del Camino de Santiago del Norte. Destaca por su claustro gótico-renacentista y la fachada neogótica.",
+    "duration_min": 45,
+    "address": "Plaza de Santiago, 1, 48005 Bilbao",
+    "lat": 43.2565,
+    "lng": -2.9248,
+    "wikipedia_title": "Cathedral of Santiago de Bilbao"
+  },
+  {
+    "name": "Museo de Bellas Artes de Bilbao",
+    "city": "Bilbao",
+    "description": "Uno de los mejores museos de bellas artes de España con obras desde el siglo XII al XXI. Colecciones de El Greco, Velázquez, Gauguin y artistas vascos junto al Guggenheim.",
+    "duration_min": 90,
+    "address": "Plaza del Museo, 2, 48009 Bilbao",
+    "lat": 43.2638,
+    "lng": -2.9354,
+    "wikipedia_title": "Bilbao Fine Arts Museum"
+  },
+  {
+    "name": "Parque de Doña Casilda",
+    "city": "Bilbao",
+    "description": "Romántico parque histórico de finales del siglo XIX junto al Museo de Bellas Artes. Con lago, patos, quiosco de música y jardines arbolados. Uno de los rincones más tranquilos de Bilbao.",
+    "duration_min": 60,
+    "address": "Parke Kalea, 1, 48013 Bilbao",
+    "lat": 43.2645,
+    "lng": -2.9411,
+    "wikipedia_title": "Doña Casilda Iturrizar Park"
+  },
+  {
+    "name": "Teatro Arriaga",
+    "city": "Bilbao",
+    "description": "Espectacular teatro neorrococó de 1890, considerado el más hermoso del País Vasco. Sede de ópera, teatro y danza. Su fachada ecléctica preside la plaza de Unamuno en el Casco Viejo.",
+    "duration_min": 30,
+    "address": "Plaza Arriaga, 1, 48005 Bilbao",
+    "lat": 43.2574,
+    "lng": -2.9259,
+    "wikipedia_title": "Teatro Arriaga"
+  },
+  {
+    "name": "Puente Zubizuri",
+    "city": "Bilbao",
+    "description": "Elegante puente peatonal sobre la Ría del Nervión diseñado por Santiago Calatrava. Su estructura blanca en arco con pasarela acristalada es uno de los símbolos del Bilbao moderno.",
+    "duration_min": 20,
+    "address": "Paseo de Uribitarte, 48001 Bilbao",
+    "lat": 43.2680,
+    "lng": -2.9286,
+    "wikipedia_title": "Zubizuri"
+  },
+  {
+    "name": "Azkuna Zentroa",
+    "city": "Bilbao",
+    "description": "Centro sociocultural en una bodega de vinos de 1909 renovada por Philippe Starck. Piscina cubierta, sala de cine, exposiciones y cafetería. Arquitectura de interior sorprendente.",
+    "duration_min": 60,
+    "address": "Plaza Arriquibar, 4, 48010 Bilbao",
+    "lat": 43.2626,
+    "lng": -2.9391,
+    "wikipedia_title": "Azkuna Zentroa"
+  },
+  {
+    "name": "Ría del Nervión — Paseo",
+    "city": "Bilbao",
+    "description": "Paseo ribereño de varios kilómetros a lo largo de la Ría del Nervión. Conecta el Casco Viejo con el Guggenheim y el barrio de Deusto. Las mejores vistas de la arquitectura contemporánea de Bilbao.",
+    "duration_min": 90,
+    "address": "Paseo Uribitarte, 48001 Bilbao",
+    "lat": 43.2647,
+    "lng": -2.9295,
+    "wikipedia_title": "Nervión"
+  }
+]

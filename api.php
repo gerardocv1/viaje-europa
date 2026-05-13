@@ -29,10 +29,69 @@ function getDB() {
                 city TEXT,
                 tentative INTEGER DEFAULT 0,
                 sort_order INTEGER DEFAULT 0,
-                updated_at TEXT
+                updated_at TEXT,
+                place_id INTEGER
             )
         ");
+    } else {
+        // Migración: agregar place_id si no existe
+        try { $db->exec("ALTER TABLE events ADD COLUMN place_id INTEGER"); } catch (Exception $e) {}
     }
+
+    // Crear tabla de lugares turísticos
+    $db->exec("
+        CREATE TABLE IF NOT EXISTS places (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT NOT NULL,
+            city TEXT,
+            description TEXT,
+            duration_min INTEGER,
+            address TEXT,
+            lat REAL,
+            lng REAL,
+            wikipedia_title TEXT,
+            images TEXT
+        )
+    ");
+
+    // Migraciones de columnas en places (seguras para BD existente)
+    $wikiAdded = false;
+    try { $db->exec("ALTER TABLE places ADD COLUMN wikipedia_title TEXT"); $wikiAdded = true; } catch (Exception $e) {}
+    try { $db->exec("ALTER TABLE places ADD COLUMN images TEXT"); } catch (Exception $e) {}
+
+    // Sembrar lugares si la tabla está vacía
+    $count = $db->query("SELECT COUNT(*) FROM places")->fetchColumn();
+    $jsonFile = __DIR__ . '/places.json';
+    if ($count == 0 && file_exists($jsonFile)) {
+        $places = json_decode(file_get_contents($jsonFile), true) ?: [];
+        $stmt = $db->prepare("
+            INSERT INTO places (name, city, description, duration_min, address, lat, lng, wikipedia_title, images)
+            VALUES (:name, :city, :description, :duration_min, :address, :lat, :lng, :wikipedia_title, :images)
+        ");
+        foreach ($places as $p) {
+            $stmt->execute([
+                ':name'            => $p['name'] ?? '',
+                ':city'            => $p['city'] ?? '',
+                ':description'     => $p['description'] ?? '',
+                ':duration_min'    => isset($p['duration_min']) ? intval($p['duration_min']) : null,
+                ':address'         => $p['address'] ?? '',
+                ':lat'             => isset($p['lat']) ? floatval($p['lat']) : null,
+                ':lng'             => isset($p['lng']) ? floatval($p['lng']) : null,
+                ':wikipedia_title' => $p['wikipedia_title'] ?? null,
+                ':images'          => isset($p['images']) ? json_encode($p['images']) : null,
+            ]);
+        }
+    } elseif ($wikiAdded && file_exists($jsonFile)) {
+        // Backfill wikipedia_title para places ya existentes
+        $places = json_decode(file_get_contents($jsonFile), true) ?: [];
+        $stmt = $db->prepare("UPDATE places SET wikipedia_title = :wt WHERE name = :name AND (wikipedia_title IS NULL OR wikipedia_title = '')");
+        foreach ($places as $p) {
+            if (!empty($p['wikipedia_title'])) {
+                $stmt->execute([':wt' => $p['wikipedia_title'], ':name' => $p['name']]);
+            }
+        }
+    }
+
     return $db;
 }
 
@@ -101,15 +160,28 @@ try {
             ok(['events' => $rows]);
         }
 
+        case 'places': {
+            requireAuth();
+            $db = getDB();
+            $city = $_GET['city'] ?? '';
+            if ($city) {
+                $stmt = $db->prepare("SELECT * FROM places WHERE city = ? ORDER BY name");
+                $stmt->execute([$city]);
+            } else {
+                $stmt = $db->query("SELECT * FROM places ORDER BY city, name");
+            }
+            ok(['places' => $stmt->fetchAll(PDO::FETCH_ASSOC)]);
+        }
+
         case 'create': {
             requireAuth();
             $in = jsonInput();
             $db = getDB();
             $stmt = $db->prepare("
                 INSERT INTO events
-                (start_date, start_time, end_date, end_time, place, activity, type, cost, notes, url, city, tentative, sort_order, updated_at)
+                (start_date, start_time, end_date, end_time, place, activity, type, cost, notes, url, city, tentative, sort_order, updated_at, place_id)
                 VALUES
-                (:start_date, :start_time, :end_date, :end_time, :place, :activity, :type, :cost, :notes, :url, :city, :tentative, :sort_order, :updated_at)
+                (:start_date, :start_time, :end_date, :end_time, :place, :activity, :type, :cost, :notes, :url, :city, :tentative, :sort_order, :updated_at, :place_id)
             ");
             $stmt->execute([
                 ':start_date' => $in['start_date'] ?? '',
@@ -126,6 +198,7 @@ try {
                 ':tentative'  => !empty($in['tentative']) ? 1 : 0,
                 ':sort_order' => intval($in['sort_order'] ?? 0),
                 ':updated_at' => date('Y-m-d H:i:s'),
+                ':place_id'   => ($in['place_id'] ?? null) ? intval($in['place_id']) : null,
             ]);
             ok(['id' => $db->lastInsertId()]);
         }
@@ -151,7 +224,8 @@ try {
                     city       = :city,
                     tentative  = :tentative,
                     sort_order = :sort_order,
-                    updated_at = :updated_at
+                    updated_at = :updated_at,
+                    place_id   = :place_id
                 WHERE id = :id
             ");
             $stmt->execute([
@@ -170,6 +244,7 @@ try {
                 ':tentative'  => !empty($in['tentative']) ? 1 : 0,
                 ':sort_order' => intval($in['sort_order'] ?? 0),
                 ':updated_at' => date('Y-m-d H:i:s'),
+                ':place_id'   => ($in['place_id'] ?? null) ? intval($in['place_id']) : null,
             ]);
             ok();
         }
