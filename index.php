@@ -647,6 +647,9 @@ main { padding: 20px 16px 100px; max-width: 720px; margin: 0 auto; }
         <button class="icon" id="todayBtn" title="Ir a hoy">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="16" y1="3" x2="16" y2="7"/><circle cx="12" cy="15" r="1.5" fill="currentColor"/></svg>
         </button>
+        <button class="icon" id="exportBtn" title="Descargar backup">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </button>
         <button class="icon" id="refreshBtn" title="Actualizar">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
         </button>
@@ -699,7 +702,8 @@ main { padding: 20px 16px 100px; max-width: 720px; margin: 0 auto; }
       </div>
       <div class="field">
         <label>Actividad</label>
-        <input type="text" id="f_activity" placeholder="Ej: Visitar Gran Vía">
+        <input type="text" id="f_activity" list="activity-list" placeholder="Ej: Visitar Gran Vía">
+        <datalist id="activity-list"></datalist>
       </div>
       <div class="field">
         <label>Tipo</label>
@@ -723,7 +727,9 @@ main { padding: 20px 16px 100px; max-width: 720px; margin: 0 auto; }
       <div class="row-2i">
         <div class="field">
           <label>Fecha</label>
-          <input type="date" id="f_start_date" min="2026-05-14" max="2026-05-29">
+          <select id="f_start_date">
+            <option value="">— elegir fecha —</option>
+          </select>
         </div>
         <div class="field">
           <label>Hora inicio</label>
@@ -941,29 +947,60 @@ function cityForDate(dateStr) {
   return 'Bogota'; // antes o después del viaje
 }
 
-// Rango de fechas válidas por ciudad para el selector de fecha
-const CITY_DATE_RANGE = {
-  Bogota: { min: '',           max: ''           },
-  Madrid: { min: '2026-05-14', max: '2026-05-29' }, // 14-15 + 28-29 (dos períodos)
-  Paris:  { min: '2026-05-16', max: '2026-05-19' },
-  Milan:  { min: '2026-05-20', max: '2026-05-21' },
-  Roma:   { min: '2026-05-22', max: '2026-05-24' },
-  Bilbao: { min: '2026-05-25', max: '2026-05-27' },
+// Días exactos del viaje por ciudad (solo los que corresponden)
+const CITY_VALID_DATES = {
+  Bogota: [], // vacío = mostrar todo el viaje
+  Madrid: ['2026-05-14','2026-05-15','2026-05-28','2026-05-29'],
+  Paris:  ['2026-05-16','2026-05-17','2026-05-18','2026-05-19'],
+  Milan:  ['2026-05-20','2026-05-21'],
+  Roma:   ['2026-05-22','2026-05-23','2026-05-24','2026-05-25'],
+  Bilbao: ['2026-05-25','2026-05-26','2026-05-27'],
 };
-function updateDateRange(city) {
-  const r = CITY_DATE_RANGE[city] || { min: '2026-05-14', max: '2026-05-29' };
-  const inp = $('#f_start_date');
-  inp.min = r.min; inp.max = r.max;
-  // Si la fecha actual queda fuera del nuevo rango, ajustar al primer día válido
-  if (r.min && inp.value && inp.value < r.min) { inp.value = r.min; applyDuration(); }
-  if (r.max && inp.value && inp.value > r.max) { inp.value = r.max; applyDuration(); }
+function updateDateSelect(city) {
+  const sel = $('#f_start_date');
+  const prev = sel.value;
+  sel.innerHTML = '<option value="">— elegir fecha —</option>';
+  let dates = CITY_VALID_DATES[city];
+  if (!dates || dates.length === 0) {
+    // Sin ciudad o Bogotá: todos los días del viaje
+    dates = [];
+    for (let d = 14; d <= 29; d++) dates.push(`2026-05-${String(d).padStart(2,'0')}`);
+  }
+  dates.forEach(dateStr => {
+    const [y, m, d] = dateStr.split('-').map(Number);
+    const dt = new Date(y, m - 1, d);
+    const o = document.createElement('option');
+    o.value = dateStr;
+    o.textContent = `${d} · ${WEEKDAYS[dt.getDay()]}`;
+    sel.appendChild(o);
+  });
+  sel.value = prev; // restaurar si sigue válido
 }
 
-// Prefijo para autosugerir nombre de actividad según tipo
-const ACTIVITY_PREFIX = {
-  Comida: 'Comer en ', Hospedaje: 'Hospedaje en ',
-  Vuelo: '', Tren: '', Traslado: '', Desplazamiento: '', Seguro: '',
+// Verbos para autocompletar actividad según tipo
+const ACTIVITY_VERBS = {
+  Actividad:      ['Visitar','Conocer','Explorar','Pasear por','Descubrir','Recorrer'],
+  Comida:         ['Comer en','Almorzar en','Cenar en','Desayunar en','Tomar algo en'],
+  Hospedaje:      ['Hospedaje en','Alojamiento en','Check-in en'],
+  Traslado:       ['Traslado a','Traslado desde','Ir a'],
+  Vuelo:          ['Vuelo a','Vuelo desde','Vuelo directo a'],
+  Tren:           ['Tren a','Tren desde','Viaje en tren a'],
+  Desplazamiento: ['Caminar a','Ir a pie a','Moverse a'],
+  Seguro:         ['Contratar seguro','Seguro de viaje'],
+  Otro:           ['Visitar','Ir a','Conocer'],
 };
+function updateActivityList() {
+  const place = $('#f_place').value.trim();
+  const type  = $('#f_type').value;
+  const dl    = document.getElementById('activity-list');
+  dl.innerHTML = '';
+  const verbs = ACTIVITY_VERBS[type] || ACTIVITY_VERBS['Otro'];
+  verbs.forEach(verb => {
+    const o = document.createElement('option');
+    o.value = place ? `${verb} ${place}` : verb;
+    dl.appendChild(o);
+  });
+}
 function updatePlacesList(city) {
   const dl = document.getElementById('places-list');
   dl.innerHTML = '';
@@ -1291,7 +1328,9 @@ function openNewModal() {
   const autoCity = (STATE.filterCity !== 'all' ? STATE.filterCity : '') || cityForDate(initDate);
   $('#f_city').value = autoCity;
   updatePlacesList(autoCity);
-  updateDateRange(autoCity);
+  updateDateSelect(autoCity);
+  $('#f_start_date').value = initDate; // restaurar después de poblar el select
+  updateActivityList();
   $('#f_cost').value = '';
   $('#f_notes').value = '';
   $('#f_url').value = '';
@@ -1313,7 +1352,9 @@ function openEditModal(e) {
   $('#f_end_time').value = e.end_time || '';
   $('#f_city').value = e.city || '';
   updatePlacesList(e.city || '');
-  updateDateRange(e.city || '');
+  updateDateSelect(e.city || '');
+  $('#f_start_date').value = e.start_date || '';
+  updateActivityList();
   $('#f_cost').value = e.cost || '';
   $('#f_notes').value = e.notes || '';
   $('#f_url').value = e.url || '';
@@ -1325,28 +1366,21 @@ $('#addBtn').addEventListener('click', openNewModal);
 $('#cancelBtn').addEventListener('click', closeModal);
 $('#modal').addEventListener('click', (e) => { if (e.target === $('#modal')) closeModal(); });
 
-// Al elegir fecha: confirmar ciudad y recalcular fin
-$('#f_start_date').addEventListener('change', () => {
-  const city = cityForDate($('#f_start_date').value);
-  if (city) { $('#f_city').value = city; updatePlacesList(city); }
-  applyDuration();
-});
+// Al elegir fecha: recalcular fin (ciudad ya está fija por el select de fechas)
+$('#f_start_date').addEventListener('change', applyDuration);
 // Al cambiar hora o duración: recalcular fin
 $('#f_start_time').addEventListener('change', applyDuration);
 $('#f_duration').addEventListener('change', applyDuration);
-// Al cambiar ciudad: filtrar fechas válidas + actualizar lista de lugares
+// Al cambiar ciudad: filtrar fechas + actualizar lugares + actualizar sugerencias
 $('#f_city').addEventListener('change', () => {
   const city = $('#f_city').value;
   updatePlacesList(city);
-  updateDateRange(city);
+  updateDateSelect(city);
+  updateActivityList();
 });
-// Al elegir lugar: autosugerir nombre de actividad si está vacío
-$('#f_place').addEventListener('change', () => {
-  const place = $('#f_place').value.trim();
-  if (!place || $('#f_activity').value.trim()) return;
-  const prefix = ACTIVITY_PREFIX[$('#f_type').value] ?? 'Visitar ';
-  if (prefix !== '') $('#f_activity').value = prefix + place;
-});
+// Al elegir lugar o tipo: actualizar sugerencias de actividad
+$('#f_place').addEventListener('change', updateActivityList);
+$('#f_type').addEventListener('change', updateActivityList);
 
 $('#saveBtn').addEventListener('click', async () => {
   const btn = $('#saveBtn'); btn.disabled = true;
@@ -1397,6 +1431,41 @@ $('#deleteBtn').addEventListener('click', async () => {
 $('#refreshBtn').addEventListener('click', async () => {
   await loadEvents();
   toast('Actualizado');
+});
+
+$('#exportBtn').addEventListener('click', async () => {
+  try {
+    const r = await api('list');
+    // Formato idéntico a seed.json — se puede usar para actualizar el repo
+    const seed = r.events.map(e => ({
+      start_date: e.start_date || '',
+      start_time: e.start_time || '',
+      end_date:   e.end_date   || '',
+      end_time:   e.end_time   || '',
+      place:      e.place      || '',
+      activity:   e.activity   || '',
+      type:       e.type       || 'Actividad',
+      cost:       e.cost       || '',
+      notes:      e.notes      || '',
+      url:        e.url        || '',
+      city:       e.city       || '',
+      tentative:  parseInt(e.tentative)  || 0,
+      sort_order: parseInt(e.sort_order) || 0,
+    }));
+    const json = JSON.stringify(seed, null, 2);
+    const blob = new Blob([json], { type: 'application/json' });
+    const url  = URL.createObjectURL(blob);
+    const a    = document.createElement('a');
+    a.href     = url;
+    a.download = `itinerario-backup-${STATE.today || new Date().toISOString().split('T')[0]}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    toast(`${seed.length} eventos exportados`);
+  } catch (err) {
+    toast('Error al exportar');
+  }
 });
 
 $('#todayBtn').addEventListener('click', () => {
